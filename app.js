@@ -3,14 +3,12 @@ import {
   TIER_META,
   archetypeDistribution,
   confidenceFor,
-  deriveInsights,
   filterAndSortRows,
   formatNumber,
   formatPercent,
   matchupResult,
   rowMap,
   shortDeckName,
-  tierCounts,
   validateDatasetShape,
   viewLabel,
 } from "./assets/site-data.js";
@@ -19,6 +17,8 @@ const DATA_URLS = {
   aggregates: "./data/aggregates.json",
   matchups: "./data/matchups.json",
 };
+
+const TIER_ORDER = ["S", "A", "B", "C"];
 
 const state = {
   aggregates: null,
@@ -37,12 +37,10 @@ const els = {};
 
 function cacheElements() {
   for (const id of [
-    "theme-toggle", "freshness-line", "hero-feature-card", "metric-games",
-    "metric-variants", "metric-window", "metric-filter", "metric-quality",
-    "insight-grid", "distribution-list", "tier-shape", "deck-search",
-    "view-select", "sort-select", "result-count", "deck-grid", "matchup-a",
-    "matchup-b", "swap-matchup", "matchup-result", "deck-dialog", "dialog-close",
-    "dialog-content", "method-diagnostics",
+    "theme-toggle", "page-meta", "freshness-line", "distribution-list",
+    "deck-search", "view-select", "sort-select", "result-count", "deck-grid",
+    "matchup-a", "matchup-b", "swap-matchup", "matchup-result", "deck-dialog",
+    "dialog-close", "dialog-content", "method-diagnostics",
   ]) els[id] = document.getElementById(id);
 }
 
@@ -56,9 +54,9 @@ function escapeHtml(value = "") {
   }[char]));
 }
 
-function tierBadge(tier, compact = false) {
+function tierBadge(tier) {
   const meta = TIER_META[tier] || TIER_META.C;
-  return `<span class="tier-badge tier-${escapeHtml(tier.toLowerCase())}${compact ? " is-compact" : ""}"><strong>${escapeHtml(meta.label)}</strong>${compact ? "" : `<small>${escapeHtml(meta.name)}</small>`}</span>`;
+  return `<span class="tier-badge tier-${escapeHtml(tier.toLowerCase())}"><strong>${escapeHtml(meta.label)}</strong></span>`;
 }
 
 function cardArt(card, { eager = false, large = false } = {}) {
@@ -148,69 +146,23 @@ function updateThemeButton(theme) {
   els["theme-toggle"].setAttribute("aria-label", isLight ? "어두운 테마로 전환" : "밝은 테마로 전환");
 }
 
-function renderHero() {
+function renderMeta() {
   const aggregates = state.aggregates;
-  const main = aggregates.views.main;
-  const strongest = deriveInsights(aggregates).strongest;
+  const view = currentView();
   const dateRange = aggregates.date_range || [];
-  const classified = 1 - Number(main.unknown_seat_share || 0);
-
-  els["metric-games"].textContent = formatNumber(main.games);
-  els["metric-variants"].textContent = formatNumber(main.rows.length);
-  els["metric-window"].textContent = dateRange.length === 2
-    ? `${dateRange[0].slice(5).replace("-", ".")} — ${dateRange[1].slice(5).replace("-", ".")}`
+  const period = dateRange.length === 2
+    ? `${dateRange[0].slice(5).replace("-", ".")}–${dateRange[1].slice(5).replace("-", ".")}`
     : "—";
-  els["metric-filter"].textContent = `양측 ${aggregates.filters.min_score}+`;
-  els["metric-quality"].textContent = formatPercent(classified);
-  els["freshness-line"].innerHTML = `<span aria-hidden="true"></span><strong>${escapeHtml(aggregates.generated_at_kst)}</strong> 갱신 · ${formatNumber(main.games)} games`;
-
-  if (!strongest) return;
-  const card = strongest.main_cards?.[0];
-  els["hero-feature-card"].innerHTML = `
-    <div class="feature-card-top">
-      <span class="feature-label">TOP OBSERVED / CURRENT 800+</span>
-      ${tierBadge(strongest.tier, true)}
-    </div>
-    <div class="feature-card-body">
-      ${cardArt(card, { eager: true, large: true })}
-      <div class="feature-copy">
-        <small>${escapeHtml(ARCHETYPE_KO[strongest.l1] || strongest.l1)}</small>
-        <h2>${escapeHtml(shortDeckName(strongest))}</h2>
-        <div class="feature-score"><strong>${formatPercent(strongest.bt_wr_shrunk)}</strong><span>BT 보정</span></div>
-        <button type="button" class="text-button" data-open-unit="${escapeHtml(strongest.unit)}">상세 보기 <span aria-hidden="true">→</span></button>
-      </div>
-    </div>
-    <div class="feature-card-foot"><span>픽률 ${formatPercent(strongest.pick_rate)}</span><span>${formatNumber(strongest.seats)} seats</span></div>`;
+  els["page-meta"].textContent =
+    `${period} · ${formatNumber(view.games)}판 · ${formatNumber(view.rows.length)}변형 · ${viewLabel(state.view, aggregates.filters)}`;
+  els["freshness-line"].innerHTML = `<span aria-hidden="true"></span>${escapeHtml(aggregates.generated_at_kst)} 갱신`;
 }
 
-function renderInsights() {
-  const { strongest, mostPlayed, eliteLeader } = deriveInsights(state.aggregates);
-  const items = [
-    { eyebrow: "관측 최고 보정값", row: strongest, value: strongest ? formatPercent(strongest.bt_wr_shrunk) : "—", note: "현재 800+ 코호트" },
-    { eyebrow: "메타 중심", row: mostPlayed, value: mostPlayed ? formatPercent(mostPlayed.pick_rate) : "—", note: "전체 픽률" },
-    { eyebrow: "상위권 선두", row: eliteLeader, value: eliteLeader ? formatPercent(eliteLeader.bt_wr_shrunk) : "—", note: `Top ${state.aggregates.filters.elite_top_rank}` },
-  ];
-
-  els["insight-grid"].innerHTML = items.map((item, index) => {
-    if (!item.row) return "";
-    return `<article class="insight-card insight-${index + 1}">
-      <div class="insight-number">0${index + 1}</div>
-      <div class="insight-art">${cardArt(item.row.main_cards?.[0])}</div>
-      <div class="insight-copy">
-        <p>${escapeHtml(item.eyebrow)}</p>
-        <h3>${escapeHtml(shortDeckName(item.row))}</h3>
-        <div><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.note)}</span></div>
-      </div>
-      <button class="card-hit-area" type="button" data-open-unit="${escapeHtml(item.row.unit)}" aria-label="${escapeHtml(shortDeckName(item.row))} 상세 보기"></button>
-    </article>`;
-  }).join("");
-}
-
-function renderOverviewCharts() {
+function renderStats() {
   const main = state.aggregates.views.main;
   const distribution = archetypeDistribution(main);
-  const visible = distribution.slice(0, 7);
-  const restRate = distribution.slice(7).reduce((sum, item) => sum + item.rate, 0);
+  const visible = distribution.slice(0, 10);
+  const restRate = distribution.slice(10).reduce((sum, item) => sum + item.rate, 0);
   if (restRate > 0) visible.push({ key: "other", name: "기타", rate: restRate });
 
   els["distribution-list"].innerHTML = visible.map((item, index) => `
@@ -221,56 +173,37 @@ function renderOverviewCharts() {
       </div>
       <strong class="distribution-value">${formatPercent(item.rate)}</strong>
     </div>`).join("");
-
-  const counts = tierCounts(main.rows);
-  const total = Math.max(main.rows.length, 1);
-  els["tier-shape"].innerHTML = Object.entries(counts).map(([tier, count]) => `
-    <div class="tier-shape-row">
-      ${tierBadge(tier, true)}
-      <div class="tier-shape-track"><span class="tier-${tier.toLowerCase()}" style="--bar: ${(count / total) * 100}%"></span></div>
-      <div><strong>${count}</strong><small>변형</small></div>
-    </div>`).join("");
 }
 
 function renderMethodDiagnostics() {
   const main = state.aggregates.views.main;
   const pilotBound = main.rows.filter((row) => row.team_count < 3 || row.top_team_share >= 0.8).length;
-  const dates = Object.values(main.date_distribution || {});
-  const minDay = dates.length ? Math.min(...dates) : 0;
-  const maxDay = dates.length ? Math.max(...dates) : 0;
   els["method-diagnostics"].innerHTML = `
-    <div><small>좌석 0 승률</small><strong>${formatPercent(main.seat0_win_rate)}</strong><span>순서 편향 미보정</span></div>
-    <div><small>파일럿 편중</small><strong>${pilotBound}/${main.rows.length}</strong><span>단일팀 80%+ 또는 3팀 미만</span></div>
-    <div><small>일별 표본 범위</small><strong>${formatNumber(minDay)}–${formatNumber(maxDay)}</strong><span>최근 날짜는 부분 수집 가능</span></div>
-    <p>이 리포트는 <strong>덱+파일럿의 관측 래더 성과</strong>를 설명합니다. 인과적인 덱 단독 성능 예측으로 읽지 마세요.</p>`;
+    <span>좌석 0 승률 <strong>${formatPercent(main.seat0_win_rate)}</strong></span>
+    <span>파일럿 편중 변형 <strong>${pilotBound}/${main.rows.length}</strong></span>
+    <span>미분류 좌석 <strong>${formatPercent(main.unknown_seat_share)}</strong></span>`;
 }
 
-function deckCard(row, index) {
-  const card = row.main_cards?.[0];
-  const confidence = rowEvidence(row);
-  return `<article class="deck-card" style="--delay: ${Math.min(index, 12) * 32}ms">
+function deckRow(row) {
+  const arts = (row.main_cards || []).slice(0, 3).map((card) => cardArt(card)).join("");
+  const evidence = rowEvidence(row);
+  const warn = evidence.key !== "high"
+    ? `<span class="row-flag" title="${escapeHtml(`${evidence.label} — ${evidence.description}`)}" aria-label="${escapeHtml(evidence.label)}">⚠</span>`
+    : "";
+  return `<article class="deck-card">
     <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="${escapeHtml(shortDeckName(row))} 상세 보기">
-      <div class="deck-card-head">
-        ${tierBadge(row.tier, true)}
-        <span class="deck-rank">#${String(index + 1).padStart(2, "0")}</span>
-      </div>
-      <div class="deck-card-main">
-        <div class="deck-card-art">${cardArt(card)}</div>
-        <div class="deck-card-copy">
-          <p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</p>
-          <h3>${escapeHtml(shortDeckName(row))}</h3>
-          <div class="tag-list">${(row.strategy_tags_ko || []).slice(0, 3).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") || "<span>기본형</span>"}</div>
-        </div>
-      </div>
-      <div class="deck-card-stats">
-        <div><small>BT</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
-        <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong></div>
-        <div><small>표본</small><strong>${formatNumber(row.seats)}</strong></div>
-      </div>
-      <div class="deck-card-foot">
-        ${confidenceBadge(confidence)}
-        <span>분석 열기 <span aria-hidden="true">↗</span></span>
-      </div>
+      <span class="deck-arts">${arts || `<span class="card-placeholder" aria-hidden="true">?</span>`}</span>
+      <span class="deck-name">
+        <strong>${escapeHtml(shortDeckName(row))}</strong>
+        <small>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}${(row.strategy_tags_ko || []).length ? " · " + row.strategy_tags_ko.slice(0, 3).map(escapeHtml).join(" · ") : ""}</small>
+      </span>
+      <span class="deck-stats">
+        <span class="deck-stat stat-bt"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>BT</small></span>
+        <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>원승률</small></span>
+        <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>픽률</small></span>
+        <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>표본</small></span>
+      </span>
+      <span class="deck-flag">${warn}</span>
     </button>
   </article>`;
 }
@@ -284,10 +217,19 @@ function renderDecks() {
   els["result-count"].textContent = `${rows.length}개 변형`;
   els["deck-grid"].setAttribute("aria-busy", "false");
   if (!rows.length) {
-    els["deck-grid"].innerHTML = `<div class="empty-state"><span aria-hidden="true">⌕</span><h3>조건에 맞는 덱이 없습니다</h3><p>검색어를 줄이거나 티어 필터를 바꿔보세요.</p><button type="button" data-reset-filters>필터 초기화</button></div>`;
+    els["deck-grid"].innerHTML = `<div class="empty-state"><span aria-hidden="true">⌕</span><h3>조건에 맞는 덱 없음</h3><button type="button" data-reset-filters>필터 초기화</button></div>`;
     return;
   }
-  els["deck-grid"].innerHTML = rows.map(deckCard).join("");
+
+  const groups = TIER_ORDER
+    .map((tier) => ({ tier, rows: rows.filter((row) => row.tier === tier) }))
+    .filter((group) => group.rows.length);
+
+  els["deck-grid"].innerHTML = groups.map((group) => `
+    <section class="tier-group tier-group-${group.tier.toLowerCase()}">
+      <div class="tier-rail">${tierBadge(group.tier)}<small>${group.rows.length}</small></div>
+      <div class="tier-rows">${group.rows.map(deckRow).join("")}</div>
+    </section>`).join("");
 }
 
 function resetFilters() {
@@ -317,6 +259,7 @@ function bindExplorer() {
   });
   els["view-select"].addEventListener("change", async (event) => {
     state.view = event.target.value;
+    renderMeta();
     renderDecks();
     populateMatchupSelectors();
     if (state.matchups) renderMatchup();
@@ -356,13 +299,13 @@ function populateMatchupSelectors() {
 function matchupDeckMini(row, side) {
   return `<div class="matchup-deck matchup-deck-${side}">
     <div class="matchup-deck-art">${cardArt(row.main_cards?.[0])}</div>
-    <div>${tierBadge(row.tier, true)}<p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</p><h3>${escapeHtml(shortDeckName(row))}</h3></div>
+    <div>${tierBadge(row.tier)}<p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</p><h3>${escapeHtml(shortDeckName(row))}</h3></div>
     <button type="button" data-open-unit="${escapeHtml(row.unit)}">상세</button>
   </div>`;
 }
 
 function renderMatchupLoading() {
-  els["matchup-result"].innerHTML = `<div class="matchup-loading"><span class="spinner" aria-hidden="true"></span><p>직접 대진 표본을 불러오는 중…</p></div>`;
+  els["matchup-result"].innerHTML = `<div class="matchup-loading"><span class="spinner" aria-hidden="true"></span><p>대진 표본 로딩 중…</p></div>`;
 }
 
 async function renderMatchup() {
@@ -370,7 +313,7 @@ async function renderMatchup() {
   try {
     await ensureMatchups();
   } catch (error) {
-    els["matchup-result"].innerHTML = `<div class="inline-error"><strong>상성 데이터를 불러오지 못했습니다.</strong><span>${escapeHtml(error.message)}</span><button type="button" data-retry-matchups>다시 시도</button></div>`;
+    els["matchup-result"].innerHTML = `<div class="inline-error"><strong>상성 데이터 로드 실패</strong><span>${escapeHtml(error.message)}</span><button type="button" data-retry-matchups>다시 시도</button></div>`;
     return;
   }
 
@@ -384,9 +327,9 @@ async function renderMatchup() {
   const rateA = result?.rate ?? 0.5;
   const rateB = 1 - rateA;
   const verdict = !result || result.mirror
-    ? "미러전 기준값"
+    ? "미러전"
     : rateA >= 0.55 ? `${shortDeckName(rowA)} 우세`
-      : rateA <= 0.45 ? `${shortDeckName(rowA)} 열세` : "팽팽한 대진";
+      : rateA <= 0.45 ? `${shortDeckName(rowA)} 열세` : "팽팽";
 
   els["matchup-result"].innerHTML = `
     <div class="matchup-stage">
@@ -406,7 +349,7 @@ async function renderMatchup() {
       </div>
       <div class="matchup-evidence">
         ${confidenceBadge(confidence)}
-        <p>${result?.mirror ? "같은 변형끼리의 셀은 집계표에서 제외됩니다." : result ? `${formatNumber(result.n)}판 · ${formatNumber(result.wins)}승 ${formatNumber(result.n - result.wins)}패 · ${escapeHtml(confidence.description)}` : "두 변형이 직접 맞붙은 공개 경기 표본이 없습니다."}</p>
+        <p>${result?.mirror ? "동일 변형 셀은 집계에서 제외" : result ? `${formatNumber(result.n)}판 · ${formatNumber(result.wins)}승 ${formatNumber(result.n - result.wins)}패` : "직접 대진 표본 없음"}</p>
       </div>
     </div>`;
 }
@@ -441,7 +384,7 @@ function bindMatchup() {
 }
 
 function matchupList(items, label, rows) {
-  if (!items?.length) return `<div class="detail-empty">직접 표본이 충분한 상대가 없습니다.</div>`;
+  if (!items?.length) return `<div class="detail-empty">직접 표본 충분한 상대 없음</div>`;
   return `<div class="detail-matchup-list">${items.map((item) => {
     const opponent = rows.get(item.vs) || getRow(item.vs, "main");
     const confidence = confidenceFor(item.n, state.aggregates.filters.min_n_cell);
@@ -469,26 +412,25 @@ function renderDialog(row) {
         <p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)} · ${escapeHtml(viewLabel(state.view, state.aggregates.filters))}</p>
         <h2 id="dialog-title">${escapeHtml(shortDeckName(row))}</h2>
         <div class="tag-list is-large">${(row.strategy_tags_ko || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") || "<span>기본형</span>"}</div>
-        <p class="detail-strategy">${escapeHtml(row.strategy || "메인 어태커 중심의 정공법 비트다운.")}</p>
+        <p class="detail-strategy">${escapeHtml(row.strategy || "")}</p>
       </div>
     </header>
 
     <div class="detail-stat-grid">
-      <div><small>BT 보정</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong><span>티어 판정값</span></div>
-      <div><small>원승률</small><strong>${formatPercent(row.raw_wr)}</strong><span>실제 W/L</span></div>
-      <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong><span>전체 좌석</span></div>
-      <div><small>표본</small><strong>${formatNumber(row.seats)}</strong><span>seats</span></div>
+      <div><small>BT 승률</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
+      <div><small>원승률</small><strong>${formatPercent(row.raw_wr)}</strong></div>
+      <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong></div>
+      <div><small>표본</small><strong>${formatNumber(row.seats)}</strong></div>
     </div>
 
     <div class="detail-evidence-strip">
       <div><small>관측 팀</small><strong>${formatNumber(row.team_count)}</strong></div>
       <div><small>최대 단일 팀 비중</small><strong>${formatPercent(row.top_team_share)}</strong></div>
       <div><small>좌석 0 비중</small><strong>${formatPercent(row.seat0_share)}</strong></div>
-      <p>${escapeHtml(confidence.description)}. 표본 수가 커도 한 팀에 편중되면 일반화 신뢰도는 낮습니다.</p>
     </div>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><div><p>HEAD TO HEAD</p><h3>어디서 막히고, 어디를 뚫는가</h3></div><span>버튼을 누르면 상성 연구소로 이동</span></div>
+      <div class="detail-section-heading"><h3>상성</h3><span>클릭 시 상성 비교로 이동</span></div>
       <div class="detail-matchups">
         <div><h4><span class="down-arrow" aria-hidden="true">↓</span> 카운터</h4>${matchupList(row.counters, "불리", rows)}</div>
         <div><h4><span class="up-arrow" aria-hidden="true">↑</span> 유리 상대</h4>${matchupList(row.preys, "유리", rows)}</div>
@@ -496,12 +438,12 @@ function renderDialog(row) {
     </section>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><div><p>CORE CARDS</p><h3>대표 카드</h3></div><span>변형 내 50%+ 채용 우선</span></div>
+      <div class="detail-section-heading"><h3>대표 카드</h3><span>변형 내 채용률순</span></div>
       <div class="core-card-grid">${cardGallery.map((card) => `<article>${cardArt(card, { large: true })}<strong>${escapeHtml(card.name)}</strong><span>${formatPercent(card.presence)} 채용</span></article>`).join("")}</div>
     </section>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><div><p>MODAL LIST</p><h3>가장 자주 관측된 리스트</h3></div><span>${formatPercent(row.modal_deck_share)} 일치 · ${modalCount}장</span></div>
+      <div class="detail-section-heading"><h3>대표 리스트</h3><span>${formatPercent(row.modal_deck_share)} 일치 · ${modalCount}장</span></div>
       <div class="decklist-shell">
         <div class="decklist-grid">${(row.modal_deck || []).map((card) => `<div><strong>${card.qty}</strong><span>${escapeHtml(card.name)}</span></div>`).join("")}</div>
         <button class="copy-button" type="button" data-copy-deck>덱 리스트 복사</button>
@@ -588,7 +530,7 @@ function bindDelegatedActions() {
 }
 
 function renderError(error) {
-  document.querySelector("main").innerHTML = `<section class="fatal-error section-shell"><span aria-hidden="true">!</span><p class="eyebrow">DATA LOAD ERROR</p><h1>리포트를 불러오지 못했습니다.</h1><p>${escapeHtml(error.message)}</p><button class="button button-primary" type="button" onclick="window.location.reload()">새로고침</button><a href="./README.md">README 원본 보기</a></section>`;
+  document.querySelector("main").innerHTML = `<section class="fatal-error section-shell"><span aria-hidden="true">!</span><h1>데이터 로드 실패</h1><p>${escapeHtml(error.message)}</p><button class="button button-primary" type="button" onclick="window.location.reload()">새로고침</button><a href="./README.md">README 원본</a></section>`;
 }
 
 function setupServiceWorker() {
@@ -599,11 +541,11 @@ function setupServiceWorker() {
 function setupNetworkStatus() {
   window.addEventListener("offline", () => {
     els["freshness-line"].classList.add("is-offline");
-    els["freshness-line"].innerHTML = `<span aria-hidden="true"></span><strong>오프라인</strong> · 마지막 저장 데이터를 표시할 수 있습니다.`;
+    els["freshness-line"].innerHTML = `<span aria-hidden="true"></span>오프라인 · 저장 데이터 표시 중`;
   });
   window.addEventListener("online", () => {
     els["freshness-line"].classList.remove("is-offline");
-    renderHero();
+    renderMeta();
   });
 }
 
@@ -623,9 +565,8 @@ async function init() {
     const preliminaryErrors = validateDatasetShape(state.aggregates, { main: { units: [], cells: {} }, elite: { units: [], cells: {} } })
       .filter((error) => !error.includes("matrix unit"));
     if (preliminaryErrors.some((error) => error.includes("rows missing"))) throw new Error(preliminaryErrors.join("; "));
-    renderHero();
-    renderInsights();
-    renderOverviewCharts();
+    renderMeta();
+    renderStats();
     renderMethodDiagnostics();
     renderDecks();
     populateMatchupSelectors();

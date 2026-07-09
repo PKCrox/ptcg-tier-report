@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ptcg-meta-v2";
+const CACHE_VERSION = "ptcg-meta-v3";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 const APP_SHELL = [

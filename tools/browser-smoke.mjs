@@ -176,7 +176,7 @@ try {
   assert(await evaluate("document.querySelectorAll('h1').length === 1"), "page must expose one h1");
   await screenshot("/tmp/ptcg-qa-desktop.png");
 
-  await evaluate("document.querySelector('#overview').scrollIntoView({block:'start'})");
+  await evaluate("document.querySelector('#stats').scrollIntoView({block:'start'})");
   await delay(150);
   await screenshot("/tmp/ptcg-qa-overview.png");
 

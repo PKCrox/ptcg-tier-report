@@ -1,8 +1,8 @@
-# PTCG Meta Lab
+# PTCG 티어표
 
-Kaggle **Pokémon TCG AI Battle** 공개 리플레이에서 현재 관측되는 덱 변형, 픽률, 직접 상성을 탐색하는 데이터 제품입니다.
+Kaggle **Pokémon TCG AI Battle** 공개 리플레이 기반 덱 티어·픽률·상성 통계.
 
-[**인터랙티브 리포트 열기 →**](https://pkcrox.github.io/ptcg-tier-report/)
+[**티어표 열기 →**](https://pkcrox.github.io/ptcg-tier-report/)
 
 ## 최신 스냅샷
 
