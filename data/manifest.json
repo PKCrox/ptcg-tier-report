@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "generated_at_kst": "2026-07-10 03:40 KST",
+  "files": {
+    "aggregates.json": {
+      "bytes": 355206,
+      "sha256": "094c28205401268963423edddc73be0e8a3b6dda3947103c999971686c82947b"
+    },
+    "matchups.json": {
+      "bytes": 339863,
+      "sha256": "49bb66f2db06ff6136f1d33ed792e99aeb7e4df6fee9289347882aa04042be32"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ptcg-tier-report",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive public meta report for Pokemon TCG AI Battle",
+  "scripts": {
+    "test": "node tools/validate-public-site.mjs",
+    "build": "npm test && node tools/build-site.mjs",
+    "qa:browser": "node tools/browser-smoke.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
