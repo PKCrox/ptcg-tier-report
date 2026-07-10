@@ -223,18 +223,38 @@ h1, h2, h3, h4, p { margin: 0; }
 .deck-card-button:hover { background: var(--panel-soft); }
 .deck-card-button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
-.deck-arts { display: flex; gap: 3px; }
-.deck-arts .card-art-wrap { width: 44px; flex: none; }
+/* lolchess-style portrait crop: square window zoomed into the card artwork */
+.deck-arts { display: flex; gap: 4px; }
+.deck-arts .card-art-wrap,
+.deck-arts .card-placeholder {
+  width: 42px; height: 42px; aspect-ratio: auto; flex: none;
+  border-radius: 9px; border: 1px solid var(--border);
+  overflow: hidden; position: relative;
+}
+.deck-arts .card-art-wrap img {
+  position: absolute; width: 200%; max-width: none; height: auto;
+  left: -50%; top: -32%;
+}
 
-.deck-name { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
-.deck-name strong { font-size: .95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.deck-name small { color: var(--text-faint); font-size: .78rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.deck-name { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.deck-name strong { font-size: 1rem; font-weight: 750; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.deck-tags { display: flex; gap: 4px; overflow: hidden; }
+.deck-tags em {
+  font-style: normal; font-size: .72rem; font-weight: 600;
+  color: var(--text-dim); background: var(--panel-soft);
+  border-radius: 4px; padding: 1px 6px; white-space: nowrap;
+}
+
+.tier-text-s strong { color: var(--tier-s); }
+.tier-text-a strong { color: var(--tier-a); }
+.tier-text-b strong { color: var(--tier-b); }
+.tier-text-c strong { color: var(--tier-c); }
 
 .deck-stats { display: contents; }
 .deck-stat { text-align: center; display: flex; flex-direction: column; }
-.deck-stat strong { font-variant-numeric: tabular-nums; font-size: .93rem; }
+.deck-stat strong { font-variant-numeric: tabular-nums; font-size: .93rem; color: var(--text-dim); }
+.deck-stat.stat-bt strong { font-size: 1rem; font-weight: 800; }
 .deck-stat small { display: none; }
-.deck-stat.stat-bt strong { color: var(--accent); }
 
 .deck-flag { text-align: center; }
 .row-flag { color: var(--warn); font-size: .95rem; cursor: help; }

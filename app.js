@@ -194,11 +194,11 @@ function deckRow(row) {
     <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="${escapeHtml(shortDeckName(row))} 상세 보기">
       <span class="deck-arts">${arts || `<span class="card-placeholder" aria-hidden="true">?</span>`}</span>
       <span class="deck-name">
-        <strong>${escapeHtml(shortDeckName(row))}</strong>
-        <small>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}${(row.strategy_tags_ko || []).length ? " · " + row.strategy_tags_ko.slice(0, 3).map(escapeHtml).join(" · ") : ""}</small>
+        <strong>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</strong>
+        <span class="deck-tags">${(row.strategy_tags_ko || []).map((tag) => `<em>${escapeHtml(tag)}</em>`).join("") || "<em>기본형</em>"}</span>
       </span>
       <span class="deck-stats">
-        <span class="deck-stat stat-bt"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>PKC</small></span>
+        <span class="deck-stat stat-bt tier-text-${escapeHtml(row.tier.toLowerCase())}"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>PKC</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>원승률</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>픽률</small></span>
         <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>표본</small></span>
