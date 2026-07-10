@@ -44,7 +44,7 @@
     <nav class="primary-nav" aria-label="주요 메뉴">
       <a href="#tiers">티어표</a>
       <a href="#matchup">상성</a>
-      <a href="#stats">점유율</a>
+      <a href="#stats">점수대별 분포</a>
     </nav>
 
     <div class="header-actions">
@@ -63,9 +63,8 @@
       <div class="page-head" id="top">
         <div class="page-title">
           <h1>덱 티어표</h1>
-          <p class="page-meta" id="page-meta">데이터 불러오는 중…</p>
         </div>
-        <div class="freshness-line" id="freshness-line" aria-live="polite"></div>
+        <div class="freshness-line" id="freshness-line" aria-live="polite">데이터 불러오는 중…</div>
       </div>
 
       <div class="explorer-toolbar">
@@ -89,8 +88,8 @@
           <select id="sort-select">
             <option value="bt">PKC 스코어</option>
             <option value="pick">픽률</option>
-            <option value="games">표본</option>
-            <option value="raw">원승률</option>
+            <option value="games">판수</option>
+            <option value="raw">승률</option>
           </select>
         </label>
 
@@ -107,9 +106,9 @@
       <div class="table-head" aria-hidden="true">
         <span class="col-deck">덱</span>
         <span>PKC 스코어</span>
-        <span>원승률</span>
+        <span>승률</span>
         <span>픽률</span>
-        <span>표본</span>
+        <span>판수</span>
         <span class="col-flag"></span>
       </div>
 
@@ -123,7 +122,7 @@
     <section class="section-shell" id="matchup">
       <div class="section-head">
         <h2>상성</h2>
-        <p class="section-note">직접 대진 리플레이 기준 · 30판 미만 저신뢰 표시</p>
+        <p class="section-note">실제로 맞붙은 경기만 집계 · 30판 미만은 판수 부족 표시</p>
       </div>
 
       <div class="matchup-lab panel">
@@ -146,9 +145,10 @@
 
     <section class="section-shell" id="stats">
       <div class="section-head">
-        <h2>아키타입 점유율</h2>
-        <p class="section-note">양쪽 좌석 기준</p>
+        <h2>점수대별 덱 분포</h2>
+        <p class="section-note">그 점수대 팀들이 실제로 들고 나온 덱 계열 비율</p>
       </div>
+      <div class="filter-row band-row" id="band-row" role="group" aria-label="점수대 선택"></div>
       <div class="distribution-list panel" id="distribution-list"></div>
     </section>
 
@@ -156,10 +156,10 @@
       <details class="method-details">
         <summary>방법론 · 한계</summary>
         <ul>
-          <li><strong>PKC 스코어</strong> — Bradley–Terry 모델로 대진 난이도를 보정한 승률(%). 티어 판정 기준값.</li>
-          <li><strong>저표본 수축</strong> — 표본이 적은 변형은 50% 방향으로 수축해 단기 운을 완화.</li>
-          <li><strong>파일럿 편중 ⚠</strong> — 단일 팀 80%+ 또는 3팀 미만 관측 변형은 표시. 티어는 덱+파일럿의 관측 성과이며 덱 단독 성능이 아님.</li>
-          <li><strong>코호트 조인</strong> — 경기 당시 점수가 없어 현재 리더보드 기준으로 800+/Top50을 조인.</li>
+          <li><strong>PKC 스코어</strong> — 만난 상대가 얼마나 셌는지까지 반영해 보정한 승률. 티어는 이 값으로 정합니다.</li>
+          <li><strong>판수 보정</strong> — 판수가 적은 덱은 50% 쪽으로 당겨서 몇 판 운으로 티어가 뻥튀기되는 것을 방지.</li>
+          <li><strong>한 팀 위주 ⚠</strong> — 판의 80% 이상이 한 팀 것이거나 쓴 팀이 3팀 미만이면 표시. 이 티어는 "덱+그 덱을 모는 봇"의 성적이라, 한 팀 위주 덱의 순위는 덱 자체보다 그 팀 실력일 수 있음.</li>
+          <li><strong>점수 기준</strong> — 경기 당시 점수 기록이 없어, 현재 리더보드 점수를 기준으로 800+/1000+/Top50 구간을 나눔.</li>
         </ul>
         <div class="method-diagnostics" id="method-diagnostics"></div>
         <a class="text-link" href="https://github.com/PKCrox/ptcg-tier-report#방법론과-한계" target="_blank" rel="noreferrer">전체 방법론 ↗</a>

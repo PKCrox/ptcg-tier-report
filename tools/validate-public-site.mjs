@@ -27,8 +27,10 @@ const allowedTrackedFiles = new Set([
 
 const allowedTopLevel = new Set([
   "schema_version", "generated_at_kst", "date_range", "unit_schema", "filters",
-  "signatures", "views",
+  "score_bands", "signatures", "views",
 ]);
+
+const allowedBandKeys = new Set(["band", "min", "max", "seats", "l1_distribution"]);
 
 const allowedFilterKeys = new Set([
   "min_score", "high_min_score", "elite_top_rank", "bt_shrink_k",
@@ -164,6 +166,18 @@ if (aggregates) {
   if (aggregates.schema_version !== 2) fail(`schema_version must be 2, got ${aggregates.schema_version}`);
   assertAllowedKeys(aggregates.filters, allowedFilterKeys, "filters");
   if (!aggregates.filters?.tier_thresholds) fail("tier thresholds missing from public contract");
+  if (!Array.isArray(aggregates.score_bands) || !aggregates.score_bands.length) {
+    fail("score_bands missing");
+  } else {
+    for (const [index, band] of aggregates.score_bands.entries()) {
+      const label = `score_bands[${index}]`;
+      assertAllowedKeys(band, allowedBandKeys, label);
+      if (typeof band.band !== "string" || !band.band) fail(`${label}: band label missing`);
+      if (!Number.isInteger(band.seats) || band.seats < 1) fail(`${label}: seats must be positive integer`);
+      const total = Object.values(band.l1_distribution || {}).reduce((sum, count) => sum + count, 0);
+      if (total !== band.seats) fail(`${label}: l1_distribution sums ${total}, expected ${band.seats}`);
+    }
+  }
   for (const viewKey of viewKeys) {
     const view = aggregates.views?.[viewKey];
     if (!view) {

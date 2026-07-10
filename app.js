@@ -28,6 +28,7 @@ const state = {
   tier: "all",
   sort: "bt",
   query: "",
+  band: "all",
   matchupA: null,
   matchupB: null,
   activeDeck: null,
@@ -37,10 +38,10 @@ const els = {};
 
 function cacheElements() {
   for (const id of [
-    "theme-toggle", "page-meta", "freshness-line", "distribution-list",
-    "deck-search", "view-select", "sort-select", "result-count", "deck-grid",
-    "matchup-a", "matchup-b", "swap-matchup", "matchup-result", "deck-dialog",
-    "dialog-close", "dialog-content", "method-diagnostics",
+    "theme-toggle", "freshness-line", "distribution-list",
+    "band-row", "deck-search", "view-select", "sort-select", "result-count",
+    "deck-grid", "matchup-a", "matchup-b", "swap-matchup", "matchup-result",
+    "deck-dialog", "dialog-close", "dialog-content", "method-diagnostics",
   ]) els[id] = document.getElementById(id);
 }
 
@@ -74,13 +75,14 @@ function confidenceBadge(confidence) {
 function rowEvidence(row) {
   const share = Number(row?.top_team_share || 0);
   const teams = Number(row?.team_count || 0);
+  const detail = `판의 ${formatPercent(share)}가 최다 사용 한 팀 몫 · 쓴 팀 ${formatNumber(teams)}개`;
   if (teams < 3 || share >= 0.8) {
-    return { key: "low", label: "파일럿 편중", description: `최대 단일 팀 비중 ${formatPercent(share)} · ${formatNumber(teams)}팀` };
+    return { key: "low", label: "한 팀 위주", description: detail };
   }
   if (share >= 0.5) {
-    return { key: "medium", label: "파일럿 주의", description: `최대 단일 팀 비중 ${formatPercent(share)} · ${formatNumber(teams)}팀` };
+    return { key: "medium", label: "소수 팀 위주", description: detail };
   }
-  return { key: "high", label: "팀 분산", description: `최대 단일 팀 비중 ${formatPercent(share)} · ${formatNumber(teams)}팀` };
+  return { key: "high", label: "여러 팀 사용", description: detail };
 }
 
 function currentView() {
@@ -146,21 +148,38 @@ function updateThemeButton(theme) {
   els["theme-toggle"].setAttribute("aria-label", isLight ? "어두운 테마로 전환" : "밝은 테마로 전환");
 }
 
+function freshnessLabel(generatedAtKst) {
+  const generated = String(generatedAtKst || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(generated)) return "갱신 시점 미상";
+  const todayKst = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" }).format(new Date());
+  const days = Math.round((new Date(todayKst) - new Date(generated)) / 86400000);
+  if (days <= 0) return "오늘 갱신";
+  if (days === 1) return "어제 갱신";
+  return `${days}일 전 갱신`;
+}
+
 function renderMeta() {
-  const aggregates = state.aggregates;
-  const view = currentView();
-  const dateRange = aggregates.date_range || [];
-  const period = dateRange.length === 2
-    ? `${dateRange[0].slice(5).replace("-", ".")}–${dateRange[1].slice(5).replace("-", ".")}`
-    : "—";
-  els["page-meta"].textContent =
-    `${period} · ${formatNumber(view.games)}판 · ${formatNumber(view.rows.length)}변형 · ${viewLabel(state.view, aggregates.filters)}`;
-  els["freshness-line"].innerHTML = `<span aria-hidden="true"></span>${escapeHtml(aggregates.generated_at_kst)} 갱신`;
+  els["freshness-line"].innerHTML =
+    `<span aria-hidden="true"></span>${escapeHtml(freshnessLabel(state.aggregates.generated_at_kst))}`;
+}
+
+function selectedBandSource() {
+  if (state.band === "all") return state.aggregates.views.main;
+  const band = (state.aggregates.score_bands || []).find((item) => item.band === state.band);
+  return band || state.aggregates.views.main;
+}
+
+function renderBandChips() {
+  const bands = state.aggregates.score_bands || [];
+  els["band-row"].innerHTML = [
+    `<button class="filter-chip${state.band === "all" ? " is-active" : ""}" type="button" data-band="all" aria-pressed="${state.band === "all"}">전체 (800+)</button>`,
+    ...bands.map((band) => `<button class="filter-chip${state.band === band.band ? " is-active" : ""}" type="button" data-band="${escapeHtml(band.band)}" aria-pressed="${state.band === band.band}">${escapeHtml(band.band)}</button>`),
+    `<span class="result-count">덱 등장 ${formatNumber(selectedBandSource().seats ?? selectedBandSource().games * 2)}회</span>`,
+  ].join("");
 }
 
 function renderStats() {
-  const main = state.aggregates.views.main;
-  const distribution = archetypeDistribution(main);
+  const distribution = archetypeDistribution(selectedBandSource());
   const visible = distribution.slice(0, 10);
   const restRate = distribution.slice(10).reduce((sum, item) => sum + item.rate, 0);
   if (restRate > 0) visible.push({ key: "other", name: "기타", rate: restRate });
@@ -175,13 +194,23 @@ function renderStats() {
     </div>`).join("");
 }
 
+function bindBandChips() {
+  els["band-row"].addEventListener("click", (event) => {
+    const button = event.target.closest("[data-band]");
+    if (!button) return;
+    state.band = button.dataset.band;
+    renderBandChips();
+    renderStats();
+  });
+}
+
 function renderMethodDiagnostics() {
   const main = state.aggregates.views.main;
   const pilotBound = main.rows.filter((row) => row.team_count < 3 || row.top_team_share >= 0.8).length;
   els["method-diagnostics"].innerHTML = `
-    <span>좌석 0 승률 <strong>${formatPercent(main.seat0_win_rate)}</strong></span>
-    <span>파일럿 편중 변형 <strong>${pilotBound}/${main.rows.length}</strong></span>
-    <span>미분류 좌석 <strong>${formatPercent(main.unknown_seat_share)}</strong></span>`;
+    <span>1번 자리 승률 <strong>${formatPercent(main.seat0_win_rate)}</strong></span>
+    <span>한 팀 위주 덱 <strong>${pilotBound}/${main.rows.length}</strong></span>
+    <span>덱 미분류 비율 <strong>${formatPercent(main.unknown_seat_share)}</strong></span>`;
 }
 
 function deckRow(row) {
@@ -199,9 +228,9 @@ function deckRow(row) {
       </span>
       <span class="deck-stats">
         <span class="deck-stat stat-bt tier-text-${escapeHtml(row.tier.toLowerCase())}"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>PKC</small></span>
-        <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>원승률</small></span>
+        <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>승률</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>픽률</small></span>
-        <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>표본</small></span>
+        <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>판수</small></span>
       </span>
       <span class="deck-flag">${warn}</span>
     </button>
@@ -418,15 +447,15 @@ function renderDialog(row) {
 
     <div class="detail-stat-grid">
       <div><small>PKC 스코어</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
-      <div><small>원승률</small><strong>${formatPercent(row.raw_wr)}</strong></div>
+      <div><small>승률</small><strong>${formatPercent(row.raw_wr)}</strong></div>
       <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong></div>
-      <div><small>표본</small><strong>${formatNumber(row.seats)}</strong></div>
+      <div><small>판수</small><strong>${formatNumber(row.seats)}</strong></div>
     </div>
 
     <div class="detail-evidence-strip">
-      <div><small>관측 팀</small><strong>${formatNumber(row.team_count)}</strong></div>
-      <div><small>최대 단일 팀 비중</small><strong>${formatPercent(row.top_team_share)}</strong></div>
-      <div><small>좌석 0 비중</small><strong>${formatPercent(row.seat0_share)}</strong></div>
+      <div><small>쓴 팀 수</small><strong>${formatNumber(row.team_count)}</strong></div>
+      <div><small>최다 한 팀 비중</small><strong>${formatPercent(row.top_team_share)}</strong></div>
+      <div><small>1번 자리 비중</small><strong>${formatPercent(row.seat0_share)}</strong></div>
     </div>
 
     <section class="detail-section">
@@ -566,11 +595,13 @@ async function init() {
       .filter((error) => !error.includes("matrix unit"));
     if (preliminaryErrors.some((error) => error.includes("rows missing"))) throw new Error(preliminaryErrors.join("; "));
     renderMeta();
+    renderBandChips();
     renderStats();
     renderMethodDiagnostics();
     renderDecks();
     populateMatchupSelectors();
     bindExplorer();
+    bindBandChips();
     bindMatchup();
     openDeepLink();
     setupServiceWorker();

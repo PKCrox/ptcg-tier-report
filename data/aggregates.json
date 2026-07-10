@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at_kst": "2026-07-10 17:16 KST",
+ "generated_at_kst": "2026-07-10 17:38 KST",
  "date_range": [
   "2026-07-01",
   "2026-07-09"
@@ -21,6 +21,89 @@
    "C": -1.0
   }
  },
+ "score_bands": [
+  {
+   "band": "800–899",
+   "min": 800,
+   "max": 900,
+   "seats": 2678,
+   "l1_distribution": {
+    "alakazam": 658,
+    "marnie": 534,
+    "unknown": 523,
+    "archaludon": 407,
+    "crustle": 265,
+    "cynthia": 133,
+    "dragapult": 47,
+    "starmie": 36,
+    "lucario": 32,
+    "iono": 27,
+    "hop": 9,
+    "comfey_control": 7
+   }
+  },
+  {
+   "band": "900–999",
+   "min": 900,
+   "max": 1000,
+   "seats": 13342,
+   "l1_distribution": {
+    "alakazam": 3190,
+    "unknown": 2412,
+    "archaludon": 2292,
+    "marnie": 1327,
+    "lucario": 1312,
+    "comfey_control": 1257,
+    "crustle": 483,
+    "cynthia": 447,
+    "okidogi": 226,
+    "starmie": 196,
+    "dragapult": 99,
+    "lopunny": 60,
+    "iono": 14,
+    "rocket_mill": 14,
+    "clefairy": 12,
+    "hop": 1
+   }
+  },
+  {
+   "band": "1000–1099",
+   "min": 1000,
+   "max": 1100,
+   "seats": 33428,
+   "l1_distribution": {
+    "marnie": 11545,
+    "alakazam": 7756,
+    "clefairy": 2795,
+    "okidogi": 2493,
+    "archaludon": 1869,
+    "cynthia": 1854,
+    "lucario": 1583,
+    "crustle": 1257,
+    "starmie": 1169,
+    "comfey_control": 570,
+    "lopunny": 221,
+    "dragapult": 159,
+    "unknown": 91,
+    "froslass": 64,
+    "iono": 2
+   }
+  },
+  {
+   "band": "1100+",
+   "min": 1100,
+   "max": null,
+   "seats": 4168,
+   "l1_distribution": {
+    "starmie": 1646,
+    "alakazam": 912,
+    "marnie": 546,
+    "hop": 509,
+    "dragapult": 485,
+    "crustle": 70
+   }
+  }
+ ],
  "signatures": {},
  "views": {
   "main": {

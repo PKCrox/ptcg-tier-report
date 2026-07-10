@@ -123,15 +123,15 @@ export function matchupResult(matrix, unitA, unitB) {
 
 export function confidenceFor(n, minReliable = 30) {
   if (!Number.isFinite(n) || n <= 0) {
-    return { key: "none", label: "직접 표본 없음", description: "직접 맞붙은 경기가 없습니다." };
+    return { key: "none", label: "맞대결 기록 없음", description: "직접 맞붙은 경기가 없습니다." };
   }
   if (n < minReliable) {
-    return { key: "low", label: "저신뢰", description: `${n}판 표본이라 방향만 참고하세요.` };
+    return { key: "low", label: "판수 부족", description: `${n}판뿐이라 방향만 참고하세요.` };
   }
   if (n < minReliable * 3) {
-    return { key: "medium", label: "보통 신뢰", description: `${n}판의 직접 대진 표본입니다.` };
+    return { key: "medium", label: "판수 보통", description: `${n}판의 맞대결 기록입니다.` };
   }
-  return { key: "high", label: "높은 신뢰", description: `${n}판의 충분한 직접 대진 표본입니다.` };
+  return { key: "high", label: "판수 충분", description: `${n}판의 맞대결 기록입니다.` };
 }
 
 export function tierCounts(rows) {
