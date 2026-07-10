@@ -198,7 +198,7 @@ function deckRow(row) {
         <small>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}${(row.strategy_tags_ko || []).length ? " · " + row.strategy_tags_ko.slice(0, 3).map(escapeHtml).join(" · ") : ""}</small>
       </span>
       <span class="deck-stats">
-        <span class="deck-stat stat-bt"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>BT</small></span>
+        <span class="deck-stat stat-bt"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>PKC</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>원승률</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>픽률</small></span>
         <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>표본</small></span>
@@ -417,7 +417,7 @@ function renderDialog(row) {
     </header>
 
     <div class="detail-stat-grid">
-      <div><small>BT 승률</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
+      <div><small>PKC 스코어</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
       <div><small>원승률</small><strong>${formatPercent(row.raw_wr)}</strong></div>
       <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong></div>
       <div><small>표본</small><strong>${formatNumber(row.seats)}</strong></div>
@@ -562,7 +562,7 @@ async function init() {
 
   try {
     state.aggregates = await fetchJson(DATA_URLS.aggregates);
-    const preliminaryErrors = validateDatasetShape(state.aggregates, { main: { units: [], cells: {} }, elite: { units: [], cells: {} } })
+    const preliminaryErrors = validateDatasetShape(state.aggregates, { main: { units: [], cells: {} }, high: { units: [], cells: {} }, elite: { units: [], cells: {} } })
       .filter((error) => !error.includes("matrix unit"));
     if (preliminaryErrors.some((error) => error.includes("rows missing"))) throw new Error(preliminaryErrors.join("; "));
     renderMeta();

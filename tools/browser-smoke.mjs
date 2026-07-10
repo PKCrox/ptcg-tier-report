@@ -170,7 +170,7 @@ try {
 
   await viewport(1440, 1000, false);
   await navigate(baseUrl);
-  const expectedCounts = await evaluate(`fetch('./data/aggregates.json').then((response) => response.json()).then((data) => ({main: data.views.main.rows.length, elite: data.views.elite.rows.length}))`);
+  const expectedCounts = await evaluate(`fetch('./data/aggregates.json').then((response) => response.json()).then((data) => ({main: data.views.main.rows.length, high: data.views.high.rows.length, elite: data.views.elite.rows.length}))`);
   assert(await evaluate(`document.querySelectorAll('.deck-card').length === ${expectedCounts.main}`), `desktop should render all ${expectedCounts.main} main variants`);
   assert(await evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"), "desktop has horizontal overflow");
   assert(await evaluate("document.querySelectorAll('h1').length === 1"), "page must expose one h1");
@@ -185,7 +185,9 @@ try {
   await screenshot("/tmp/ptcg-qa-tiers.png");
   await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = '삐삐'; input.dispatchEvent(new Event('input', {bubbles:true})); return true; })()`);
   await waitFor(`document.querySelectorAll('.deck-card').length > 0 && document.querySelectorAll('.deck-card').length < ${expectedCounts.main}`, "search-filtered cards");
-  await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = ''; input.dispatchEvent(new Event('input', {bubbles:true})); const view = document.querySelector('#view-select'); view.value='elite'; view.dispatchEvent(new Event('change',{bubbles:true})); return true; })()`);
+  await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = ''; input.dispatchEvent(new Event('input', {bubbles:true})); const view = document.querySelector('#view-select'); view.value='high'; view.dispatchEvent(new Event('change',{bubbles:true})); return true; })()`);
+  await waitFor(`document.querySelectorAll('.deck-card').length === ${expectedCounts.high}`, "high (1000+) view cards");
+  await evaluate(`(() => { const view = document.querySelector('#view-select'); view.value='elite'; view.dispatchEvent(new Event('change',{bubbles:true})); return true; })()`);
   await waitFor(`document.querySelectorAll('.deck-card').length === ${expectedCounts.elite}`, "elite view cards");
 
   await evaluate(`(() => { const view = document.querySelector('#view-select'); view.value='main'; view.dispatchEvent(new Event('change',{bubbles:true})); document.querySelector('#matchup').scrollIntoView({block:'start'}); return true; })()`);

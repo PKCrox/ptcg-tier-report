@@ -31,9 +31,11 @@ const allowedTopLevel = new Set([
 ]);
 
 const allowedFilterKeys = new Set([
-  "min_score", "elite_top_rank", "bt_shrink_k", "min_games_entry",
-  "min_cell_listing", "min_n_cell", "tier_thresholds",
+  "min_score", "high_min_score", "elite_top_rank", "bt_shrink_k",
+  "min_games_entry", "min_cell_listing", "min_n_cell", "tier_thresholds",
 ]);
+
+const viewKeys = ["main", "high", "elite"];
 
 const allowedViewKeys = new Set([
   "games", "rows", "unknown_seat_share", "l1_distribution", "date_distribution",
@@ -162,7 +164,7 @@ if (aggregates) {
   if (aggregates.schema_version !== 2) fail(`schema_version must be 2, got ${aggregates.schema_version}`);
   assertAllowedKeys(aggregates.filters, allowedFilterKeys, "filters");
   if (!aggregates.filters?.tier_thresholds) fail("tier thresholds missing from public contract");
-  for (const viewKey of ["main", "elite"]) {
+  for (const viewKey of viewKeys) {
     const view = aggregates.views?.[viewKey];
     if (!view) {
       fail(`${viewKey}: aggregate view missing`);
@@ -220,4 +222,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`public-site validation passed: ${aggregates.views.main.rows.length} main variants, ${aggregates.views.elite.rows.length} elite variants, schema v${aggregates.schema_version}`);
+console.log(`public-site validation passed: ${viewKeys.map((key) => `${aggregates.views[key].rows.length} ${key}`).join(", ")} variants, schema v${aggregates.schema_version}`);

@@ -8824,6 +8824,4902 @@
    }
   }
  },
+ "high": {
+  "units": [
+   "cynthia[bulk_boost+energy_turbo]",
+   "clefairy[prevention_wall]",
+   "crustle[gust_pressure+heal_tech+prevention_wall]",
+   "marnie",
+   "marnie[recovery_loop]",
+   "starmie[energy_turbo+heal_tech]",
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]",
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]",
+   "crustle[heal_tech+prevention_wall]",
+   "marnie[hand_disruption+recovery_loop]",
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]",
+   "froslass[energy_denial+heal_tech+prevention_wall]",
+   "alakazam[energy_denial+gust_pressure+hand_disruption]",
+   "lucario[energy_turbo+heal_tech]",
+   "alakazam[energy_denial+gust_pressure+prevention_wall]",
+   "alakazam[energy_denial+gust_pressure]",
+   "alakazam[energy_denial+prevention_wall+recovery_loop]",
+   "crustle[hand_disruption+heal_tech+prevention_wall]",
+   "alakazam[energy_denial+gust_pressure+recovery_loop]",
+   "clefairy[gust_pressure+prevention_wall]",
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]",
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]",
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]",
+   "marnie[hand_disruption]",
+   "dragapult[gust_pressure+prevention_wall]",
+   "lopunny[gust_pressure+heal_tech]",
+   "marnie[gust_pressure]",
+   "okidogi[energy_turbo+gust_pressure]",
+   "alakazam[gust_pressure+prevention_wall]",
+   "alakazam[energy_denial+prevention_wall]",
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]",
+   "starmie[energy_denial+energy_turbo+heal_tech]",
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]",
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]",
+   "hop[prevention_wall]",
+   "archaludon[gust_pressure+recovery_loop]",
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]",
+   "alakazam[energy_denial+recovery_loop]"
+  ],
+  "cells": {
+   "cynthia[bulk_boost+energy_turbo]|clefairy[prevention_wall]": {
+    "n": 108,
+    "w": 55
+   },
+   "cynthia[bulk_boost+energy_turbo]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 123,
+    "w": 80
+   },
+   "cynthia[bulk_boost+energy_turbo]|marnie": {
+    "n": 100,
+    "w": 69
+   },
+   "cynthia[bulk_boost+energy_turbo]|marnie[recovery_loop]": {
+    "n": 187,
+    "w": 127
+   },
+   "cynthia[bulk_boost+energy_turbo]|starmie[energy_turbo+heal_tech]": {
+    "n": 37,
+    "w": 15
+   },
+   "cynthia[bulk_boost+energy_turbo]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 17,
+    "w": 4
+   },
+   "cynthia[bulk_boost+energy_turbo]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 18,
+    "w": 9
+   },
+   "cynthia[bulk_boost+energy_turbo]|crustle[heal_tech+prevention_wall]": {
+    "n": 19,
+    "w": 17
+   },
+   "cynthia[bulk_boost+energy_turbo]|marnie[hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 5
+   },
+   "cynthia[bulk_boost+energy_turbo]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 6,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 26,
+    "w": 11
+   },
+   "cynthia[bulk_boost+energy_turbo]|lucario[energy_turbo+heal_tech]": {
+    "n": 48,
+    "w": 24
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 19,
+    "w": 8
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+gust_pressure]": {
+    "n": 128,
+    "w": 55
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 23,
+    "w": 10
+   },
+   "cynthia[bulk_boost+energy_turbo]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 11,
+    "w": 11
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 230,
+    "w": 98
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 0
+   },
+   "cynthia[bulk_boost+energy_turbo]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 20,
+    "w": 12
+   },
+   "cynthia[bulk_boost+energy_turbo]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 14,
+    "w": 6
+   },
+   "cynthia[bulk_boost+energy_turbo]|marnie[hand_disruption]": {
+    "n": 11,
+    "w": 8
+   },
+   "cynthia[bulk_boost+energy_turbo]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 6,
+    "w": 5
+   },
+   "cynthia[bulk_boost+energy_turbo]|lopunny[gust_pressure+heal_tech]": {
+    "n": 9,
+    "w": 7
+   },
+   "cynthia[bulk_boost+energy_turbo]|marnie[gust_pressure]": {
+    "n": 26,
+    "w": 18
+   },
+   "cynthia[bulk_boost+energy_turbo]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 35,
+    "w": 21
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+prevention_wall]": {
+    "n": 15,
+    "w": 9
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "cynthia[bulk_boost+energy_turbo]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 32,
+    "w": 28
+   },
+   "cynthia[bulk_boost+energy_turbo]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "cynthia[bulk_boost+energy_turbo]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "cynthia[bulk_boost+energy_turbo]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 23,
+    "w": 20
+   },
+   "cynthia[bulk_boost+energy_turbo]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 8,
+    "w": 4
+   },
+   "cynthia[bulk_boost+energy_turbo]|alakazam[energy_denial+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "clefairy[prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 108,
+    "w": 53
+   },
+   "clefairy[prevention_wall]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 81,
+    "w": 10
+   },
+   "clefairy[prevention_wall]|marnie": {
+    "n": 83,
+    "w": 70
+   },
+   "clefairy[prevention_wall]|marnie[recovery_loop]": {
+    "n": 188,
+    "w": 148
+   },
+   "clefairy[prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 30,
+    "w": 17
+   },
+   "clefairy[prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 15,
+    "w": 7
+   },
+   "clefairy[prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 8,
+    "w": 6
+   },
+   "clefairy[prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 6,
+    "w": 2
+   },
+   "clefairy[prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 6
+   },
+   "clefairy[prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 2
+   },
+   "clefairy[prevention_wall]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 7,
+    "w": 1
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 18,
+    "w": 5
+   },
+   "clefairy[prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 42,
+    "w": 22
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 14,
+    "w": 8
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 28,
+    "w": 9
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 39,
+    "w": 18
+   },
+   "clefairy[prevention_wall]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 13,
+    "w": 3
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 165,
+    "w": 67
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 2
+   },
+   "clefairy[prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 17,
+    "w": 3
+   },
+   "clefairy[prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 14,
+    "w": 12
+   },
+   "clefairy[prevention_wall]|marnie[hand_disruption]": {
+    "n": 13,
+    "w": 12
+   },
+   "clefairy[prevention_wall]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "clefairy[prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 10,
+    "w": 5
+   },
+   "clefairy[prevention_wall]|marnie[gust_pressure]": {
+    "n": 11,
+    "w": 10
+   },
+   "clefairy[prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 48,
+    "w": 31
+   },
+   "clefairy[prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 10,
+    "w": 4
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 21,
+    "w": 9
+   },
+   "clefairy[prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 6,
+    "w": 2
+   },
+   "clefairy[prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 17,
+    "w": 13
+   },
+   "clefairy[prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "clefairy[prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 23,
+    "w": 15
+   },
+   "clefairy[prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 11,
+    "w": 1
+   },
+   "clefairy[prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 6,
+    "w": 6
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 123,
+    "w": 43
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 81,
+    "w": 71
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|marnie": {
+    "n": 49,
+    "w": 46
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|marnie[recovery_loop]": {
+    "n": 95,
+    "w": 80
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 39,
+    "w": 5
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 15,
+    "w": 7
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 10,
+    "w": 3
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 18,
+    "w": 6
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 3,
+    "w": 3
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 11,
+    "w": 3
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 31,
+    "w": 25
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 26,
+    "w": 5
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 23,
+    "w": 10
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 0
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 7,
+    "w": 0
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|marnie[hand_disruption]": {
+    "n": 5,
+    "w": 5
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 9,
+    "w": 2
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 51,
+    "w": 17
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 16,
+    "w": 3
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 16,
+    "w": 1
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 10,
+    "w": 8
+   },
+   "crustle[gust_pressure+heal_tech+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "marnie|cynthia[bulk_boost+energy_turbo]": {
+    "n": 100,
+    "w": 31
+   },
+   "marnie|clefairy[prevention_wall]": {
+    "n": 83,
+    "w": 13
+   },
+   "marnie|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 49,
+    "w": 3
+   },
+   "marnie|marnie[recovery_loop]": {
+    "n": 1308,
+    "w": 629
+   },
+   "marnie|starmie[energy_turbo+heal_tech]": {
+    "n": 88,
+    "w": 64
+   },
+   "marnie|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 8,
+    "w": 5
+   },
+   "marnie|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 28,
+    "w": 21
+   },
+   "marnie|crustle[heal_tech+prevention_wall]": {
+    "n": 11,
+    "w": 1
+   },
+   "marnie|marnie[hand_disruption+recovery_loop]": {
+    "n": 17,
+    "w": 9
+   },
+   "marnie|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 13,
+    "w": 7
+   },
+   "marnie|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 0
+   },
+   "marnie|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 37,
+    "w": 23
+   },
+   "marnie|lucario[energy_turbo+heal_tech]": {
+    "n": 111,
+    "w": 51
+   },
+   "marnie|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 15,
+    "w": 9
+   },
+   "marnie|alakazam[energy_denial+gust_pressure]": {
+    "n": 104,
+    "w": 62
+   },
+   "marnie|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 145,
+    "w": 76
+   },
+   "marnie|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 0
+   },
+   "marnie|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 259,
+    "w": 168
+   },
+   "marnie|clefairy[gust_pressure+prevention_wall]": {
+    "n": 266,
+    "w": 166
+   },
+   "marnie|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 8,
+    "w": 4
+   },
+   "marnie|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 13,
+    "w": 12
+   },
+   "marnie|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 20,
+    "w": 12
+   },
+   "marnie|marnie[hand_disruption]": {
+    "n": 18,
+    "w": 10
+   },
+   "marnie|dragapult[gust_pressure+prevention_wall]": {
+    "n": 9,
+    "w": 5
+   },
+   "marnie|lopunny[gust_pressure+heal_tech]": {
+    "n": 11,
+    "w": 4
+   },
+   "marnie|marnie[gust_pressure]": {
+    "n": 7,
+    "w": 4
+   },
+   "marnie|okidogi[energy_turbo+gust_pressure]": {
+    "n": 176,
+    "w": 90
+   },
+   "marnie|alakazam[gust_pressure+prevention_wall]": {
+    "n": 31,
+    "w": 16
+   },
+   "marnie|alakazam[energy_denial+prevention_wall]": {
+    "n": 81,
+    "w": 50
+   },
+   "marnie|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 15,
+    "w": 6
+   },
+   "marnie|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 236,
+    "w": 167
+   },
+   "marnie|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 44,
+    "w": 23
+   },
+   "marnie|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 19,
+    "w": 11
+   },
+   "marnie|hop[prevention_wall]": {
+    "n": 85,
+    "w": 75
+   },
+   "marnie|archaludon[gust_pressure+recovery_loop]": {
+    "n": 166,
+    "w": 92
+   },
+   "marnie|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 16,
+    "w": 4
+   },
+   "marnie|alakazam[energy_denial+recovery_loop]": {
+    "n": 48,
+    "w": 39
+   },
+   "marnie[recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 187,
+    "w": 60
+   },
+   "marnie[recovery_loop]|clefairy[prevention_wall]": {
+    "n": 188,
+    "w": 40
+   },
+   "marnie[recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 95,
+    "w": 15
+   },
+   "marnie[recovery_loop]|marnie": {
+    "n": 1308,
+    "w": 679
+   },
+   "marnie[recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 148,
+    "w": 92
+   },
+   "marnie[recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 17,
+    "w": 8
+   },
+   "marnie[recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 29,
+    "w": 14
+   },
+   "marnie[recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 13,
+    "w": 9
+   },
+   "marnie[recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 27,
+    "w": 12
+   },
+   "marnie[recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 18,
+    "w": 6
+   },
+   "marnie[recovery_loop]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 6,
+    "w": 5
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 42,
+    "w": 21
+   },
+   "marnie[recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 115,
+    "w": 58
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 23,
+    "w": 13
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 109,
+    "w": 51
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 55,
+    "w": 30
+   },
+   "marnie[recovery_loop]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 6,
+    "w": 0
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 220,
+    "w": 122
+   },
+   "marnie[recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 138,
+    "w": 105
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 11,
+    "w": 5
+   },
+   "marnie[recovery_loop]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 24,
+    "w": 17
+   },
+   "marnie[recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 23,
+    "w": 11
+   },
+   "marnie[recovery_loop]|marnie[hand_disruption]": {
+    "n": 30,
+    "w": 18
+   },
+   "marnie[recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 16,
+    "w": 11
+   },
+   "marnie[recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 20,
+    "w": 8
+   },
+   "marnie[recovery_loop]|marnie[gust_pressure]": {
+    "n": 4,
+    "w": 2
+   },
+   "marnie[recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 227,
+    "w": 160
+   },
+   "marnie[recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 18,
+    "w": 8
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 69,
+    "w": 37
+   },
+   "marnie[recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 10,
+    "w": 7
+   },
+   "marnie[recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 303,
+    "w": 179
+   },
+   "marnie[recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 19,
+    "w": 11
+   },
+   "marnie[recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 5,
+    "w": 5
+   },
+   "marnie[recovery_loop]|hop[prevention_wall]": {
+    "n": 24,
+    "w": 19
+   },
+   "marnie[recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 105,
+    "w": 76
+   },
+   "marnie[recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 27,
+    "w": 23
+   },
+   "marnie[recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 31,
+    "w": 24
+   },
+   "starmie[energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 37,
+    "w": 22
+   },
+   "starmie[energy_turbo+heal_tech]|clefairy[prevention_wall]": {
+    "n": 30,
+    "w": 13
+   },
+   "starmie[energy_turbo+heal_tech]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 39,
+    "w": 34
+   },
+   "starmie[energy_turbo+heal_tech]|marnie": {
+    "n": 88,
+    "w": 24
+   },
+   "starmie[energy_turbo+heal_tech]|marnie[recovery_loop]": {
+    "n": 148,
+    "w": 56
+   },
+   "starmie[energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 2
+   },
+   "starmie[energy_turbo+heal_tech]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 15,
+    "w": 8
+   },
+   "starmie[energy_turbo+heal_tech]|crustle[heal_tech+prevention_wall]": {
+    "n": 7,
+    "w": 5
+   },
+   "starmie[energy_turbo+heal_tech]|marnie[hand_disruption+recovery_loop]": {
+    "n": 9,
+    "w": 3
+   },
+   "starmie[energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 3,
+    "w": 0
+   },
+   "starmie[energy_turbo+heal_tech]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 23,
+    "w": 12
+   },
+   "starmie[energy_turbo+heal_tech]|lucario[energy_turbo+heal_tech]": {
+    "n": 33,
+    "w": 10
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 3
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure]": {
+    "n": 18,
+    "w": 12
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 3
+   },
+   "starmie[energy_turbo+heal_tech]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 59,
+    "w": 37
+   },
+   "starmie[energy_turbo+heal_tech]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "starmie[energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 3
+   },
+   "starmie[energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 4,
+    "w": 4
+   },
+   "starmie[energy_turbo+heal_tech]|marnie[hand_disruption]": {
+    "n": 11,
+    "w": 4
+   },
+   "starmie[energy_turbo+heal_tech]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "starmie[energy_turbo+heal_tech]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 1
+   },
+   "starmie[energy_turbo+heal_tech]|marnie[gust_pressure]": {
+    "n": 7,
+    "w": 2
+   },
+   "starmie[energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 73,
+    "w": 53
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 3
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall]": {
+    "n": 13,
+    "w": 8
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 8,
+    "w": 4
+   },
+   "starmie[energy_turbo+heal_tech]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 35,
+    "w": 16
+   },
+   "starmie[energy_turbo+heal_tech]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 2
+   },
+   "starmie[energy_turbo+heal_tech]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 26,
+    "w": 18
+   },
+   "starmie[energy_turbo+heal_tech]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 13,
+    "w": 12
+   },
+   "starmie[energy_turbo+heal_tech]|alakazam[energy_denial+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 17,
+    "w": 13
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 15,
+    "w": 8
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|marnie": {
+    "n": 8,
+    "w": 3
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 17,
+    "w": 9
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 5,
+    "w": 3
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 8,
+    "w": 4
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 9,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 22,
+    "w": 16
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 19,
+    "w": 11
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 5,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|marnie[hand_disruption]": {
+    "n": 2,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 3
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|marnie[gust_pressure]": {
+    "n": 2,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 15,
+    "w": 7
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 18,
+    "w": 9
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 8,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 15,
+    "w": 8
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|marnie": {
+    "n": 28,
+    "w": 7
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 29,
+    "w": 15
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 15,
+    "w": 7
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 7,
+    "w": 3
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 19,
+    "w": 10
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 11,
+    "w": 3
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 10,
+    "w": 6
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 9,
+    "w": 6
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 43,
+    "w": 23
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 5,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|marnie[gust_pressure]": {
+    "n": 5,
+    "w": 3
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 35,
+    "w": 21
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 7,
+    "w": 5
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 20,
+    "w": 17
+   },
+   "dragapult[gust_pressure+prevention_wall+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 19,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 6,
+    "w": 4
+   },
+   "crustle[heal_tech+prevention_wall]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 10,
+    "w": 7
+   },
+   "crustle[heal_tech+prevention_wall]|marnie": {
+    "n": 11,
+    "w": 10
+   },
+   "crustle[heal_tech+prevention_wall]|marnie[recovery_loop]": {
+    "n": 13,
+    "w": 4
+   },
+   "crustle[heal_tech+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 7,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 0
+   },
+   "crustle[heal_tech+prevention_wall]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 3,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 11,
+    "w": 7
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 2
+   },
+   "crustle[heal_tech+prevention_wall]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 4
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 21,
+    "w": 12
+   },
+   "crustle[heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 4,
+    "w": 4
+   },
+   "crustle[heal_tech+prevention_wall]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[heal_tech+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|marnie[gust_pressure]": {
+    "n": 6,
+    "w": 5
+   },
+   "crustle[heal_tech+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 17,
+    "w": 14
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 1
+   },
+   "crustle[heal_tech+prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[heal_tech+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 6,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 6,
+    "w": 0
+   },
+   "marnie[hand_disruption+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 18,
+    "w": 12
+   },
+   "marnie[hand_disruption+recovery_loop]|marnie": {
+    "n": 17,
+    "w": 8
+   },
+   "marnie[hand_disruption+recovery_loop]|marnie[recovery_loop]": {
+    "n": 27,
+    "w": 15
+   },
+   "marnie[hand_disruption+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 9,
+    "w": 6
+   },
+   "marnie[hand_disruption+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 8,
+    "w": 4
+   },
+   "marnie[hand_disruption+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 4
+   },
+   "marnie[hand_disruption+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 3
+   },
+   "marnie[hand_disruption+recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 2,
+    "w": 0
+   },
+   "marnie[hand_disruption+recovery_loop]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 10,
+    "w": 9
+   },
+   "marnie[hand_disruption+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 19,
+    "w": 6
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 3,
+    "w": 2
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 10,
+    "w": 5
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 29,
+    "w": 14
+   },
+   "marnie[hand_disruption+recovery_loop]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "marnie[hand_disruption+recovery_loop]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "marnie[hand_disruption+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 2
+   },
+   "marnie[hand_disruption+recovery_loop]|marnie[gust_pressure]": {
+    "n": 8,
+    "w": 4
+   },
+   "marnie[hand_disruption+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 3,
+    "w": 2
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 6,
+    "w": 3
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "marnie[hand_disruption+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 6,
+    "w": 3
+   },
+   "marnie[hand_disruption+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "marnie[hand_disruption+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "marnie[hand_disruption+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 6,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|clefairy[prevention_wall]": {
+    "n": 5,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 0
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|marnie": {
+    "n": 13,
+    "w": 6
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|marnie[recovery_loop]": {
+    "n": 18,
+    "w": 12
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|starmie[energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|marnie[hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|lucario[energy_turbo+heal_tech]": {
+    "n": 1,
+    "w": 1
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure]": {
+    "n": 5,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|alakazam[energy_denial+prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 2
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 5,
+    "w": 3
+   },
+   "cynthia[bulk_boost+energy_turbo+gust_pressure]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 4,
+    "w": 2
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 7,
+    "w": 6
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|marnie": {
+    "n": 3,
+    "w": 3
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|marnie[recovery_loop]": {
+    "n": 6,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 3
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 9,
+    "w": 5
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 1,
+    "w": 0
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 1,
+    "w": 1
+   },
+   "froslass[energy_denial+heal_tech+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 10,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 26,
+    "w": 15
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|clefairy[prevention_wall]": {
+    "n": 18,
+    "w": 13
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 11,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|marnie": {
+    "n": 37,
+    "w": 14
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|marnie[recovery_loop]": {
+    "n": 42,
+    "w": 21
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|starmie[energy_turbo+heal_tech]": {
+    "n": 23,
+    "w": 11
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 9,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 19,
+    "w": 9
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|crustle[heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|marnie[hand_disruption+recovery_loop]": {
+    "n": 10,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|lucario[energy_turbo+heal_tech]": {
+    "n": 33,
+    "w": 11
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+gust_pressure]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 14,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 45,
+    "w": 29
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 8,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 6,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|marnie[hand_disruption]": {
+    "n": 5,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|lopunny[gust_pressure+heal_tech]": {
+    "n": 9,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|marnie[gust_pressure]": {
+    "n": 5,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 28,
+    "w": 15
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+prevention_wall]": {
+    "n": 9,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 10,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 11,
+    "w": 5
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+hand_disruption]|alakazam[energy_denial+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "lucario[energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 48,
+    "w": 24
+   },
+   "lucario[energy_turbo+heal_tech]|clefairy[prevention_wall]": {
+    "n": 42,
+    "w": 20
+   },
+   "lucario[energy_turbo+heal_tech]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 31,
+    "w": 6
+   },
+   "lucario[energy_turbo+heal_tech]|marnie": {
+    "n": 111,
+    "w": 60
+   },
+   "lucario[energy_turbo+heal_tech]|marnie[recovery_loop]": {
+    "n": 115,
+    "w": 57
+   },
+   "lucario[energy_turbo+heal_tech]|starmie[energy_turbo+heal_tech]": {
+    "n": 33,
+    "w": 23
+   },
+   "lucario[energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 22,
+    "w": 6
+   },
+   "lucario[energy_turbo+heal_tech]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 11,
+    "w": 8
+   },
+   "lucario[energy_turbo+heal_tech]|crustle[heal_tech+prevention_wall]": {
+    "n": 11,
+    "w": 4
+   },
+   "lucario[energy_turbo+heal_tech]|marnie[hand_disruption+recovery_loop]": {
+    "n": 19,
+    "w": 13
+   },
+   "lucario[energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 0
+   },
+   "lucario[energy_turbo+heal_tech]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 9,
+    "w": 4
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 33,
+    "w": 22
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 16,
+    "w": 8
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure]": {
+    "n": 12,
+    "w": 6
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 47,
+    "w": 24
+   },
+   "lucario[energy_turbo+heal_tech]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 10,
+    "w": 3
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 116,
+    "w": 49
+   },
+   "lucario[energy_turbo+heal_tech]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 15,
+    "w": 3
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "lucario[energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 9,
+    "w": 4
+   },
+   "lucario[energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 14,
+    "w": 5
+   },
+   "lucario[energy_turbo+heal_tech]|marnie[hand_disruption]": {
+    "n": 9,
+    "w": 4
+   },
+   "lucario[energy_turbo+heal_tech]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "lucario[energy_turbo+heal_tech]|lopunny[gust_pressure+heal_tech]": {
+    "n": 8,
+    "w": 7
+   },
+   "lucario[energy_turbo+heal_tech]|marnie[gust_pressure]": {
+    "n": 21,
+    "w": 15
+   },
+   "lucario[energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 50,
+    "w": 25
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall]": {
+    "n": 22,
+    "w": 11
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 12,
+    "w": 8
+   },
+   "lucario[energy_turbo+heal_tech]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 29,
+    "w": 20
+   },
+   "lucario[energy_turbo+heal_tech]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 8,
+    "w": 7
+   },
+   "lucario[energy_turbo+heal_tech]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 6,
+    "w": 6
+   },
+   "lucario[energy_turbo+heal_tech]|hop[prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "lucario[energy_turbo+heal_tech]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 30,
+    "w": 10
+   },
+   "lucario[energy_turbo+heal_tech]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 6,
+    "w": 2
+   },
+   "lucario[energy_turbo+heal_tech]|alakazam[energy_denial+recovery_loop]": {
+    "n": 10,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 19,
+    "w": 11
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 14,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|marnie": {
+    "n": 15,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|marnie[recovery_loop]": {
+    "n": 23,
+    "w": 10
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 5,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 16,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 10,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 9,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 11,
+    "w": 7
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 128,
+    "w": 73
+   },
+   "alakazam[energy_denial+gust_pressure]|clefairy[prevention_wall]": {
+    "n": 28,
+    "w": 19
+   },
+   "alakazam[energy_denial+gust_pressure]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 26,
+    "w": 21
+   },
+   "alakazam[energy_denial+gust_pressure]|marnie": {
+    "n": 104,
+    "w": 42
+   },
+   "alakazam[energy_denial+gust_pressure]|marnie[recovery_loop]": {
+    "n": 109,
+    "w": 58
+   },
+   "alakazam[energy_denial+gust_pressure]|starmie[energy_turbo+heal_tech]": {
+    "n": 18,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 10,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure]|marnie[hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 5,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure]|lucario[energy_turbo+heal_tech]": {
+    "n": 12,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 47,
+    "w": 27
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 112,
+    "w": 47
+   },
+   "alakazam[energy_denial+gust_pressure]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 41,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|lopunny[gust_pressure+heal_tech]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 37,
+    "w": 21
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 10,
+    "w": 5
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+prevention_wall]": {
+    "n": 23,
+    "w": 18
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 43,
+    "w": 15
+   },
+   "alakazam[energy_denial+gust_pressure]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 8,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 6,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure]|hop[prevention_wall]": {
+    "n": 17,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 33,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure]|alakazam[energy_denial+recovery_loop]": {
+    "n": 27,
+    "w": 19
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 23,
+    "w": 13
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 39,
+    "w": 21
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|marnie": {
+    "n": 145,
+    "w": 69
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 55,
+    "w": 25
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 7,
+    "w": 4
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 9,
+    "w": 3
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 7,
+    "w": 5
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 10,
+    "w": 5
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 14,
+    "w": 10
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 47,
+    "w": 23
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 47,
+    "w": 20
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 73,
+    "w": 47
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 54,
+    "w": 22
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 11,
+    "w": 5
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 12,
+    "w": 8
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 51,
+    "w": 30
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 24,
+    "w": 16
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 27,
+    "w": 18
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 37,
+    "w": 16
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 23,
+    "w": 13
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 18,
+    "w": 14
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|hop[prevention_wall]": {
+    "n": 35,
+    "w": 7
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 32,
+    "w": 7
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 33,
+    "w": 22
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 11,
+    "w": 0
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 13,
+    "w": 10
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|marnie": {
+    "n": 3,
+    "w": 3
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|marnie[recovery_loop]": {
+    "n": 6,
+    "w": 6
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 0
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 3,
+    "w": 1
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 10,
+    "w": 7
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 1
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 11,
+    "w": 1
+   },
+   "crustle[hand_disruption+heal_tech+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 230,
+    "w": 132
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 165,
+    "w": 98
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 23,
+    "w": 13
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|marnie": {
+    "n": 259,
+    "w": 91
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|marnie[recovery_loop]": {
+    "n": 220,
+    "w": 98
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 59,
+    "w": 22
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 19,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 43,
+    "w": 20
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 21,
+    "w": 9
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 29,
+    "w": 15
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 6,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 45,
+    "w": 16
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 116,
+    "w": 67
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 10,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 112,
+    "w": 65
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 73,
+    "w": 26
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 58,
+    "w": 39
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 5
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 5
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 41,
+    "w": 21
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|marnie[hand_disruption]": {
+    "n": 10,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 12,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 25,
+    "w": 17
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|marnie[gust_pressure]": {
+    "n": 4,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 154,
+    "w": 91
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 35,
+    "w": 15
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 51,
+    "w": 14
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 88,
+    "w": 23
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 19,
+    "w": 8
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 24,
+    "w": 16
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|hop[prevention_wall]": {
+    "n": 50,
+    "w": 18
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 58,
+    "w": 30
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 9,
+    "w": 5
+   },
+   "alakazam[energy_denial+gust_pressure+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 45,
+    "w": 22
+   },
+   "clefairy[gust_pressure+prevention_wall]|marnie": {
+    "n": 266,
+    "w": 100
+   },
+   "clefairy[gust_pressure+prevention_wall]|marnie[recovery_loop]": {
+    "n": 138,
+    "w": 33
+   },
+   "clefairy[gust_pressure+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 1
+   },
+   "clefairy[gust_pressure+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "clefairy[gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 3
+   },
+   "clefairy[gust_pressure+prevention_wall]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 8,
+    "w": 6
+   },
+   "clefairy[gust_pressure+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 15,
+    "w": 12
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 41,
+    "w": 33
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 54,
+    "w": 32
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 58,
+    "w": 19
+   },
+   "clefairy[gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 44,
+    "w": 12
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 7,
+    "w": 4
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 26,
+    "w": 9
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 4
+   },
+   "clefairy[gust_pressure+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 70,
+    "w": 62
+   },
+   "clefairy[gust_pressure+prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 17,
+    "w": 16
+   },
+   "clefairy[gust_pressure+prevention_wall]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 5,
+    "w": 3
+   },
+   "clefairy[gust_pressure+prevention_wall]|hop[prevention_wall]": {
+    "n": 36,
+    "w": 25
+   },
+   "clefairy[gust_pressure+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 45,
+    "w": 38
+   },
+   "clefairy[gust_pressure+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 0
+   },
+   "clefairy[gust_pressure+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 19,
+    "w": 12
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 3,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 5,
+    "w": 3
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|marnie": {
+    "n": 8,
+    "w": 4
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 11,
+    "w": 6
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 4,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 5,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 20,
+    "w": 8
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 17,
+    "w": 14
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 4
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|marnie": {
+    "n": 13,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 24,
+    "w": 7
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 7,
+    "w": 4
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 2,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 9,
+    "w": 5
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 4,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 5,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|marnie[hand_disruption]": {
+    "n": 4,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 18,
+    "w": 12
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 6,
+    "w": 2
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 5,
+    "w": 5
+   },
+   "okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 14,
+    "w": 8
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 14,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 7,
+    "w": 7
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|marnie": {
+    "n": 20,
+    "w": 8
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|marnie[recovery_loop]": {
+    "n": 23,
+    "w": 12
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 3
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 6,
+    "w": 6
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 14,
+    "w": 9
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 9,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 11,
+    "w": 6
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 5,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 41,
+    "w": 20
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 12,
+    "w": 4
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 3,
+    "w": 2
+   },
+   "marnie[hand_disruption]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 11,
+    "w": 3
+   },
+   "marnie[hand_disruption]|clefairy[prevention_wall]": {
+    "n": 13,
+    "w": 1
+   },
+   "marnie[hand_disruption]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 5,
+    "w": 0
+   },
+   "marnie[hand_disruption]|marnie": {
+    "n": 18,
+    "w": 8
+   },
+   "marnie[hand_disruption]|marnie[recovery_loop]": {
+    "n": 30,
+    "w": 12
+   },
+   "marnie[hand_disruption]|starmie[energy_turbo+heal_tech]": {
+    "n": 11,
+    "w": 7
+   },
+   "marnie[hand_disruption]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "marnie[hand_disruption]|marnie[hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 5,
+    "w": 5
+   },
+   "marnie[hand_disruption]|lucario[energy_turbo+heal_tech]": {
+    "n": 9,
+    "w": 5
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 10,
+    "w": 9
+   },
+   "marnie[hand_disruption]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 4
+   },
+   "marnie[hand_disruption]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "marnie[hand_disruption]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 21,
+    "w": 5
+   },
+   "marnie[hand_disruption]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "marnie[hand_disruption]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 3
+   },
+   "marnie[hand_disruption]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 11,
+    "w": 3
+   },
+   "marnie[hand_disruption]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "marnie[hand_disruption]|alakazam[energy_denial+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 6,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|marnie": {
+    "n": 9,
+    "w": 4
+   },
+   "dragapult[gust_pressure+prevention_wall]|marnie[recovery_loop]": {
+    "n": 16,
+    "w": 5
+   },
+   "dragapult[gust_pressure+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 5,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 12,
+    "w": 6
+   },
+   "dragapult[gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|marnie[hand_disruption]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 2,
+    "w": 2
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "dragapult[gust_pressure+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "dragapult[gust_pressure+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "lopunny[gust_pressure+heal_tech]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 9,
+    "w": 2
+   },
+   "lopunny[gust_pressure+heal_tech]|clefairy[prevention_wall]": {
+    "n": 10,
+    "w": 5
+   },
+   "lopunny[gust_pressure+heal_tech]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 9,
+    "w": 7
+   },
+   "lopunny[gust_pressure+heal_tech]|marnie": {
+    "n": 11,
+    "w": 7
+   },
+   "lopunny[gust_pressure+heal_tech]|marnie[recovery_loop]": {
+    "n": 20,
+    "w": 12
+   },
+   "lopunny[gust_pressure+heal_tech]|starmie[energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 2
+   },
+   "lopunny[gust_pressure+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 3,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 5
+   },
+   "lopunny[gust_pressure+heal_tech]|crustle[heal_tech+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "lopunny[gust_pressure+heal_tech]|marnie[hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 9,
+    "w": 3
+   },
+   "lopunny[gust_pressure+heal_tech]|lucario[energy_turbo+heal_tech]": {
+    "n": 8,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[energy_denial+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 12,
+    "w": 4
+   },
+   "lopunny[gust_pressure+heal_tech]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 25,
+    "w": 8
+   },
+   "lopunny[gust_pressure+heal_tech]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "lopunny[gust_pressure+heal_tech]|marnie[gust_pressure]": {
+    "n": 5,
+    "w": 4
+   },
+   "lopunny[gust_pressure+heal_tech]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 10,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 2,
+    "w": 0
+   },
+   "lopunny[gust_pressure+heal_tech]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 3
+   },
+   "lopunny[gust_pressure+heal_tech]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "marnie[gust_pressure]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 26,
+    "w": 8
+   },
+   "marnie[gust_pressure]|clefairy[prevention_wall]": {
+    "n": 11,
+    "w": 1
+   },
+   "marnie[gust_pressure]|marnie": {
+    "n": 7,
+    "w": 3
+   },
+   "marnie[gust_pressure]|marnie[recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "marnie[gust_pressure]|starmie[energy_turbo+heal_tech]": {
+    "n": 7,
+    "w": 5
+   },
+   "marnie[gust_pressure]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "marnie[gust_pressure]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 2
+   },
+   "marnie[gust_pressure]|crustle[heal_tech+prevention_wall]": {
+    "n": 6,
+    "w": 1
+   },
+   "marnie[gust_pressure]|marnie[hand_disruption+recovery_loop]": {
+    "n": 8,
+    "w": 4
+   },
+   "marnie[gust_pressure]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 5,
+    "w": 5
+   },
+   "marnie[gust_pressure]|lucario[energy_turbo+heal_tech]": {
+    "n": 21,
+    "w": 6
+   },
+   "marnie[gust_pressure]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "marnie[gust_pressure]|lopunny[gust_pressure+heal_tech]": {
+    "n": 5,
+    "w": 1
+   },
+   "marnie[gust_pressure]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 9,
+    "w": 6
+   },
+   "marnie[gust_pressure]|alakazam[energy_denial+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 35,
+    "w": 14
+   },
+   "okidogi[energy_turbo+gust_pressure]|clefairy[prevention_wall]": {
+    "n": 48,
+    "w": 17
+   },
+   "okidogi[energy_turbo+gust_pressure]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 51,
+    "w": 34
+   },
+   "okidogi[energy_turbo+gust_pressure]|marnie": {
+    "n": 176,
+    "w": 86
+   },
+   "okidogi[energy_turbo+gust_pressure]|marnie[recovery_loop]": {
+    "n": 227,
+    "w": 67
+   },
+   "okidogi[energy_turbo+gust_pressure]|starmie[energy_turbo+heal_tech]": {
+    "n": 73,
+    "w": 20
+   },
+   "okidogi[energy_turbo+gust_pressure]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 15,
+    "w": 8
+   },
+   "okidogi[energy_turbo+gust_pressure]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 35,
+    "w": 14
+   },
+   "okidogi[energy_turbo+gust_pressure]|crustle[heal_tech+prevention_wall]": {
+    "n": 17,
+    "w": 3
+   },
+   "okidogi[energy_turbo+gust_pressure]|marnie[hand_disruption+recovery_loop]": {
+    "n": 3,
+    "w": 1
+   },
+   "okidogi[energy_turbo+gust_pressure]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 2
+   },
+   "okidogi[energy_turbo+gust_pressure]|froslass[energy_denial+heal_tech+prevention_wall]": {
+    "n": 10,
+    "w": 6
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 28,
+    "w": 13
+   },
+   "okidogi[energy_turbo+gust_pressure]|lucario[energy_turbo+heal_tech]": {
+    "n": 50,
+    "w": 25
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 11,
+    "w": 4
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure]": {
+    "n": 37,
+    "w": 16
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 51,
+    "w": 21
+   },
+   "okidogi[energy_turbo+gust_pressure]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 11,
+    "w": 10
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 154,
+    "w": 63
+   },
+   "okidogi[energy_turbo+gust_pressure]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 44,
+    "w": 32
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 4
+   },
+   "okidogi[energy_turbo+gust_pressure]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 18,
+    "w": 6
+   },
+   "okidogi[energy_turbo+gust_pressure]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 12,
+    "w": 8
+   },
+   "okidogi[energy_turbo+gust_pressure]|marnie[hand_disruption]": {
+    "n": 21,
+    "w": 16
+   },
+   "okidogi[energy_turbo+gust_pressure]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure]|lopunny[gust_pressure+heal_tech]": {
+    "n": 10,
+    "w": 10
+   },
+   "okidogi[energy_turbo+gust_pressure]|marnie[gust_pressure]": {
+    "n": 9,
+    "w": 3
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 10,
+    "w": 6
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+prevention_wall]": {
+    "n": 33,
+    "w": 12
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 19,
+    "w": 9
+   },
+   "okidogi[energy_turbo+gust_pressure]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 71,
+    "w": 19
+   },
+   "okidogi[energy_turbo+gust_pressure]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 14,
+    "w": 10
+   },
+   "okidogi[energy_turbo+gust_pressure]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "okidogi[energy_turbo+gust_pressure]|hop[prevention_wall]": {
+    "n": 5,
+    "w": 5
+   },
+   "okidogi[energy_turbo+gust_pressure]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 67,
+    "w": 59
+   },
+   "okidogi[energy_turbo+gust_pressure]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 22,
+    "w": 21
+   },
+   "okidogi[energy_turbo+gust_pressure]|alakazam[energy_denial+recovery_loop]": {
+    "n": 15,
+    "w": 10
+   },
+   "alakazam[gust_pressure+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 5,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 10,
+    "w": 6
+   },
+   "alakazam[gust_pressure+prevention_wall]|marnie": {
+    "n": 31,
+    "w": 15
+   },
+   "alakazam[gust_pressure+prevention_wall]|marnie[recovery_loop]": {
+    "n": 18,
+    "w": 10
+   },
+   "alakazam[gust_pressure+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 3,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 10,
+    "w": 5
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 24,
+    "w": 8
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 35,
+    "w": 20
+   },
+   "alakazam[gust_pressure+prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 7,
+    "w": 3
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 10,
+    "w": 4
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 14,
+    "w": 4
+   },
+   "alakazam[gust_pressure+prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall]|hop[prevention_wall]": {
+    "n": 8,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 12,
+    "w": 6
+   },
+   "alakazam[gust_pressure+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 11,
+    "w": 7
+   },
+   "alakazam[energy_denial+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 15,
+    "w": 6
+   },
+   "alakazam[energy_denial+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 21,
+    "w": 12
+   },
+   "alakazam[energy_denial+prevention_wall]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 16,
+    "w": 13
+   },
+   "alakazam[energy_denial+prevention_wall]|marnie": {
+    "n": 81,
+    "w": 31
+   },
+   "alakazam[energy_denial+prevention_wall]|marnie[recovery_loop]": {
+    "n": 69,
+    "w": 32
+   },
+   "alakazam[energy_denial+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 13,
+    "w": 5
+   },
+   "alakazam[energy_denial+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|crustle[heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "alakazam[energy_denial+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 4,
+    "w": 3
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 9,
+    "w": 2
+   },
+   "alakazam[energy_denial+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 22,
+    "w": 11
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 23,
+    "w": 5
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 27,
+    "w": 9
+   },
+   "alakazam[energy_denial+prevention_wall]|crustle[hand_disruption+heal_tech+prevention_wall]": {
+    "n": 5,
+    "w": 4
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 51,
+    "w": 37
+   },
+   "alakazam[energy_denial+prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 26,
+    "w": 17
+   },
+   "alakazam[energy_denial+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|marnie[hand_disruption]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|marnie[gust_pressure]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 33,
+    "w": 21
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 9,
+    "w": 7
+   },
+   "alakazam[energy_denial+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 29,
+    "w": 8
+   },
+   "alakazam[energy_denial+prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 8,
+    "w": 2
+   },
+   "alakazam[energy_denial+prevention_wall]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "alakazam[energy_denial+prevention_wall]|hop[prevention_wall]": {
+    "n": 9,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 21,
+    "w": 4
+   },
+   "alakazam[energy_denial+prevention_wall]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 9,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 6,
+    "w": 4
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|marnie": {
+    "n": 15,
+    "w": 9
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|marnie[recovery_loop]": {
+    "n": 10,
+    "w": 3
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 8,
+    "w": 4
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 12,
+    "w": 4
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 7,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 7,
+    "w": 3
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 19,
+    "w": 10
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 9,
+    "w": 2
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "alakazam[gust_pressure+prevention_wall+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 32,
+    "w": 4
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|clefairy[prevention_wall]": {
+    "n": 17,
+    "w": 4
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 16,
+    "w": 15
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|marnie": {
+    "n": 236,
+    "w": 69
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|marnie[recovery_loop]": {
+    "n": 303,
+    "w": 124
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|starmie[energy_turbo+heal_tech]": {
+    "n": 35,
+    "w": 19
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 7,
+    "w": 2
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|crustle[heal_tech+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|marnie[hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 4,
+    "w": 2
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 10,
+    "w": 3
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|lucario[energy_turbo+heal_tech]": {
+    "n": 29,
+    "w": 9
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure]": {
+    "n": 43,
+    "w": 28
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 37,
+    "w": 21
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 88,
+    "w": 65
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 70,
+    "w": 8
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 6,
+    "w": 4
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 4,
+    "w": 4
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|marnie[hand_disruption]": {
+    "n": 4,
+    "w": 1
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 2
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 71,
+    "w": 52
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 14,
+    "w": 10
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+prevention_wall]": {
+    "n": 29,
+    "w": 21
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 3
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 20,
+    "w": 10
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 6,
+    "w": 1
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 52,
+    "w": 21
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 3
+   },
+   "starmie[energy_denial+energy_turbo+heal_tech]|alakazam[energy_denial+recovery_loop]": {
+    "n": 17,
+    "w": 15
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 5,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 4,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|marnie": {
+    "n": 44,
+    "w": 21
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|marnie[recovery_loop]": {
+    "n": 19,
+    "w": 8
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 1,
+    "w": 0
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 1,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 8,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 8,
+    "w": 5
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 23,
+    "w": 10
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 19,
+    "w": 11
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 17,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 3,
+    "w": 0
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 14,
+    "w": 4
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 8,
+    "w": 6
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 20,
+    "w": 10
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|hop[prevention_wall]": {
+    "n": 6,
+    "w": 6
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 16,
+    "w": 3
+   },
+   "archaludon[energy_turbo+hand_disruption+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 6,
+    "w": 4
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 1,
+    "w": 0
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|marnie": {
+    "n": 19,
+    "w": 8
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|marnie[recovery_loop]": {
+    "n": 5,
+    "w": 0
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 2
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 6,
+    "w": 0
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 6,
+    "w": 2
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 18,
+    "w": 4
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 24,
+    "w": 8
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 5,
+    "w": 2
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 4,
+    "w": 3
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 4,
+    "w": 2
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 6,
+    "w": 5
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|hop[prevention_wall]": {
+    "n": 5,
+    "w": 2
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 6,
+    "w": 2
+   },
+   "hop[prevention_wall]|marnie": {
+    "n": 85,
+    "w": 10
+   },
+   "hop[prevention_wall]|marnie[recovery_loop]": {
+    "n": 24,
+    "w": 5
+   },
+   "hop[prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 1,
+    "w": 1
+   },
+   "hop[prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 17,
+    "w": 14
+   },
+   "hop[prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 35,
+    "w": 28
+   },
+   "hop[prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 50,
+    "w": 32
+   },
+   "hop[prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 36,
+    "w": 11
+   },
+   "hop[prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 0
+   },
+   "hop[prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 8,
+    "w": 6
+   },
+   "hop[prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 9,
+    "w": 8
+   },
+   "hop[prevention_wall]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 0
+   },
+   "hop[prevention_wall]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 5,
+    "w": 3
+   },
+   "hop[prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 18,
+    "w": 5
+   },
+   "hop[prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 17,
+    "w": 13
+   },
+   "archaludon[gust_pressure+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 23,
+    "w": 3
+   },
+   "archaludon[gust_pressure+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 23,
+    "w": 8
+   },
+   "archaludon[gust_pressure+recovery_loop]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 10,
+    "w": 2
+   },
+   "archaludon[gust_pressure+recovery_loop]|marnie": {
+    "n": 166,
+    "w": 74
+   },
+   "archaludon[gust_pressure+recovery_loop]|marnie[recovery_loop]": {
+    "n": 105,
+    "w": 29
+   },
+   "archaludon[gust_pressure+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 26,
+    "w": 8
+   },
+   "archaludon[gust_pressure+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall+recovery_loop]": {
+    "n": 4,
+    "w": 2
+   },
+   "archaludon[gust_pressure+recovery_loop]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 20,
+    "w": 3
+   },
+   "archaludon[gust_pressure+recovery_loop]|crustle[heal_tech+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "archaludon[gust_pressure+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "archaludon[gust_pressure+recovery_loop]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 5,
+    "w": 2
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 11,
+    "w": 6
+   },
+   "archaludon[gust_pressure+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 30,
+    "w": 20
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 33,
+    "w": 25
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 32,
+    "w": 25
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 58,
+    "w": 28
+   },
+   "archaludon[gust_pressure+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 45,
+    "w": 7
+   },
+   "archaludon[gust_pressure+recovery_loop]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 5,
+    "w": 0
+   },
+   "archaludon[gust_pressure+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "archaludon[gust_pressure+recovery_loop]|marnie[hand_disruption]": {
+    "n": 11,
+    "w": 8
+   },
+   "archaludon[gust_pressure+recovery_loop]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 1
+   },
+   "archaludon[gust_pressure+recovery_loop]|lopunny[gust_pressure+heal_tech]": {
+    "n": 2,
+    "w": 0
+   },
+   "archaludon[gust_pressure+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 67,
+    "w": 8
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 12,
+    "w": 6
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 21,
+    "w": 17
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 1
+   },
+   "archaludon[gust_pressure+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 52,
+    "w": 31
+   },
+   "archaludon[gust_pressure+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 16,
+    "w": 13
+   },
+   "archaludon[gust_pressure+recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 6,
+    "w": 3
+   },
+   "archaludon[gust_pressure+recovery_loop]|hop[prevention_wall]": {
+    "n": 18,
+    "w": 13
+   },
+   "archaludon[gust_pressure+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 8,
+    "w": 7
+   },
+   "archaludon[gust_pressure+recovery_loop]|alakazam[energy_denial+recovery_loop]": {
+    "n": 24,
+    "w": 18
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 8,
+    "w": 4
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|clefairy[prevention_wall]": {
+    "n": 11,
+    "w": 10
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|crustle[gust_pressure+heal_tech+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|marnie": {
+    "n": 16,
+    "w": 12
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|marnie[recovery_loop]": {
+    "n": 27,
+    "w": 4
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|starmie[energy_turbo+heal_tech]": {
+    "n": 13,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|dragapult[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|marnie[hand_disruption+recovery_loop]": {
+    "n": 5,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|cynthia[bulk_boost+energy_turbo+gust_pressure]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 2,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|lucario[energy_turbo+heal_tech]": {
+    "n": 6,
+    "w": 4
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure]": {
+    "n": 1,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 9,
+    "w": 4
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 3,
+    "w": 3
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|okidogi[energy_turbo+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 1,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|marnie[hand_disruption]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|dragapult[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 22,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 2,
+    "w": 2
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+prevention_wall]": {
+    "n": 3,
+    "w": 2
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 3,
+    "w": 0
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 8,
+    "w": 1
+   },
+   "crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]|alakazam[energy_denial+recovery_loop]": {
+    "n": 3,
+    "w": 2
+   },
+   "alakazam[energy_denial+recovery_loop]|cynthia[bulk_boost+energy_turbo]": {
+    "n": 4,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|clefairy[prevention_wall]": {
+    "n": 6,
+    "w": 0
+   },
+   "alakazam[energy_denial+recovery_loop]|marnie": {
+    "n": 48,
+    "w": 9
+   },
+   "alakazam[energy_denial+recovery_loop]|marnie[recovery_loop]": {
+    "n": 31,
+    "w": 7
+   },
+   "alakazam[energy_denial+recovery_loop]|starmie[energy_turbo+heal_tech]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|marnie[hand_disruption+recovery_loop]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+gust_pressure+hand_disruption]": {
+    "n": 5,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|lucario[energy_turbo+heal_tech]": {
+    "n": 10,
+    "w": 6
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+gust_pressure]": {
+    "n": 27,
+    "w": 8
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+prevention_wall+recovery_loop]": {
+    "n": 33,
+    "w": 11
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+gust_pressure+recovery_loop]": {
+    "n": 45,
+    "w": 23
+   },
+   "alakazam[energy_denial+recovery_loop]|clefairy[gust_pressure+prevention_wall]": {
+    "n": 19,
+    "w": 7
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|comfey_control[energy_denial+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|marnie[hand_disruption]": {
+    "n": 2,
+    "w": 0
+   },
+   "alakazam[energy_denial+recovery_loop]|okidogi[energy_turbo+gust_pressure]": {
+    "n": 15,
+    "w": 5
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[gust_pressure+prevention_wall]": {
+    "n": 11,
+    "w": 4
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[energy_denial+prevention_wall]": {
+    "n": 9,
+    "w": 7
+   },
+   "alakazam[energy_denial+recovery_loop]|alakazam[gust_pressure+prevention_wall+recovery_loop]": {
+    "n": 1,
+    "w": 1
+   },
+   "alakazam[energy_denial+recovery_loop]|starmie[energy_denial+energy_turbo+heal_tech]": {
+    "n": 17,
+    "w": 2
+   },
+   "alakazam[energy_denial+recovery_loop]|archaludon[energy_turbo+hand_disruption+recovery_loop]": {
+    "n": 6,
+    "w": 2
+   },
+   "alakazam[energy_denial+recovery_loop]|archaludon[energy_turbo+gust_pressure+heal_tech+recovery_loop]": {
+    "n": 6,
+    "w": 4
+   },
+   "alakazam[energy_denial+recovery_loop]|hop[prevention_wall]": {
+    "n": 17,
+    "w": 4
+   },
+   "alakazam[energy_denial+recovery_loop]|archaludon[gust_pressure+recovery_loop]": {
+    "n": 24,
+    "w": 6
+   },
+   "alakazam[energy_denial+recovery_loop]|crustle[energy_turbo+gust_pressure+hand_disruption+prevention_wall]": {
+    "n": 3,
+    "w": 1
+   }
+  },
+  "l1": {
+   "units": [
+    "marnie",
+    "alakazam",
+    "starmie",
+    "clefairy",
+    "okidogi",
+    "cynthia",
+    "archaludon",
+    "crustle",
+    "lucario",
+    "dragapult",
+    "comfey_control",
+    "hop",
+    "lopunny",
+    "froslass"
+   ],
+   "cells": {
+    "marnie|alakazam": {
+     "n": 1453,
+     "w": 854
+    },
+    "marnie|starmie": {
+     "n": 814,
+     "w": 527
+    },
+    "marnie|clefairy": {
+     "n": 705,
+     "w": 326
+    },
+    "marnie|okidogi": {
+     "n": 485,
+     "w": 300
+    },
+    "marnie|cynthia": {
+     "n": 367,
+     "w": 117
+    },
+    "marnie|archaludon": {
+     "n": 377,
+     "w": 226
+    },
+    "marnie|crustle": {
+     "n": 259,
+     "w": 75
+    },
+    "marnie|lucario": {
+     "n": 278,
+     "w": 129
+    },
+    "marnie|dragapult": {
+     "n": 100,
+     "w": 61
+    },
+    "marnie|comfey_control": {
+     "n": 84,
+     "w": 46
+    },
+    "marnie|hop": {
+     "n": 109,
+     "w": 94
+    },
+    "marnie|lopunny": {
+     "n": 40,
+     "w": 16
+    },
+    "marnie|froslass": {
+     "n": 10,
+     "w": 5
+    },
+    "alakazam|marnie": {
+     "n": 1453,
+     "w": 599
+    },
+    "alakazam|starmie": {
+     "n": 397,
+     "w": 141
+    },
+    "alakazam|clefairy": {
+     "n": 535,
+     "w": 285
+    },
+    "alakazam|okidogi": {
+     "n": 388,
+     "w": 222
+    },
+    "alakazam|cynthia": {
+     "n": 475,
+     "w": 268
+    },
+    "alakazam|archaludon": {
+     "n": 331,
+     "w": 141
+    },
+    "alakazam|crustle": {
+     "n": 151,
+     "w": 89
+    },
+    "alakazam|lucario": {
+     "n": 275,
+     "w": 139
+    },
+    "alakazam|dragapult": {
+     "n": 113,
+     "w": 50
+    },
+    "alakazam|comfey_control": {
+     "n": 115,
+     "w": 54
+    },
+    "alakazam|hop": {
+     "n": 136,
+     "w": 35
+    },
+    "alakazam|lopunny": {
+     "n": 51,
+     "w": 34
+    },
+    "alakazam|froslass": {
+     "n": 5,
+     "w": 2
+    },
+    "starmie|marnie": {
+     "n": 814,
+     "w": 287
+    },
+    "starmie|alakazam": {
+     "n": 397,
+     "w": 256
+    },
+    "starmie|clefairy": {
+     "n": 120,
+     "w": 26
+    },
+    "starmie|okidogi": {
+     "n": 165,
+     "w": 118
+    },
+    "starmie|cynthia": {
+     "n": 79,
+     "w": 29
+    },
+    "starmie|archaludon": {
+     "n": 108,
+     "w": 52
+    },
+    "starmie|crustle": {
+     "n": 84,
+     "w": 74
+    },
+    "starmie|lucario": {
+     "n": 72,
+     "w": 23
+    },
+    "starmie|dragapult": {
+     "n": 28,
+     "w": 14
+    },
+    "starmie|comfey_control": {
+     "n": 16,
+     "w": 12
+    },
+    "starmie|lopunny": {
+     "n": 5,
+     "w": 3
+    },
+    "starmie|froslass": {
+     "n": 4,
+     "w": 1
+    },
+    "clefairy|marnie": {
+     "n": 705,
+     "w": 379
+    },
+    "clefairy|alakazam": {
+     "n": 535,
+     "w": 250
+    },
+    "clefairy|starmie": {
+     "n": 120,
+     "w": 94
+    },
+    "clefairy|okidogi": {
+     "n": 112,
+     "w": 47
+    },
+    "clefairy|cynthia": {
+     "n": 118,
+     "w": 58
+    },
+    "clefairy|archaludon": {
+     "n": 96,
+     "w": 77
+    },
+    "clefairy|crustle": {
+     "n": 114,
+     "w": 16
+    },
+    "clefairy|lucario": {
+     "n": 57,
+     "w": 34
+    },
+    "clefairy|dragapult": {
+     "n": 18,
+     "w": 13
+    },
+    "clefairy|comfey_control": {
+     "n": 29,
+     "w": 19
+    },
+    "clefairy|hop": {
+     "n": 36,
+     "w": 25
+    },
+    "clefairy|lopunny": {
+     "n": 10,
+     "w": 5
+    },
+    "clefairy|froslass": {
+     "n": 8,
+     "w": 1
+    },
+    "okidogi|marnie": {
+     "n": 485,
+     "w": 185
+    },
+    "okidogi|alakazam": {
+     "n": 388,
+     "w": 166
+    },
+    "okidogi|starmie": {
+     "n": 165,
+     "w": 47
+    },
+    "okidogi|clefairy": {
+     "n": 112,
+     "w": 65
+    },
+    "okidogi|cynthia": {
+     "n": 61,
+     "w": 25
+    },
+    "okidogi|archaludon": {
+     "n": 94,
+     "w": 79
+    },
+    "okidogi|crustle": {
+     "n": 107,
+     "w": 74
+    },
+    "okidogi|lucario": {
+     "n": 60,
+     "w": 31
+    },
+    "okidogi|dragapult": {
+     "n": 46,
+     "w": 17
+    },
+    "okidogi|comfey_control": {
+     "n": 30,
+     "w": 18
+    },
+    "okidogi|hop": {
+     "n": 5,
+     "w": 5
+    },
+    "okidogi|lopunny": {
+     "n": 12,
+     "w": 11
+    },
+    "okidogi|froslass": {
+     "n": 10,
+     "w": 6
+    },
+    "cynthia|marnie": {
+     "n": 367,
+     "w": 250
+    },
+    "cynthia|alakazam": {
+     "n": 475,
+     "w": 207
+    },
+    "cynthia|starmie": {
+     "n": 79,
+     "w": 50
+    },
+    "cynthia|clefairy": {
+     "n": 118,
+     "w": 60
+    },
+    "cynthia|okidogi": {
+     "n": 61,
+     "w": 36
+    },
+    "cynthia|archaludon": {
+     "n": 36,
+     "w": 30
+    },
+    "cynthia|crustle": {
+     "n": 165,
+     "w": 112
+    },
+    "cynthia|lucario": {
+     "n": 52,
+     "w": 25
+    },
+    "cynthia|dragapult": {
+     "n": 26,
+     "w": 15
+    },
+    "cynthia|comfey_control": {
+     "n": 32,
+     "w": 11
+    },
+    "cynthia|lopunny": {
+     "n": 9,
+     "w": 7
+    },
+    "cynthia|froslass": {
+     "n": 4,
+     "w": 2
+    },
+    "archaludon|marnie": {
+     "n": 377,
+     "w": 151
+    },
+    "archaludon|alakazam": {
+     "n": 331,
+     "w": 190
+    },
+    "archaludon|starmie": {
+     "n": 108,
+     "w": 56
+    },
+    "archaludon|clefairy": {
+     "n": 96,
+     "w": 19
+    },
+    "archaludon|okidogi": {
+     "n": 94,
+     "w": 15
+    },
+    "archaludon|cynthia": {
+     "n": 36,
+     "w": 6
+    },
+    "archaludon|crustle": {
+     "n": 24,
+     "w": 14
+    },
+    "archaludon|lucario": {
+     "n": 49,
+     "w": 24
+    },
+    "archaludon|dragapult": {
+     "n": 28,
+     "w": 7
+    },
+    "archaludon|comfey_control": {
+     "n": 10,
+     "w": 5
+    },
+    "archaludon|hop": {
+     "n": 29,
+     "w": 21
+    },
+    "archaludon|lopunny": {
+     "n": 5,
+     "w": 0
+    },
+    "crustle|marnie": {
+     "n": 259,
+     "w": 184
+    },
+    "crustle|alakazam": {
+     "n": 151,
+     "w": 62
+    },
+    "crustle|starmie": {
+     "n": 84,
+     "w": 10
+    },
+    "crustle|clefairy": {
+     "n": 114,
+     "w": 98
+    },
+    "crustle|okidogi": {
+     "n": 107,
+     "w": 33
+    },
+    "crustle|cynthia": {
+     "n": 165,
+     "w": 53
+    },
+    "crustle|archaludon": {
+     "n": 24,
+     "w": 10
+    },
+    "crustle|lucario": {
+     "n": 58,
+     "w": 43
+    },
+    "crustle|dragapult": {
+     "n": 28,
+     "w": 9
+    },
+    "crustle|comfey_control": {
+     "n": 22,
+     "w": 12
+    },
+    "crustle|lopunny": {
+     "n": 14,
+     "w": 4
+    },
+    "crustle|froslass": {
+     "n": 2,
+     "w": 2
+    },
+    "lucario|marnie": {
+     "n": 278,
+     "w": 149
+    },
+    "lucario|alakazam": {
+     "n": 275,
+     "w": 136
+    },
+    "lucario|starmie": {
+     "n": 72,
+     "w": 49
+    },
+    "lucario|clefairy": {
+     "n": 57,
+     "w": 23
+    },
+    "lucario|okidogi": {
+     "n": 60,
+     "w": 29
+    },
+    "lucario|cynthia": {
+     "n": 52,
+     "w": 27
+    },
+    "lucario|archaludon": {
+     "n": 49,
+     "w": 25
+    },
+    "lucario|crustle": {
+     "n": 58,
+     "w": 15
+    },
+    "lucario|dragapult": {
+     "n": 15,
+     "w": 11
+    },
+    "lucario|comfey_control": {
+     "n": 36,
+     "w": 11
+    },
+    "lucario|hop": {
+     "n": 1,
+     "w": 0
+    },
+    "lucario|lopunny": {
+     "n": 8,
+     "w": 7
+    },
+    "lucario|froslass": {
+     "n": 9,
+     "w": 4
+    },
+    "dragapult|marnie": {
+     "n": 100,
+     "w": 39
+    },
+    "dragapult|alakazam": {
+     "n": 113,
+     "w": 63
+    },
+    "dragapult|starmie": {
+     "n": 28,
+     "w": 14
+    },
+    "dragapult|clefairy": {
+     "n": 18,
+     "w": 5
+    },
+    "dragapult|okidogi": {
+     "n": 46,
+     "w": 29
+    },
+    "dragapult|cynthia": {
+     "n": 26,
+     "w": 11
+    },
+    "dragapult|archaludon": {
+     "n": 28,
+     "w": 21
+    },
+    "dragapult|crustle": {
+     "n": 28,
+     "w": 19
+    },
+    "dragapult|lucario": {
+     "n": 15,
+     "w": 4
+    },
+    "dragapult|comfey_control": {
+     "n": 9,
+     "w": 7
+    },
+    "dragapult|lopunny": {
+     "n": 7,
+     "w": 1
+    },
+    "comfey_control|marnie": {
+     "n": 84,
+     "w": 38
+    },
+    "comfey_control|alakazam": {
+     "n": 115,
+     "w": 61
+    },
+    "comfey_control|starmie": {
+     "n": 16,
+     "w": 4
+    },
+    "comfey_control|clefairy": {
+     "n": 29,
+     "w": 10
+    },
+    "comfey_control|okidogi": {
+     "n": 30,
+     "w": 12
+    },
+    "comfey_control|cynthia": {
+     "n": 32,
+     "w": 21
+    },
+    "comfey_control|archaludon": {
+     "n": 10,
+     "w": 5
+    },
+    "comfey_control|crustle": {
+     "n": 22,
+     "w": 10
+    },
+    "comfey_control|lucario": {
+     "n": 36,
+     "w": 25
+    },
+    "comfey_control|dragapult": {
+     "n": 9,
+     "w": 2
+    },
+    "comfey_control|lopunny": {
+     "n": 5,
+     "w": 5
+    },
+    "comfey_control|froslass": {
+     "n": 2,
+     "w": 1
+    },
+    "hop|marnie": {
+     "n": 109,
+     "w": 15
+    },
+    "hop|alakazam": {
+     "n": 136,
+     "w": 101
+    },
+    "hop|clefairy": {
+     "n": 36,
+     "w": 11
+    },
+    "hop|okidogi": {
+     "n": 5,
+     "w": 0
+    },
+    "hop|archaludon": {
+     "n": 29,
+     "w": 8
+    },
+    "hop|lucario": {
+     "n": 1,
+     "w": 1
+    },
+    "lopunny|marnie": {
+     "n": 40,
+     "w": 24
+    },
+    "lopunny|alakazam": {
+     "n": 51,
+     "w": 17
+    },
+    "lopunny|starmie": {
+     "n": 5,
+     "w": 2
+    },
+    "lopunny|clefairy": {
+     "n": 10,
+     "w": 5
+    },
+    "lopunny|okidogi": {
+     "n": 12,
+     "w": 1
+    },
+    "lopunny|cynthia": {
+     "n": 9,
+     "w": 2
+    },
+    "lopunny|archaludon": {
+     "n": 5,
+     "w": 5
+    },
+    "lopunny|crustle": {
+     "n": 14,
+     "w": 10
+    },
+    "lopunny|lucario": {
+     "n": 8,
+     "w": 1
+    },
+    "lopunny|dragapult": {
+     "n": 7,
+     "w": 6
+    },
+    "lopunny|comfey_control": {
+     "n": 5,
+     "w": 0
+    },
+    "lopunny|froslass": {
+     "n": 1,
+     "w": 0
+    },
+    "froslass|marnie": {
+     "n": 10,
+     "w": 5
+    },
+    "froslass|alakazam": {
+     "n": 5,
+     "w": 3
+    },
+    "froslass|starmie": {
+     "n": 4,
+     "w": 3
+    },
+    "froslass|clefairy": {
+     "n": 8,
+     "w": 7
+    },
+    "froslass|okidogi": {
+     "n": 10,
+     "w": 4
+    },
+    "froslass|cynthia": {
+     "n": 4,
+     "w": 2
+    },
+    "froslass|crustle": {
+     "n": 2,
+     "w": 0
+    },
+    "froslass|lucario": {
+     "n": 9,
+     "w": 5
+    },
+    "froslass|comfey_control": {
+     "n": 2,
+     "w": 1
+    },
+    "froslass|lopunny": {
+     "n": 1,
+     "w": 1
+    }
+   }
+  }
+ },
  "elite": {
   "units": [
    "clefairy[gust_pressure+prevention_wall]",

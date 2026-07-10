@@ -79,6 +79,7 @@
           <span>구간</span>
           <select id="view-select">
             <option value="main">800+</option>
+            <option value="high">1000+</option>
             <option value="elite">Top 50</option>
           </select>
         </label>
@@ -86,7 +87,7 @@
         <label class="field select-field">
           <span>정렬</span>
           <select id="sort-select">
-            <option value="bt">BT 승률</option>
+            <option value="bt">PKC 스코어</option>
             <option value="pick">픽률</option>
             <option value="games">표본</option>
             <option value="raw">원승률</option>
@@ -105,7 +106,7 @@
 
       <div class="table-head" aria-hidden="true">
         <span class="col-deck">덱</span>
-        <span>BT 승률</span>
+        <span>PKC 스코어</span>
         <span>원승률</span>
         <span>픽률</span>
         <span>표본</span>
@@ -155,7 +156,7 @@
       <details class="method-details">
         <summary>방법론 · 한계</summary>
         <ul>
-          <li><strong>BT 승률</strong> — Bradley–Terry 모델로 대진 난이도를 보정한 승률. 티어 판정 기준값.</li>
+          <li><strong>PKC 스코어</strong> — Bradley–Terry 모델로 대진 난이도를 보정한 승률(%). 티어 판정 기준값.</li>
           <li><strong>저표본 수축</strong> — 표본이 적은 변형은 50% 방향으로 수축해 단기 운을 완화.</li>
           <li><strong>파일럿 편중 ⚠</strong> — 단일 팀 80%+ 또는 3팀 미만 관측 변형은 표시. 티어는 덱+파일럿의 관측 성과이며 덱 단독 성능이 아님.</li>
           <li><strong>코호트 조인</strong> — 경기 당시 점수가 없어 현재 리더보드 기준으로 800+/Top50을 조인.</li>

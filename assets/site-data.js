@@ -54,6 +54,7 @@ export function shortDeckName(row) {
 
 export function viewLabel(key, filters = {}) {
   if (key === "elite") return `Top ${filters.elite_top_rank || 50}`;
+  if (key === "high") return `현재 ${filters.high_min_score || 1000}+ 코호트`;
   return `현재 ${filters.min_score || 800}+ 코호트`;
 }
 
@@ -171,7 +172,7 @@ export function validateDatasetShape(aggregates, matchups) {
   const errors = [];
   if (!aggregates || typeof aggregates !== "object") errors.push("aggregates missing");
   if (!matchups || typeof matchups !== "object") errors.push("matchups missing");
-  for (const key of ["main", "elite"]) {
+  for (const key of ["main", "high", "elite"]) {
     const view = aggregates?.views?.[key];
     const matrix = matchups?.[key];
     if (!view || !Array.isArray(view.rows)) errors.push(`${key} rows missing`);
