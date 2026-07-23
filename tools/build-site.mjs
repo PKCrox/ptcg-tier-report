@@ -22,6 +22,7 @@ const publicEntries = [
   "data/aggregates.json",
   "data/manifest.json",
   "data/matchups.json",
+  "data/prices.json",
 ];
 
 async function assertNoSymlinks(source, label = source) {

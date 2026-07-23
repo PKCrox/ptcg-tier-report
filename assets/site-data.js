@@ -1,31 +1,47 @@
-export const ARCHETYPE_KO = {
-  alakazam: "후딘",
-  archaludon: "아르카루돈",
-  beartic: "툰베어",
-  clefairy: "삐삐 캥카",
-  comfey_control: "큐아링 컨트롤",
-  crustle: "암팰리스",
-  cynthia: "난천 한카리아스",
-  dragapult: "드래펄트",
-  froslass: "눈여아",
-  hop: "호브 백솜모카",
-  iono: "나예리 일렉트릭",
-  libraryout: "라이브러리 덱아웃",
-  lopunny: "메가이어롭",
-  lucario: "메가루카리오",
-  marnie: "마리 오롱털",
-  okidogi: "조타구 솔록",
-  raging_bolt: "날뛰는우레",
-  rocket_mill: "로켓단 밀",
-  starmie: "아쿠스타",
-  unknown: "미분류",
+export const ARCHETYPE_NAMES = {
+  alakazam: "Alakazam",
+  archaludon: "Archaludon",
+  beartic: "Beartic",
+  clefairy: "Clefairy / Kangaskhan",
+  comfey_control: "Comfey Control",
+  crustle: "Crustle",
+  cynthia: "Cynthia's Garchomp",
+  dragapult: "Dragapult",
+  froslass: "Froslass",
+  hop: "Hop's Trevenant",
+  iono: "Iono's Bellibolt",
+  libraryout: "Library Out",
+  lopunny: "Mega Lopunny",
+  lucario: "Mega Lucario",
+  marnie: "Marnie's Grimmsnarl",
+  okidogi: "Okidogi / Lunatone",
+  raging_bolt: "Raging Bolt",
+  rocket_mill: "Team Rocket Mill",
+  starmie: "Mega Starmie",
+  unknown: "Unclassified",
+};
+
+export const ARCHETYPE_KO = ARCHETYPE_NAMES;
+
+export const STRATEGY_NAMES = {
+  prevention_wall: "Damage Wall",
+  recovery_loop: "Recovery",
+  hand_disruption: "Hand Disruption",
+  energy_denial: "Energy Denial",
+  gust_pressure: "Gust Pressure",
+  energy_turbo: "Energy Acceleration",
+  bulk_boost: "Bulk Boost",
+  bench_snipe: "Bench Snipe",
+  setup_consistency: "Setup Consistency",
+  prize_trade: "Prize Trade",
+  mill: "Mill",
 };
 
 export const TIER_META = {
-  S: { label: "S", name: "관측 선두", color: "#5b8cff" },
-  A: { label: "A", name: "강한 관측치", color: "#29c7a9" },
-  B: { label: "B", name: "상황형", color: "#f2bd57" },
-  C: { label: "C", name: "도전적", color: "#f07078" },
+  S: { label: "S", name: "Observed leader", color: "#b8f34a" },
+  A: { label: "A", name: "Strong result", color: "#42d99a" },
+  B: { label: "B", name: "Situational", color: "#f2bd57" },
+  C: { label: "C", name: "Challenging", color: "#f07078" },
 };
 
 export function formatPercent(value, digits = 1) {
@@ -35,27 +51,24 @@ export function formatPercent(value, digits = 1) {
 
 export function formatNumber(value) {
   if (!Number.isFinite(value)) return "—";
-  return new Intl.NumberFormat("ko-KR").format(value);
+  return new Intl.NumberFormat("en-US").format(value);
+}
+
+export function strategyNames(row) {
+  return (row?.strategy_tags || []).map((tag) => STRATEGY_NAMES[tag] || tag.replaceAll("_", " "));
 }
 
 export function shortDeckName(row) {
-  if (!row) return "알 수 없는 덱";
-  return String(row.display || row.unit)
-    .replace(/ 덱 \(기본형\)$/u, " (기본)")
-    .replace(/ 덱$/u, "")
-    .replaceAll("데미지 방벽", "벽")
-    .replaceAll("자원 재활용", "회수")
-    .replaceAll("벤치 저격", "거스트")
-    .replaceAll("에너지 견제", "에너지컷")
-    .replaceAll("에너지 가속", "가속")
-    .replaceAll("손패 교란", "손패")
-    .replaceAll("맷집 강화", "맷집");
+  if (!row) return "Unknown deck";
+  const base = ARCHETYPE_NAMES[row.l1] || row.l1.replaceAll("_", " ");
+  const tags = strategyNames(row);
+  return tags.length ? `${base} · ${tags.join(" / ")}` : `${base} · Standard`;
 }
 
 export function viewLabel(key, filters = {}) {
   if (key === "elite") return `Top ${filters.elite_top_rank || 50}`;
-  if (key === "high") return `현재 ${filters.high_min_score || 1000}+ 코호트`;
-  return `현재 ${filters.min_score || 800}+ 코호트`;
+  if (key === "high") return `${filters.high_min_score || 1000}+ cohort`;
+  return `${filters.min_score || 800}+ cohort`;
 }
 
 export function rowMap(rows) {
@@ -63,109 +76,54 @@ export function rowMap(rows) {
 }
 
 export function filterAndSortRows(rows, { query = "", tier = "all", sort = "bt" } = {}) {
-  const needle = query.trim().toLocaleLowerCase("ko-KR");
+  const needle = query.trim().toLowerCase();
   const filtered = (rows || []).filter((row) => {
     if (tier !== "all" && row.tier !== tier) return false;
     if (!needle) return true;
-    const haystack = [
-      row.display,
-      row.unit,
-      ARCHETYPE_KO[row.l1],
-      row.strategy,
-      ...(row.strategy_tags || []),
-      ...(row.strategy_tags_ko || []),
-      ...(row.main_cards || []).map((card) => card.name),
-    ].filter(Boolean).join(" ").toLocaleLowerCase("ko-KR");
+    const haystack = [row.unit, ARCHETYPE_NAMES[row.l1], ...(row.strategy_tags || []), ...strategyNames(row), ...(row.main_cards || []).map((card) => card.name)].filter(Boolean).join(" ").toLowerCase();
     return haystack.includes(needle);
   });
-
-  const field = {
-    bt: "bt_wr_shrunk",
-    pick: "pick_rate",
-    games: "seats",
-    raw: "raw_wr",
-  }[sort] || "bt_wr_shrunk";
-
-  return filtered.sort((a, b) => {
-    const delta = Number(b[field] || 0) - Number(a[field] || 0);
-    return delta || Number(b.seats || 0) - Number(a.seats || 0) ||
-      shortDeckName(a).localeCompare(shortDeckName(b), "ko");
-  });
+  const field = { bt: "bt_wr_shrunk", pick: "pick_rate", games: "seats", raw: "raw_wr" }[sort] || "bt_wr_shrunk";
+  return filtered.sort((a, b) => Number(b[field] || 0) - Number(a[field] || 0) || Number(b.seats || 0) - Number(a.seats || 0) || shortDeckName(a).localeCompare(shortDeckName(b), "en"));
 }
 
 export function matchupResult(matrix, unitA, unitB) {
   if (!matrix || !unitA || !unitB) return null;
-  if (unitA === unitB) {
-    return { rate: 0.5, n: 0, wins: 0, mirror: true, source: "mirror" };
-  }
+  if (unitA === unitB) return { rate: 0.5, n: 0, wins: 0, mirror: true, source: "mirror" };
   const direct = matrix.cells?.[`${unitA}|${unitB}`];
-  if (direct && direct.n > 0) {
-    return {
-      rate: direct.w / direct.n,
-      n: direct.n,
-      wins: direct.w,
-      mirror: false,
-      source: "direct",
-    };
-  }
+  if (direct?.n > 0) return { rate: direct.w / direct.n, n: direct.n, wins: direct.w, mirror: false, source: "direct" };
   const reverse = matrix.cells?.[`${unitB}|${unitA}`];
-  if (reverse && reverse.n > 0) {
-    return {
-      rate: 1 - reverse.w / reverse.n,
-      n: reverse.n,
-      wins: reverse.n - reverse.w,
-      mirror: false,
-      source: "reverse",
-    };
-  }
+  if (reverse?.n > 0) return { rate: 1 - reverse.w / reverse.n, n: reverse.n, wins: reverse.n - reverse.w, mirror: false, source: "reverse" };
   return null;
 }
 
 export function confidenceFor(n, minReliable = 30) {
-  if (!Number.isFinite(n) || n <= 0) {
-    return { key: "none", label: "맞대결 기록 없음", description: "직접 맞붙은 경기가 없습니다." };
-  }
-  if (n < minReliable) {
-    return { key: "low", label: "판수 부족", description: `${n}판뿐이라 방향만 참고하세요.` };
-  }
-  if (n < minReliable * 3) {
-    return { key: "medium", label: "판수 보통", description: `${n}판의 맞대결 기록입니다.` };
-  }
-  return { key: "high", label: "판수 충분", description: `${n}판의 맞대결 기록입니다.` };
+  if (!Number.isFinite(n) || n <= 0) return { key: "none", label: "No direct games", description: "These decks have not met directly." };
+  if (n < minReliable) return { key: "low", label: "Low sample", description: `Only ${n} direct games; treat the direction cautiously.` };
+  if (n < minReliable * 3) return { key: "medium", label: "Moderate sample", description: `${n} direct games.` };
+  return { key: "high", label: "Strong sample", description: `${n} direct games.` };
 }
 
 export function tierCounts(rows) {
   const counts = { S: 0, A: 0, B: 0, C: 0 };
-  for (const row of rows || []) {
-    if (Object.hasOwn(counts, row.tier)) counts[row.tier] += 1;
-  }
+  for (const row of rows || []) if (Object.hasOwn(counts, row.tier)) counts[row.tier] += 1;
   return counts;
 }
 
 export function archetypeDistribution(view) {
   const source = view?.l1_distribution || {};
-  const total = Object.entries(source)
-    .filter(([key]) => key !== "unknown")
-    .reduce((sum, [, value]) => sum + Number(value || 0), 0);
-
-  return Object.entries(source)
-    .filter(([key]) => key !== "unknown")
-    .map(([key, count]) => ({
-      key,
-      name: ARCHETYPE_KO[key] || key.replaceAll("_", " "),
-      count,
-      rate: total ? count / total : 0,
-    }))
-    .sort((a, b) => b.count - a.count);
+  const total = Object.entries(source).filter(([key]) => key !== "unknown").reduce((sum, [, value]) => sum + Number(value || 0), 0);
+  return Object.entries(source).filter(([key]) => key !== "unknown").map(([key, count]) => ({ key, name: ARCHETYPE_NAMES[key] || key.replaceAll("_", " "), count, rate: total ? count / total : 0 })).sort((a, b) => b.count - a.count);
 }
 
 export function deriveInsights(aggregates) {
   const mainRows = aggregates?.views?.main?.rows || [];
   const eliteRows = aggregates?.views?.elite?.rows || [];
-  const strongest = [...mainRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0];
-  const mostPlayed = [...mainRows].sort((a, b) => b.pick_rate - a.pick_rate)[0];
-  const eliteLeader = [...eliteRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0];
-  return { strongest, mostPlayed, eliteLeader };
+  return {
+    strongest: [...mainRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0],
+    mostPlayed: [...mainRows].sort((a, b) => b.pick_rate - a.pick_rate)[0],
+    eliteLeader: [...eliteRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0],
+  };
 }
 
 export function validateDatasetShape(aggregates, matchups) {
@@ -176,14 +134,9 @@ export function validateDatasetShape(aggregates, matchups) {
     const view = aggregates?.views?.[key];
     const matrix = matchups?.[key];
     if (!view || !Array.isArray(view.rows)) errors.push(`${key} rows missing`);
-    if (!matrix || !Array.isArray(matrix.units) || typeof matrix.cells !== "object") {
-      errors.push(`${key} matrix missing`);
-      continue;
-    }
+    if (!matrix || !Array.isArray(matrix.units) || typeof matrix.cells !== "object") { errors.push(`${key} matrix missing`); continue; }
     const units = new Set((view?.rows || []).map((row) => row.unit));
-    for (const unit of matrix.units) {
-      if (!units.has(unit)) errors.push(`${key} matrix unit absent from rows: ${unit}`);
-    }
+    for (const unit of matrix.units) if (!units.has(unit)) errors.push(`${key} matrix unit absent from rows: ${unit}`);
   }
   return errors;
 }

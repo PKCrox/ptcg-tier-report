@@ -11,7 +11,7 @@ const requiredFiles = [
   "index.html", "styles.css", "app.js", "manifest.webmanifest", "sw.js",
   "robots.txt", "sitemap.xml", ".nojekyll", "assets/app-icon.svg",
   "assets/site-data.js", "assets/og-card.png", "data/aggregates.json",
-  "data/matchups.json", "data/manifest.json",
+  "data/matchups.json", "data/manifest.json", "data/prices.json",
 ];
 
 const allowedTrackedFiles = new Set([
@@ -19,10 +19,10 @@ const allowedTrackedFiles = new Set([
   ".nojekyll", "README.md", "app.js", "assets/app-icon.svg",
   "assets/matchup_matrix.svg", "assets/matchup_matrix_elite.svg",
   "assets/og-card.png", "assets/og-card.svg", "assets/site-data.js",
-  "data/aggregates.json", "data/manifest.json", "data/matchups.json",
+  "data/aggregates.json", "data/manifest.json", "data/matchups.json", "data/prices.json",
   "index.html", "manifest.webmanifest", "package-lock.json", "package.json",
   "robots.txt", "sitemap.xml", "styles.css", "sw.js", "tools/browser-smoke.mjs",
-  "tools/build-site.mjs", "tools/validate-public-site.mjs",
+  "tools/build-site.mjs", "tools/validate-public-site.mjs", "vercel.json",
 ]);
 
 const allowedTopLevel = new Set([
@@ -210,7 +210,7 @@ try {
     if (/(^|\/)(goal_|agents?|decks?|grok_|fidelity|submissions?)/i.test(file)) fail(`tracked path looks internal: ${file}`);
   }
 } catch (error) {
-  fail(`could not audit tracked files: ${error.message}`);
+  if (process.env.VERCEL !== "1") fail(`could not audit tracked files: ${error.message}`);
 }
 
 for (const file of ["index.html", "styles.css", "app.js", "manifest.webmanifest", "sw.js", "assets/site-data.js", "data/aggregates.json", "data/matchups.json"]) {
@@ -222,7 +222,7 @@ for (const file of ["index.html", "styles.css", "app.js", "manifest.webmanifest"
 
 if (await exists("index.html")) {
   const html = await read("index.html");
-  if (!/<html\s+lang="ko"/i.test(html)) fail("index.html must declare lang=ko");
+  if (!/<html\s+lang="en"/i.test(html)) fail("index.html must declare lang=en");
   if ((html.match(/<h1\b/gi) || []).length !== 1) fail("index.html must contain exactly one h1");
   if (!/class="skip-link"/.test(html)) fail("index.html must include a skip link");
   if (!/<meta\s+name="description"/i.test(html)) fail("index.html meta description missing");

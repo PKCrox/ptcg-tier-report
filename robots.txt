@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pkcrox.github.io/ptcg-tier-report/sitemap.xml
+Sitemap: https://metatcg.vercel.app/sitemap.xml

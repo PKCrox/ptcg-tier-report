@@ -1,299 +1,175 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="586" viewBox="0 0 700 586" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
-<rect width="700" height="586" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="562" height="490" viewBox="0 0 562 490" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect width="562" height="490" fill="#fcfcfb"/>
 <text x="16" y="28" font-size="17" font-weight="700" fill="#0b0b0b">아키타입 상성 매트릭스 — 행(세로) 기준 승률</text>
 <text x="16" y="48" font-size="12" fill="#898781">파랑 = 행 덱이 유리 · 빨강 = 불리 · 표본 8판 미만 칸은 공백 · 점유율순 정렬</text>
 <text x="99" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 99 124)">후딘</text>
-<text x="145" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 145 124)">삐삐 캥카</text>
-<text x="191" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 191 124)">난천 한카리아스</text>
-<text x="237" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 237 124)">조타구 솔록</text>
-<text x="283" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 283 124)">아쿠스타</text>
-<text x="329" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 329 124)">마리 오롱털</text>
-<text x="375" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 375 124)">암팰리스</text>
-<text x="421" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 421 124)">메가루카리오</text>
-<text x="467" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 467 124)">아르카루돈</text>
-<text x="513" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 513 124)">드래펄트</text>
-<text x="559" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 559 124)">호브 백솜모카</text>
-<text x="605" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 605 124)">큐아링 컨트롤</text>
+<text x="145" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 145 124)">마리 오롱털</text>
+<text x="191" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 191 124)">암팰리스</text>
+<text x="237" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 237 124)">Rocket</text>
+<text x="283" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 283 124)">난천 한카리아스</text>
+<text x="329" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 329 124)">드래펄트</text>
+<text x="375" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 375 124)">Thwackey</text>
+<text x="421" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 421 124)">메가이어롭</text>
+<text x="467" y="124" font-size="11" fill="#0b0b0b" text-anchor="start" transform="rotate(-45 467 124)">눈여아</text>
 <text x="68" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="end">후딘</text>
 <rect x="77.0" y="133.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="99.0" y="152.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="123.0" y="133.0" width="44" height="30" rx="3" fill="#e6e9eb"><title>후딘 vs 삐삐 캥카: 51.7% (n=373)</title></rect>
-<text x="145.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">52</text>
-<rect x="169.0" y="133.0" width="44" height="30" rx="3" fill="#c3d4e7"><title>후딘 vs 난천 한카리아스: 58.0% (n=393)</title></rect>
-<text x="191.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">58</text>
-<rect x="215.0" y="133.0" width="44" height="30" rx="3" fill="#bed1e6"><title>후딘 vs 조타구 솔록: 58.9% (n=248)</title></rect>
-<text x="237.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
-<rect x="261.0" y="133.0" width="44" height="30" rx="3" fill="#ecbbb8"><title>후딘 vs 아쿠스타: 39.0% (n=241)</title></rect>
-<text x="283.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">39</text>
-<rect x="307.0" y="133.0" width="44" height="30" rx="3" fill="#edc3c0"><title>후딘 vs 마리 오롱털: 40.6% (n=160)</title></rect>
-<text x="329.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
-<rect x="353.0" y="133.0" width="44" height="30" rx="3" fill="#78a7df"><title>후딘 vs 암팰리스: 71.2% (n=52)</title></rect>
-<text x="375.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">71</text>
-<rect x="399.0" y="133.0" width="44" height="30" rx="3" fill="#eedbd8"><title>후딘 vs 메가루카리오: 45.7% (n=151)</title></rect>
-<text x="421.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">46</text>
-<rect x="445.0" y="133.0" width="44" height="30" rx="3" fill="#eaa4a2"><title>후딘 vs 아르카루돈: 34.3% (n=108)</title></rect>
-<text x="467.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">34</text>
-<rect x="491.0" y="133.0" width="44" height="30" rx="3" fill="#edc6c4"><title>후딘 vs 드래펄트: 41.4% (n=70)</title></rect>
-<text x="513.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
-<rect x="537.0" y="133.0" width="44" height="30" rx="3" fill="#e56766"><title>후딘 vs 호브 백솜모카: 21.4% (n=84)</title></rect>
-<text x="559.0" y="152.0" font-size="11" fill="#ffffff" text-anchor="middle">21</text>
-<rect x="583.0" y="133.0" width="44" height="30" rx="3" fill="#efe7e4"><title>후딘 vs 큐아링 컨트롤: 48.4% (n=31)</title></rect>
-<text x="605.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">48</text>
-<text x="68" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="end">삐삐 캥카</text>
-<rect x="77.0" y="165.0" width="44" height="30" rx="3" fill="#efe7e4"><title>삐삐 캥카 vs 후딘: 48.3% (n=373)</title></rect>
-<text x="99.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">48</text>
+<rect x="123.0" y="133.0" width="44" height="30" rx="3" fill="#eed4d2"><title>후딘 vs 마리 오롱털: 44.4% (n=3494)</title></rect>
+<text x="145.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">44</text>
+<rect x="169.0" y="133.0" width="44" height="30" rx="3" fill="#efefec"><title>후딘 vs 암팰리스: 50.1% (n=2887)</title></rect>
+<text x="191.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">50</text>
+<rect x="215.0" y="133.0" width="44" height="30" rx="3" fill="#ea9e9c"><title>후딘 vs Rocket: 32.9% (n=2058)</title></rect>
+<text x="237.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">33</text>
+<rect x="261.0" y="133.0" width="44" height="30" rx="3" fill="#b1c9e5"><title>후딘 vs 난천 한카리아스: 61.1% (n=1209)</title></rect>
+<text x="283.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">61</text>
+<rect x="307.0" y="133.0" width="44" height="30" rx="3" fill="#efe5e2"><title>후딘 vs 드래펄트: 47.8% (n=347)</title></rect>
+<text x="329.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">48</text>
+<rect x="353.0" y="133.0" width="44" height="30" rx="3" fill="#efe1de"><title>후딘 vs Thwackey: 47.1% (n=408)</title></rect>
+<text x="375.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
+<rect x="399.0" y="133.0" width="44" height="30" rx="3" fill="#7ba9df"><title>후딘 vs 메가이어롭: 70.7% (n=41)</title></rect>
+<text x="421.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">71</text>
+<rect x="445.0" y="133.0" width="44" height="30" rx="3" fill="#b7cde6"><title>후딘 vs 눈여아: 60.0% (n=20)</title></rect>
+<text x="467.0" y="152.0" font-size="11" fill="#0b0b0b" text-anchor="middle">60</text>
+<text x="68" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="end">마리 오롱털</text>
+<rect x="77.0" y="165.0" width="44" height="30" rx="3" fill="#d0dce8"><title>마리 오롱털 vs 후딘: 55.6% (n=3494)</title></rect>
+<text x="99.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">56</text>
 <rect x="123.0" y="165.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="145.0" y="184.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="169.0" y="165.0" width="44" height="30" rx="3" fill="#f0ebe8"><title>삐삐 캥카 vs 난천 한카리아스: 49.2% (n=118)</title></rect>
-<text x="191.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">49</text>
-<rect x="215.0" y="165.0" width="44" height="30" rx="3" fill="#edc9c6"><title>삐삐 캥카 vs 조타구 솔록: 42.0% (n=112)</title></rect>
-<text x="237.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">42</text>
-<rect x="261.0" y="165.0" width="44" height="30" rx="3" fill="#5290da"><title>삐삐 캥카 vs 아쿠스타: 77.9% (n=113)</title></rect>
-<text x="283.0" y="184.0" font-size="11" fill="#ffffff" text-anchor="middle">78</text>
-<rect x="307.0" y="165.0" width="44" height="30" rx="3" fill="#699edd"><title>삐삐 캥카 vs 마리 오롱털: 73.9% (n=115)</title></rect>
-<text x="329.0" y="184.0" font-size="11" fill="#ffffff" text-anchor="middle">74</text>
-<rect x="353.0" y="165.0" width="44" height="30" rx="3" fill="#e34e4c"><title>삐삐 캥카 vs 암팰리스: 16.0% (n=94)</title></rect>
-<text x="375.0" y="184.0" font-size="11" fill="#ffffff" text-anchor="middle">16</text>
-<rect x="399.0" y="165.0" width="44" height="30" rx="3" fill="#9ebee3"><title>삐삐 캥카 vs 메가루카리오: 64.4% (n=45)</title></rect>
-<text x="421.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">64</text>
-<rect x="445.0" y="165.0" width="44" height="30" rx="3" fill="#5290da"><title>삐삐 캥카 vs 아르카루돈: 77.9% (n=68)</title></rect>
-<text x="467.0" y="184.0" font-size="11" fill="#ffffff" text-anchor="middle">78</text>
-<rect x="491.0" y="165.0" width="44" height="30" rx="3" fill="#77a6df"><title>삐삐 캥카 vs 드래펄트: 71.4% (n=14)</title></rect>
-<text x="513.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">71</text>
-<rect x="537.0" y="165.0" width="44" height="30" rx="3" fill="#82ade0"><title>삐삐 캥카 vs 호브 백솜모카: 69.4% (n=36)</title></rect>
-<text x="559.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">69</text>
-<rect x="583.0" y="165.0" width="44" height="30" rx="3" fill="#efdfdc"><title>삐삐 캥카 vs 큐아링 컨트롤: 46.7% (n=15)</title></rect>
-<text x="605.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
-<text x="68" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="end">난천 한카리아스</text>
-<rect x="77.0" y="197.0" width="44" height="30" rx="3" fill="#edc9c6"><title>난천 한카리아스 vs 후딘: 42.0% (n=393)</title></rect>
-<text x="99.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">42</text>
-<rect x="123.0" y="197.0" width="44" height="30" rx="3" fill="#ebeceb"><title>난천 한카리아스 vs 삐삐 캥카: 50.8% (n=118)</title></rect>
-<text x="145.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">51</text>
+<rect x="169.0" y="165.0" width="44" height="30" rx="3" fill="#eaa8a6"><title>마리 오롱털 vs 암팰리스: 35.1% (n=715)</title></rect>
+<text x="191.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">35</text>
+<rect x="215.0" y="165.0" width="44" height="30" rx="3" fill="#b6cce6"><title>마리 오롱털 vs Rocket: 60.2% (n=1157)</title></rect>
+<text x="237.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">60</text>
+<rect x="261.0" y="165.0" width="44" height="30" rx="3" fill="#ebb3b1"><title>마리 오롱털 vs 난천 한카리아스: 37.4% (n=872)</title></rect>
+<text x="283.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">37</text>
+<rect x="307.0" y="165.0" width="44" height="30" rx="3" fill="#dde4ea"><title>마리 오롱털 vs 드래펄트: 53.4% (n=343)</title></rect>
+<text x="329.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
+<rect x="353.0" y="165.0" width="44" height="30" rx="3" fill="#e99997"><title>마리 오롱털 vs Thwackey: 32.0% (n=97)</title></rect>
+<text x="375.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">32</text>
+<rect x="399.0" y="165.0" width="44" height="30" rx="3" fill="#eed9d7"><title>마리 오롱털 vs 메가이어롭: 45.5% (n=33)</title></rect>
+<text x="421.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">45</text>
+<rect x="445.0" y="165.0" width="44" height="30" rx="3" fill="#efe1de"><title>마리 오롱털 vs 눈여아: 47.1% (n=34)</title></rect>
+<text x="467.0" y="184.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
+<text x="68" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="end">암팰리스</text>
+<rect x="77.0" y="197.0" width="44" height="30" rx="3" fill="#f0eeeb"><title>암팰리스 vs 후딘: 49.9% (n=2887)</title></rect>
+<text x="99.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">50</text>
+<rect x="123.0" y="197.0" width="44" height="30" rx="3" fill="#9cbce3"><title>암팰리스 vs 마리 오롱털: 64.9% (n=715)</title></rect>
+<text x="145.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">65</text>
 <rect x="169.0" y="197.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="191.0" y="216.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="215.0" y="197.0" width="44" height="30" rx="3" fill="#bdd0e6"><title>난천 한카리아스 vs 조타구 솔록: 59.0% (n=61)</title></rect>
-<text x="237.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
-<rect x="261.0" y="197.0" width="44" height="30" rx="3" fill="#a6c3e4"><title>난천 한카리아스 vs 아쿠스타: 63.0% (n=73)</title></rect>
-<text x="283.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">63</text>
-<rect x="307.0" y="197.0" width="44" height="30" rx="3" fill="#71a2de"><title>난천 한카리아스 vs 마리 오롱털: 72.5% (n=120)</title></rect>
-<text x="329.0" y="216.0" font-size="11" fill="#ffffff" text-anchor="middle">72</text>
-<rect x="353.0" y="197.0" width="44" height="30" rx="3" fill="#84aee0"><title>난천 한카리아스 vs 암팰리스: 69.1% (n=152)</title></rect>
-<text x="375.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">69</text>
-<rect x="399.0" y="197.0" width="44" height="30" rx="3" fill="#edcfcc"><title>난천 한카리아스 vs 메가루카리오: 43.2% (n=37)</title></rect>
-<text x="421.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">43</text>
-<rect x="445.0" y="197.0" width="44" height="30" rx="3" fill="#3780d7"><title>난천 한카리아스 vs 아르카루돈: 82.8% (n=29)</title></rect>
-<text x="467.0" y="216.0" font-size="11" fill="#ffffff" text-anchor="middle">83</text>
-<rect x="491.0" y="197.0" width="44" height="30" rx="3" fill="#efe3e0"><title>난천 한카리아스 vs 드래펄트: 47.4% (n=19)</title></rect>
-<text x="513.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
-<rect x="537.0" y="197.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="197.0" width="44" height="30" rx="3" fill="#e67170"><title>난천 한카리아스 vs 큐아링 컨트롤: 23.5% (n=17)</title></rect>
-<text x="605.0" y="216.0" font-size="11" fill="#ffffff" text-anchor="middle">24</text>
-<text x="68" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="end">조타구 솔록</text>
-<rect x="77.0" y="229.0" width="44" height="30" rx="3" fill="#edc5c2"><title>조타구 솔록 vs 후딘: 41.1% (n=248)</title></rect>
-<text x="99.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
-<rect x="123.0" y="229.0" width="44" height="30" rx="3" fill="#c3d4e7"><title>조타구 솔록 vs 삐삐 캥카: 58.0% (n=112)</title></rect>
-<text x="145.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">58</text>
-<rect x="169.0" y="229.0" width="44" height="30" rx="3" fill="#edc4c2"><title>조타구 솔록 vs 난천 한카리아스: 41.0% (n=61)</title></rect>
-<text x="191.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
+<rect x="215.0" y="197.0" width="44" height="30" rx="3" fill="#ecb9b7"><title>암팰리스 vs Rocket: 38.7% (n=535)</title></rect>
+<text x="237.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">39</text>
+<rect x="261.0" y="197.0" width="44" height="30" rx="3" fill="#eed9d6"><title>암팰리스 vs 난천 한카리아스: 45.3% (n=254)</title></rect>
+<text x="283.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">45</text>
+<rect x="307.0" y="197.0" width="44" height="30" rx="3" fill="#ebb5b3"><title>암팰리스 vs 드래펄트: 37.7% (n=53)</title></rect>
+<text x="329.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">38</text>
+<rect x="353.0" y="197.0" width="44" height="30" rx="3" fill="#e66c6b"><title>암팰리스 vs Thwackey: 22.4% (n=67)</title></rect>
+<text x="375.0" y="216.0" font-size="11" fill="#ffffff" text-anchor="middle">22</text>
+<rect x="399.0" y="197.0" width="44" height="30" rx="3" fill="#92b6e2"><title>암팰리스 vs 메가이어롭: 66.7% (n=9)</title></rect>
+<text x="421.0" y="216.0" font-size="11" fill="#0b0b0b" text-anchor="middle">67</text>
+<rect x="445.0" y="197.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="68" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="end">Rocket</text>
+<rect x="77.0" y="229.0" width="44" height="30" rx="3" fill="#90b5e1"><title>Rocket vs 후딘: 67.1% (n=2058)</title></rect>
+<text x="99.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">67</text>
+<rect x="123.0" y="229.0" width="44" height="30" rx="3" fill="#ecbebc"><title>Rocket vs 마리 오롱털: 39.8% (n=1157)</title></rect>
+<text x="145.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">40</text>
+<rect x="169.0" y="229.0" width="44" height="30" rx="3" fill="#b0c9e5"><title>Rocket vs 암팰리스: 61.3% (n=535)</title></rect>
+<text x="191.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">61</text>
 <rect x="215.0" y="229.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="237.0" y="248.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="261.0" y="229.0" width="44" height="30" rx="3" fill="#e88785"><title>조타구 솔록 vs 아쿠스타: 28.0% (n=157)</title></rect>
-<text x="283.0" y="248.0" font-size="11" fill="#ffffff" text-anchor="middle">28</text>
-<rect x="307.0" y="229.0" width="44" height="30" rx="3" fill="#efe6e3"><title>조타구 솔록 vs 마리 오롱털: 48.0% (n=100)</title></rect>
-<text x="329.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">48</text>
-<rect x="353.0" y="229.0" width="44" height="30" rx="3" fill="#b3cae5"><title>조타구 솔록 vs 암팰리스: 60.8% (n=79)</title></rect>
-<text x="375.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">61</text>
-<rect x="399.0" y="229.0" width="44" height="30" rx="3" fill="#eaeceb"><title>조타구 솔록 vs 메가루카리오: 51.0% (n=49)</title></rect>
-<text x="421.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">51</text>
-<rect x="445.0" y="229.0" width="44" height="30" rx="3" fill="#2a78d6"><title>조타구 솔록 vs 아르카루돈: 88.0% (n=75)</title></rect>
-<text x="467.0" y="248.0" font-size="11" fill="#ffffff" text-anchor="middle">88</text>
-<rect x="491.0" y="229.0" width="44" height="30" rx="3" fill="#ecb7b4"><title>조타구 솔록 vs 드래펄트: 38.1% (n=42)</title></rect>
-<text x="513.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">38</text>
-<rect x="537.0" y="229.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="229.0" width="44" height="30" rx="3" fill="#c8d7e8"><title>조타구 솔록 vs 큐아링 컨트롤: 57.1% (n=14)</title></rect>
-<text x="605.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">57</text>
-<text x="68" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="end">아쿠스타</text>
-<rect x="77.0" y="261.0" width="44" height="30" rx="3" fill="#b2cae5"><title>아쿠스타 vs 후딘: 61.0% (n=241)</title></rect>
-<text x="99.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">61</text>
-<rect x="123.0" y="261.0" width="44" height="30" rx="3" fill="#e66b69"><title>아쿠스타 vs 삐삐 캥카: 22.1% (n=113)</title></rect>
-<text x="145.0" y="280.0" font-size="11" fill="#ffffff" text-anchor="middle">22</text>
-<rect x="169.0" y="261.0" width="44" height="30" rx="3" fill="#ebb1af"><title>아쿠스타 vs 난천 한카리아스: 37.0% (n=73)</title></rect>
-<text x="191.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">37</text>
-<rect x="215.0" y="261.0" width="44" height="30" rx="3" fill="#74a4de"><title>아쿠스타 vs 조타구 솔록: 72.0% (n=157)</title></rect>
-<text x="237.0" y="280.0" font-size="11" fill="#ffffff" text-anchor="middle">72</text>
+<rect x="261.0" y="229.0" width="44" height="30" rx="3" fill="#ebb1af"><title>Rocket vs 난천 한카리아스: 36.9% (n=474)</title></rect>
+<text x="283.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">37</text>
+<rect x="307.0" y="229.0" width="44" height="30" rx="3" fill="#ea9c9a"><title>Rocket vs 드래펄트: 32.6% (n=181)</title></rect>
+<text x="329.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">33</text>
+<rect x="353.0" y="229.0" width="44" height="30" rx="3" fill="#d7e0e9"><title>Rocket vs Thwackey: 54.4% (n=103)</title></rect>
+<text x="375.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">54</text>
+<rect x="399.0" y="229.0" width="44" height="30" rx="3" fill="#edcdcb"><title>Rocket vs 메가이어롭: 42.9% (n=21)</title></rect>
+<text x="421.0" y="248.0" font-size="11" fill="#0b0b0b" text-anchor="middle">43</text>
+<rect x="445.0" y="229.0" width="44" height="30" rx="3" fill="#e34948"><title>Rocket vs 눈여아: 0.0% (n=15)</title></rect>
+<text x="467.0" y="248.0" font-size="11" fill="#ffffff" text-anchor="middle">0</text>
+<text x="68" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="end">난천 한카리아스</text>
+<rect x="77.0" y="261.0" width="44" height="30" rx="3" fill="#ecbab8"><title>난천 한카리아스 vs 후딘: 38.9% (n=1209)</title></rect>
+<text x="99.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">39</text>
+<rect x="123.0" y="261.0" width="44" height="30" rx="3" fill="#a9c4e4"><title>난천 한카리아스 vs 마리 오롱털: 62.6% (n=872)</title></rect>
+<text x="145.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">63</text>
+<rect x="169.0" y="261.0" width="44" height="30" rx="3" fill="#d5dfe9"><title>난천 한카리아스 vs 암팰리스: 54.7% (n=254)</title></rect>
+<text x="191.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">55</text>
+<rect x="215.0" y="261.0" width="44" height="30" rx="3" fill="#a6c3e4"><title>난천 한카리아스 vs Rocket: 63.1% (n=474)</title></rect>
+<text x="237.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">63</text>
 <rect x="261.0" y="261.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="283.0" y="280.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="307.0" y="261.0" width="44" height="30" rx="3" fill="#ea9e9c"><title>아쿠스타 vs 마리 오롱털: 32.9% (n=73)</title></rect>
-<text x="329.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">33</text>
-<rect x="353.0" y="261.0" width="44" height="30" rx="3" fill="#2a78d6"><title>아쿠스타 vs 암팰리스: 89.8% (n=59)</title></rect>
-<text x="375.0" y="280.0" font-size="11" fill="#ffffff" text-anchor="middle">90</text>
-<rect x="399.0" y="261.0" width="44" height="30" rx="3" fill="#e9918f"><title>아쿠스타 vs 메가루카리오: 30.2% (n=43)</title></rect>
-<text x="421.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">30</text>
-<rect x="445.0" y="261.0" width="44" height="30" rx="3" fill="#f0efec"><title>아쿠스타 vs 아르카루돈: 50.0% (n=78)</title></rect>
-<text x="467.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">50</text>
-<rect x="491.0" y="261.0" width="44" height="30" rx="3" fill="#eed9d7"><title>아쿠스타 vs 드래펄트: 45.5% (n=22)</title></rect>
-<text x="513.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">45</text>
-<rect x="537.0" y="261.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="261.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="68" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="end">마리 오롱털</text>
-<rect x="77.0" y="293.0" width="44" height="30" rx="3" fill="#bbcfe6"><title>마리 오롱털 vs 후딘: 59.4% (n=160)</title></rect>
-<text x="99.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
-<rect x="123.0" y="293.0" width="44" height="30" rx="3" fill="#e77e7c"><title>마리 오롱털 vs 삐삐 캥카: 26.1% (n=115)</title></rect>
-<text x="145.0" y="312.0" font-size="11" fill="#ffffff" text-anchor="middle">26</text>
-<rect x="169.0" y="293.0" width="44" height="30" rx="3" fill="#e88483"><title>마리 오롱털 vs 난천 한카리아스: 27.5% (n=120)</title></rect>
-<text x="191.0" y="312.0" font-size="11" fill="#ffffff" text-anchor="middle">28</text>
-<rect x="215.0" y="293.0" width="44" height="30" rx="3" fill="#e5e8eb"><title>마리 오롱털 vs 조타구 솔록: 52.0% (n=100)</title></rect>
-<text x="237.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">52</text>
-<rect x="261.0" y="293.0" width="44" height="30" rx="3" fill="#8fb5e1"><title>마리 오롱털 vs 아쿠스타: 67.1% (n=73)</title></rect>
-<text x="283.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">67</text>
+<rect x="307.0" y="261.0" width="44" height="30" rx="3" fill="#d2dde9"><title>난천 한카리아스 vs 드래펄트: 55.3% (n=103)</title></rect>
+<text x="329.0" y="280.0" font-size="11" fill="#0b0b0b" text-anchor="middle">55</text>
+<rect x="353.0" y="261.0" width="44" height="30" rx="3" fill="#e77877"><title>난천 한카리아스 vs Thwackey: 25.0% (n=60)</title></rect>
+<text x="375.0" y="280.0" font-size="11" fill="#ffffff" text-anchor="middle">25</text>
+<rect x="399.0" y="261.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="445.0" y="261.0" width="44" height="30" rx="3" fill="#2a78d6"><title>난천 한카리아스 vs 눈여아: 88.9% (n=9)</title></rect>
+<text x="467.0" y="280.0" font-size="11" fill="#ffffff" text-anchor="middle">89</text>
+<text x="68" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="end">드래펄트</text>
+<rect x="77.0" y="293.0" width="44" height="30" rx="3" fill="#e4e8eb"><title>드래펄트 vs 후딘: 52.2% (n=347)</title></rect>
+<text x="99.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">52</text>
+<rect x="123.0" y="293.0" width="44" height="30" rx="3" fill="#efdfdc"><title>드래펄트 vs 마리 오롱털: 46.6% (n=343)</title></rect>
+<text x="145.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
+<rect x="169.0" y="293.0" width="44" height="30" rx="3" fill="#abc5e4"><title>드래펄트 vs 암팰리스: 62.3% (n=53)</title></rect>
+<text x="191.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">62</text>
+<rect x="215.0" y="293.0" width="44" height="30" rx="3" fill="#8eb4e1"><title>드래펄트 vs Rocket: 67.4% (n=181)</title></rect>
+<text x="237.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">67</text>
+<rect x="261.0" y="293.0" width="44" height="30" rx="3" fill="#eed6d3"><title>드래펄트 vs 난천 한카리아스: 44.7% (n=103)</title></rect>
+<text x="283.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">45</text>
 <rect x="307.0" y="293.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="329.0" y="312.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="353.0" y="293.0" width="44" height="30" rx="3" fill="#dde4ea"><title>마리 오롱털 vs 암팰리스: 53.3% (n=30)</title></rect>
-<text x="375.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
-<rect x="399.0" y="293.0" width="44" height="30" rx="3" fill="#eedbd8"><title>마리 오롱털 vs 메가루카리오: 45.7% (n=70)</title></rect>
-<text x="421.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">46</text>
-<rect x="445.0" y="293.0" width="44" height="30" rx="3" fill="#dae2ea"><title>마리 오롱털 vs 아르카루돈: 53.8% (n=39)</title></rect>
-<text x="467.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">54</text>
-<rect x="491.0" y="293.0" width="44" height="30" rx="3" fill="#d6e0e9"><title>마리 오롱털 vs 드래펄트: 54.5% (n=33)</title></rect>
-<text x="513.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">55</text>
-<rect x="537.0" y="293.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="293.0" width="44" height="30" rx="3" fill="#adc7e5"><title>마리 오롱털 vs 큐아링 컨트롤: 61.9% (n=21)</title></rect>
-<text x="605.0" y="312.0" font-size="11" fill="#0b0b0b" text-anchor="middle">62</text>
-<text x="68" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="end">암팰리스</text>
-<rect x="77.0" y="325.0" width="44" height="30" rx="3" fill="#e88b89"><title>암팰리스 vs 후딘: 28.8% (n=52)</title></rect>
-<text x="99.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">29</text>
-<rect x="123.0" y="325.0" width="44" height="30" rx="3" fill="#2f7bd7"><title>암팰리스 vs 삐삐 캥카: 84.0% (n=94)</title></rect>
-<text x="145.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">84</text>
-<rect x="169.0" y="325.0" width="44" height="30" rx="3" fill="#e99593"><title>암팰리스 vs 난천 한카리아스: 30.9% (n=152)</title></rect>
-<text x="191.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">31</text>
-<rect x="215.0" y="325.0" width="44" height="30" rx="3" fill="#ecbcba"><title>암팰리스 vs 조타구 솔록: 39.2% (n=79)</title></rect>
-<text x="237.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">39</text>
-<rect x="261.0" y="325.0" width="44" height="30" rx="3" fill="#e34948"><title>암팰리스 vs 아쿠스타: 10.2% (n=59)</title></rect>
-<text x="283.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">10</text>
-<rect x="307.0" y="325.0" width="44" height="30" rx="3" fill="#efdfdc"><title>암팰리스 vs 마리 오롱털: 46.7% (n=30)</title></rect>
-<text x="329.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">47</text>
+<rect x="353.0" y="293.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="399.0" y="293.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="445.0" y="293.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="68" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="end">Thwackey</text>
+<rect x="77.0" y="325.0" width="44" height="30" rx="3" fill="#dfe5ea"><title>Thwackey vs 후딘: 52.9% (n=408)</title></rect>
+<text x="99.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
+<rect x="123.0" y="325.0" width="44" height="30" rx="3" fill="#8ab2e1"><title>Thwackey vs 마리 오롱털: 68.0% (n=97)</title></rect>
+<text x="145.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">68</text>
+<rect x="169.0" y="325.0" width="44" height="30" rx="3" fill="#5491db"><title>Thwackey vs 암팰리스: 77.6% (n=67)</title></rect>
+<text x="191.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">78</text>
+<rect x="215.0" y="325.0" width="44" height="30" rx="3" fill="#eedad8"><title>Thwackey vs Rocket: 45.6% (n=103)</title></rect>
+<text x="237.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">46</text>
+<rect x="261.0" y="325.0" width="44" height="30" rx="3" fill="#639adc"><title>Thwackey vs 난천 한카리아스: 75.0% (n=60)</title></rect>
+<text x="283.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">75</text>
+<rect x="307.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <rect x="353.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="375.0" y="344.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="399.0" y="325.0" width="44" height="30" rx="3" fill="#72a3de"><title>암팰리스 vs 메가루카리오: 72.2% (n=36)</title></rect>
-<text x="421.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">72</text>
-<rect x="445.0" y="325.0" width="44" height="30" rx="3" fill="#4689d9"><title>암팰리스 vs 아르카루돈: 80.0% (n=10)</title></rect>
-<text x="467.0" y="344.0" font-size="11" fill="#ffffff" text-anchor="middle">80</text>
-<rect x="491.0" y="325.0" width="44" height="30" rx="3" fill="#edc4c1"><title>암팰리스 vs 드래펄트: 40.9% (n=22)</title></rect>
-<text x="513.0" y="344.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
-<rect x="537.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="68" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="end">메가루카리오</text>
-<rect x="77.0" y="357.0" width="44" height="30" rx="3" fill="#d8e0e9"><title>메가루카리오 vs 후딘: 54.3% (n=151)</title></rect>
-<text x="99.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">54</text>
-<rect x="123.0" y="357.0" width="44" height="30" rx="3" fill="#ebaaa8"><title>메가루카리오 vs 삐삐 캥카: 35.6% (n=45)</title></rect>
-<text x="145.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">36</text>
-<rect x="169.0" y="357.0" width="44" height="30" rx="3" fill="#cad8e8"><title>메가루카리오 vs 난천 한카리아스: 56.8% (n=37)</title></rect>
-<text x="191.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">57</text>
-<rect x="215.0" y="357.0" width="44" height="30" rx="3" fill="#f0eae7"><title>메가루카리오 vs 조타구 솔록: 49.0% (n=49)</title></rect>
-<text x="237.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">49</text>
-<rect x="261.0" y="357.0" width="44" height="30" rx="3" fill="#80ace0"><title>메가루카리오 vs 아쿠스타: 69.8% (n=43)</title></rect>
-<text x="283.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">70</text>
-<rect x="307.0" y="357.0" width="44" height="30" rx="3" fill="#d8e0e9"><title>메가루카리오 vs 마리 오롱털: 54.3% (n=70)</title></rect>
-<text x="329.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">54</text>
-<rect x="353.0" y="357.0" width="44" height="30" rx="3" fill="#e88684"><title>메가루카리오 vs 암팰리스: 27.8% (n=36)</title></rect>
-<text x="375.0" y="376.0" font-size="11" fill="#ffffff" text-anchor="middle">28</text>
+<rect x="399.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="445.0" y="325.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="68" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="end">메가이어롭</text>
+<rect x="77.0" y="357.0" width="44" height="30" rx="3" fill="#e88d8b"><title>메가이어롭 vs 후딘: 29.3% (n=41)</title></rect>
+<text x="99.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">29</text>
+<rect x="123.0" y="357.0" width="44" height="30" rx="3" fill="#d6e0e9"><title>메가이어롭 vs 마리 오롱털: 54.5% (n=33)</title></rect>
+<text x="145.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">55</text>
+<rect x="169.0" y="357.0" width="44" height="30" rx="3" fill="#eaa09e"><title>메가이어롭 vs 암팰리스: 33.3% (n=9)</title></rect>
+<text x="191.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">33</text>
+<rect x="215.0" y="357.0" width="44" height="30" rx="3" fill="#c8d7e8"><title>메가이어롭 vs Rocket: 57.1% (n=21)</title></rect>
+<text x="237.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">57</text>
+<rect x="261.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="307.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="353.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <rect x="399.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="421.0" y="376.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="445.0" y="357.0" width="44" height="30" rx="3" fill="#edc3c0"><title>메가루카리오 vs 아르카루돈: 40.6% (n=32)</title></rect>
-<text x="467.0" y="376.0" font-size="11" fill="#0b0b0b" text-anchor="middle">41</text>
-<rect x="491.0" y="357.0" width="44" height="30" rx="3" fill="#4689d9"><title>메가루카리오 vs 드래펄트: 80.0% (n=10)</title></rect>
-<text x="513.0" y="376.0" font-size="11" fill="#ffffff" text-anchor="middle">80</text>
-<rect x="537.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="357.0" width="44" height="30" rx="3" fill="#e45654"><title>메가루카리오 vs 큐아링 컨트롤: 17.6% (n=17)</title></rect>
-<text x="605.0" y="376.0" font-size="11" fill="#ffffff" text-anchor="middle">18</text>
-<text x="68" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="end">아르카루돈</text>
-<rect x="77.0" y="389.0" width="44" height="30" rx="3" fill="#97b9e2"><title>아르카루돈 vs 후딘: 65.7% (n=108)</title></rect>
-<text x="99.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">66</text>
-<rect x="123.0" y="389.0" width="44" height="30" rx="3" fill="#e66a69"><title>아르카루돈 vs 삐삐 캥카: 22.1% (n=68)</title></rect>
-<text x="145.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">22</text>
-<rect x="169.0" y="389.0" width="44" height="30" rx="3" fill="#e45453"><title>아르카루돈 vs 난천 한카리아스: 17.2% (n=29)</title></rect>
-<text x="191.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">17</text>
-<rect x="215.0" y="389.0" width="44" height="30" rx="3" fill="#e34948"><title>아르카루돈 vs 조타구 솔록: 12.0% (n=75)</title></rect>
-<text x="237.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">12</text>
-<rect x="261.0" y="389.0" width="44" height="30" rx="3" fill="#f0efec"><title>아르카루돈 vs 아쿠스타: 50.0% (n=78)</title></rect>
-<text x="283.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">50</text>
-<rect x="307.0" y="389.0" width="44" height="30" rx="3" fill="#efddda"><title>아르카루돈 vs 마리 오롱털: 46.2% (n=39)</title></rect>
-<text x="329.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">46</text>
-<rect x="353.0" y="389.0" width="44" height="30" rx="3" fill="#e5615f"><title>아르카루돈 vs 암팰리스: 20.0% (n=10)</title></rect>
-<text x="375.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">20</text>
-<rect x="399.0" y="389.0" width="44" height="30" rx="3" fill="#bbcfe6"><title>아르카루돈 vs 메가루카리오: 59.4% (n=32)</title></rect>
-<text x="421.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
+<rect x="445.0" y="357.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="68" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="end">눈여아</text>
+<rect x="77.0" y="389.0" width="44" height="30" rx="3" fill="#ecc0bd"><title>눈여아 vs 후딘: 40.0% (n=20)</title></rect>
+<text x="99.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">40</text>
+<rect x="123.0" y="389.0" width="44" height="30" rx="3" fill="#dfe5ea"><title>눈여아 vs 마리 오롱털: 52.9% (n=34)</title></rect>
+<text x="145.0" y="408.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
+<rect x="169.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="215.0" y="389.0" width="44" height="30" rx="3" fill="#2a78d6"><title>눈여아 vs Rocket: 100.0% (n=15)</title></rect>
+<text x="237.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">100</text>
+<rect x="261.0" y="389.0" width="44" height="30" rx="3" fill="#e34948"><title>눈여아 vs 난천 한카리아스: 11.1% (n=9)</title></rect>
+<text x="283.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">11</text>
+<rect x="307.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="353.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
+<rect x="399.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <rect x="445.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
 <text x="467.0" y="408.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="491.0" y="389.0" width="44" height="30" rx="3" fill="#e34948"><title>아르카루돈 vs 드래펄트: 15.0% (n=20)</title></rect>
-<text x="513.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">15</text>
-<rect x="537.0" y="389.0" width="44" height="30" rx="3" fill="#72a3de"><title>아르카루돈 vs 호브 백솜모카: 72.2% (n=18)</title></rect>
-<text x="559.0" y="408.0" font-size="11" fill="#ffffff" text-anchor="middle">72</text>
-<rect x="583.0" y="389.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="68" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="end">드래펄트</text>
-<rect x="77.0" y="421.0" width="44" height="30" rx="3" fill="#c0d2e7"><title>드래펄트 vs 후딘: 58.6% (n=70)</title></rect>
-<text x="99.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
-<rect x="123.0" y="421.0" width="44" height="30" rx="3" fill="#e88988"><title>드래펄트 vs 삐삐 캥카: 28.6% (n=14)</title></rect>
-<text x="145.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">29</text>
-<rect x="169.0" y="421.0" width="44" height="30" rx="3" fill="#e1e6ea"><title>드래펄트 vs 난천 한카리아스: 52.6% (n=19)</title></rect>
-<text x="191.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
-<rect x="215.0" y="421.0" width="44" height="30" rx="3" fill="#adc7e5"><title>드래펄트 vs 조타구 솔록: 61.9% (n=42)</title></rect>
-<text x="237.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">62</text>
-<rect x="261.0" y="421.0" width="44" height="30" rx="3" fill="#d6e0e9"><title>드래펄트 vs 아쿠스타: 54.5% (n=22)</title></rect>
-<text x="283.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">55</text>
-<rect x="307.0" y="421.0" width="44" height="30" rx="3" fill="#eed9d7"><title>드래펄트 vs 마리 오롱털: 45.5% (n=33)</title></rect>
-<text x="329.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">45</text>
-<rect x="353.0" y="421.0" width="44" height="30" rx="3" fill="#bdd0e6"><title>드래펄트 vs 암팰리스: 59.1% (n=22)</title></rect>
-<text x="375.0" y="440.0" font-size="11" fill="#0b0b0b" text-anchor="middle">59</text>
-<rect x="399.0" y="421.0" width="44" height="30" rx="3" fill="#e5615f"><title>드래펄트 vs 메가루카리오: 20.0% (n=10)</title></rect>
-<text x="421.0" y="440.0" font-size="11" fill="#ffffff" text-anchor="middle">20</text>
-<rect x="445.0" y="421.0" width="44" height="30" rx="3" fill="#2a78d6"><title>드래펄트 vs 아르카루돈: 85.0% (n=20)</title></rect>
-<text x="467.0" y="440.0" font-size="11" fill="#ffffff" text-anchor="middle">85</text>
-<rect x="491.0" y="421.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="513.0" y="440.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="537.0" y="421.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="421.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="68" y="472.0" font-size="11" fill="#0b0b0b" text-anchor="end">호브 백솜모카</text>
-<rect x="77.0" y="453.0" width="44" height="30" rx="3" fill="#4e8eda"><title>호브 백솜모카 vs 후딘: 78.6% (n=84)</title></rect>
-<text x="99.0" y="472.0" font-size="11" fill="#ffffff" text-anchor="middle">79</text>
-<rect x="123.0" y="453.0" width="44" height="30" rx="3" fill="#e99391"><title>호브 백솜모카 vs 삐삐 캥카: 30.6% (n=36)</title></rect>
-<text x="145.0" y="472.0" font-size="11" fill="#0b0b0b" text-anchor="middle">31</text>
-<rect x="169.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="215.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="261.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="307.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="353.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="399.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="445.0" y="453.0" width="44" height="30" rx="3" fill="#e88684"><title>호브 백솜모카 vs 아르카루돈: 27.8% (n=18)</title></rect>
-<text x="467.0" y="472.0" font-size="11" fill="#ffffff" text-anchor="middle">28</text>
-<rect x="491.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="537.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="559.0" y="472.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
-<rect x="583.0" y="453.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="68" y="504.0" font-size="11" fill="#0b0b0b" text-anchor="end">큐아링 컨트롤</text>
-<rect x="77.0" y="485.0" width="44" height="30" rx="3" fill="#e7eaeb"><title>큐아링 컨트롤 vs 후딘: 51.6% (n=31)</title></rect>
-<text x="99.0" y="504.0" font-size="11" fill="#0b0b0b" text-anchor="middle">52</text>
-<rect x="123.0" y="485.0" width="44" height="30" rx="3" fill="#dde4ea"><title>큐아링 컨트롤 vs 삐삐 캥카: 53.3% (n=15)</title></rect>
-<text x="145.0" y="504.0" font-size="11" fill="#0b0b0b" text-anchor="middle">53</text>
-<rect x="169.0" y="485.0" width="44" height="30" rx="3" fill="#5a95db"><title>큐아링 컨트롤 vs 난천 한카리아스: 76.5% (n=17)</title></rect>
-<text x="191.0" y="504.0" font-size="11" fill="#ffffff" text-anchor="middle">76</text>
-<rect x="215.0" y="485.0" width="44" height="30" rx="3" fill="#edcdcb"><title>큐아링 컨트롤 vs 조타구 솔록: 42.9% (n=14)</title></rect>
-<text x="237.0" y="504.0" font-size="11" fill="#0b0b0b" text-anchor="middle">43</text>
-<rect x="261.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="307.0" y="485.0" width="44" height="30" rx="3" fill="#ecb7b4"><title>큐아링 컨트롤 vs 마리 오롱털: 38.1% (n=21)</title></rect>
-<text x="329.0" y="504.0" font-size="11" fill="#0b0b0b" text-anchor="middle">38</text>
-<rect x="353.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="399.0" y="485.0" width="44" height="30" rx="3" fill="#3981d8"><title>큐아링 컨트롤 vs 메가루카리오: 82.4% (n=17)</title></rect>
-<text x="421.0" y="504.0" font-size="11" fill="#ffffff" text-anchor="middle">82</text>
-<rect x="445.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="491.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="537.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<rect x="583.0" y="485.0" width="44" height="30" rx="3" fill="#fcfcfb" stroke="#e1e0d9"/>
-<text x="605.0" y="504.0" font-size="11" fill="#898781" text-anchor="middle">·</text>
 <defs><linearGradient id="dv" x1="0" x2="1"><stop offset="0" stop-color="#e34948"/><stop offset="0.5" stop-color="#f0efec"/><stop offset="1" stop-color="#2a78d6"/></linearGradient></defs>
-<rect x="76" y="550" width="220" height="10" rx="3" fill="url(#dv)"/>
-<text x="76.0" y="574" font-size="10" fill="#898781" text-anchor="middle">15%</text>
-<text x="186.0" y="574" font-size="10" fill="#898781" text-anchor="middle">50%</text>
-<text x="296.0" y="574" font-size="10" fill="#898781" text-anchor="middle">85%</text>
-<text x="308" y="559" font-size="11" fill="#898781">행 기준 승률</text>
+<rect x="76" y="454" width="220" height="10" rx="3" fill="url(#dv)"/>
+<text x="76.0" y="478" font-size="10" fill="#898781" text-anchor="middle">15%</text>
+<text x="186.0" y="478" font-size="10" fill="#898781" text-anchor="middle">50%</text>
+<text x="296.0" y="478" font-size="10" fill="#898781" text-anchor="middle">85%</text>
+<text x="308" y="463" font-size="11" fill="#898781">행 기준 승률</text>
 </svg>

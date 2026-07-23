@@ -3,6 +3,15 @@ import { access, mkdtemp, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 
+if (typeof globalThis.WebSocket === "undefined") {
+  try {
+    const { WebSocket } = await import("ws");
+    globalThis.WebSocket = WebSocket;
+  } catch {
+    throw new Error("browser QA requires Node 22+ or the optional 'ws' package");
+  }
+}
+
 const baseUrl = process.env.QA_URL || "http://127.0.0.1:4173/";
 const chromeCandidates = [
   process.env.CHROME_BIN,
@@ -183,7 +192,7 @@ try {
   await evaluate("document.querySelector('#tiers').scrollIntoView({block:'start'})");
   await delay(150);
   await screenshot("/tmp/ptcg-qa-tiers.png");
-  await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = '삐삐'; input.dispatchEvent(new Event('input', {bubbles:true})); return true; })()`);
+  await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = 'Clefairy'; input.dispatchEvent(new Event('input', {bubbles:true})); return true; })()`);
   await waitFor(`document.querySelectorAll('.deck-card').length > 0 && document.querySelectorAll('.deck-card').length < ${expectedCounts.main}`, "search-filtered cards");
   await evaluate(`(() => { const input = document.querySelector('#deck-search'); input.value = ''; input.dispatchEvent(new Event('input', {bubbles:true})); const view = document.querySelector('#view-select'); view.value='high'; view.dispatchEvent(new Event('change',{bubbles:true})); return true; })()`);
   await waitFor(`document.querySelectorAll('.deck-card').length === ${expectedCounts.high}`, "high (1000+) view cards");

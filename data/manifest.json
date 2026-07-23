@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at_kst": "2026-07-10 17:38 KST",
+  "generated_at_kst": "2026-07-23 14:00 KST",
   "files": {
     "aggregates.json": {
-      "bytes": 522433,
-      "sha256": "4b1a37cab9d38daa89e747a4f2bd477e709f42267af8884d6f1482e9f896baba"
+      "bytes": 467733,
+      "sha256": "8e74c2058dbb0a80dd57be9c516a5ef6437e64e21b85d1e9dd8f679522e06eb0"
     },
     "matchups.json": {
-      "bytes": 482514,
-      "sha256": "f90cc6f014b09b426a7b3d7f57b38f9f11c44b815e9adb3cf72037f8ac86448f"
+      "bytes": 364672,
+      "sha256": "b74f07b589cdb28e18f0051e7653077575e3f71c3a6c1561c70d76415eb9c770"
     }
   }
 }

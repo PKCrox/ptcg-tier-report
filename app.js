@@ -3,12 +3,14 @@ import {
   TIER_META,
   archetypeDistribution,
   confidenceFor,
+  deriveInsights,
   filterAndSortRows,
   formatNumber,
   formatPercent,
   matchupResult,
   rowMap,
   shortDeckName,
+  strategyNames,
   validateDatasetShape,
   viewLabel,
 } from "./assets/site-data.js";
@@ -16,6 +18,7 @@ import {
 const DATA_URLS = {
   aggregates: "./data/aggregates.json",
   matchups: "./data/matchups.json",
+  prices: "./data/prices.json",
 };
 
 const TIER_ORDER = ["S", "A", "B", "C"];
@@ -24,6 +27,7 @@ const state = {
   aggregates: null,
   matchups: null,
   matchupsPromise: null,
+  prices: null,
   view: "main",
   tier: "all",
   sort: "bt",
@@ -38,7 +42,7 @@ const els = {};
 
 function cacheElements() {
   for (const id of [
-    "theme-toggle", "freshness-line", "distribution-list",
+    "theme-toggle", "signal-board", "distribution-list",
     "band-row", "deck-search", "view-select", "sort-select", "result-count",
     "deck-grid", "matchup-a", "matchup-b", "swap-matchup", "matchup-result",
     "deck-dialog", "dialog-close", "dialog-content", "method-diagnostics",
@@ -75,14 +79,14 @@ function confidenceBadge(confidence) {
 function rowEvidence(row) {
   const share = Number(row?.top_team_share || 0);
   const teams = Number(row?.team_count || 0);
-  const detail = `판의 ${formatPercent(share)}가 최다 사용 한 팀 몫 · 쓴 팀 ${formatNumber(teams)}개`;
+  const detail = `The most active team supplied ${formatPercent(share)} of games · ${formatNumber(teams)} teams played this variant`;
   if (teams < 3 || share >= 0.8) {
-    return { key: "low", label: "한 팀 위주", description: detail };
+    return { key: "low", label: "Pilot concentrated", description: detail };
   }
   if (share >= 0.5) {
-    return { key: "medium", label: "소수 팀 위주", description: detail };
+    return { key: "medium", label: "Few pilots", description: detail };
   }
-  return { key: "high", label: "여러 팀 사용", description: detail };
+  return { key: "high", label: "Broad pilot base", description: detail };
 }
 
 function currentView() {
@@ -128,7 +132,7 @@ async function ensureMatchups() {
 }
 
 function setupTheme() {
-  const stored = localStorage.getItem("ptcg-theme");
+  const stored = localStorage.getItem("metatcg-theme") || localStorage.getItem("ptcg-theme");
   const preferred = window.matchMedia?.("(prefers-color-scheme: light)").matches ? "light" : "dark";
   const theme = stored || preferred;
   document.documentElement.dataset.theme = theme;
@@ -137,7 +141,7 @@ function setupTheme() {
   els["theme-toggle"].addEventListener("click", () => {
     const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
-    localStorage.setItem("ptcg-theme", next);
+    localStorage.setItem("metatcg-theme", next);
     updateThemeButton(next);
   });
 }
@@ -145,22 +149,26 @@ function setupTheme() {
 function updateThemeButton(theme) {
   const isLight = theme === "light";
   els["theme-toggle"].setAttribute("aria-pressed", String(isLight));
-  els["theme-toggle"].setAttribute("aria-label", isLight ? "어두운 테마로 전환" : "밝은 테마로 전환");
+  els["theme-toggle"].setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
 }
 
-function freshnessLabel(generatedAtKst) {
-  const generated = String(generatedAtKst || "").slice(0, 10);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(generated)) return "갱신 시점 미상";
-  const todayKst = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" }).format(new Date());
-  const days = Math.round((new Date(todayKst) - new Date(generated)) / 86400000);
-  if (days <= 0) return "오늘 갱신";
-  if (days === 1) return "어제 갱신";
-  return `${days}일 전 갱신`;
-}
 
-function renderMeta() {
-  els["freshness-line"].innerHTML =
-    `<span aria-hidden="true"></span>${escapeHtml(freshnessLabel(state.aggregates.generated_at_kst))}`;
+function renderOverview() {
+  const insights = deriveInsights(state.aggregates);
+  const signals = [
+    { label: "META LEADER", row: insights.strongest, value: insights.strongest ? formatPercent(insights.strongest.bt_wr_shrunk) : "—", note: "Meta Score" },
+    { label: "MOST PLAYED", row: insights.mostPlayed, value: insights.mostPlayed ? formatPercent(insights.mostPlayed.pick_rate) : "—", note: "Overall meta share" },
+    { label: "TOP 50 LEADER", row: insights.eliteLeader, value: insights.eliteLeader ? formatPercent(insights.eliteLeader.bt_wr_shrunk) : "—", note: "Top 50 Meta Score" },
+  ];
+  els["signal-board"].innerHTML = `
+    <div class="signal-board-head"><div><p class="section-kicker">MARKET SIGNALS</p><h2>Key Meta Signals</h2></div><a href="#tiers">View all decks <span aria-hidden="true">→</span></a></div>
+    <div class="signal-grid">${signals.map((signal, index) => signal.row ? `
+      <button type="button" data-open-unit="${escapeHtml(signal.row.unit)}">
+        <span class="signal-index">0${index + 1}</span>
+        <span class="signal-art">${cardArt(signal.row.main_cards?.[0], { eager: index === 0 })}</span>
+        <span class="signal-copy"><small>${escapeHtml(signal.label)}</small><strong>${escapeHtml(shortDeckName(signal.row))}</strong><em>${escapeHtml(ARCHETYPE_KO[signal.row.l1] || signal.row.l1)}</em></span>
+        <span class="signal-value"><strong>${escapeHtml(signal.value)}</strong><small>${escapeHtml(signal.note)}</small></span>
+      </button>` : "").join("")}</div>`;
 }
 
 function selectedBandSource() {
@@ -172,9 +180,9 @@ function selectedBandSource() {
 function renderBandChips() {
   const bands = state.aggregates.score_bands || [];
   els["band-row"].innerHTML = [
-    `<button class="filter-chip${state.band === "all" ? " is-active" : ""}" type="button" data-band="all" aria-pressed="${state.band === "all"}">전체 (800+)</button>`,
+    `<button class="filter-chip${state.band === "all" ? " is-active" : ""}" type="button" data-band="all" aria-pressed="${state.band === "all"}">All (800+)</button>`,
     ...bands.map((band) => `<button class="filter-chip${state.band === band.band ? " is-active" : ""}" type="button" data-band="${escapeHtml(band.band)}" aria-pressed="${state.band === band.band}">${escapeHtml(band.band)}</button>`),
-    `<span class="result-count">덱 등장 ${formatNumber(selectedBandSource().seats ?? selectedBandSource().games * 2)}회</span>`,
+    `<span class="result-count">${formatNumber(selectedBandSource().seats ?? selectedBandSource().games * 2)} deck appearances</span>`,
   ].join("");
 }
 
@@ -182,7 +190,7 @@ function renderStats() {
   const distribution = archetypeDistribution(selectedBandSource());
   const visible = distribution.slice(0, 10);
   const restRate = distribution.slice(10).reduce((sum, item) => sum + item.rate, 0);
-  if (restRate > 0) visible.push({ key: "other", name: "기타", rate: restRate });
+  if (restRate > 0) visible.push({ key: "other", name: "Other", rate: restRate });
 
   els["distribution-list"].innerHTML = visible.map((item, index) => `
     <div class="distribution-row">
@@ -208,29 +216,31 @@ function renderMethodDiagnostics() {
   const main = state.aggregates.views.main;
   const pilotBound = main.rows.filter((row) => row.team_count < 3 || row.top_team_share >= 0.8).length;
   els["method-diagnostics"].innerHTML = `
-    <span>1번 자리 승률 <strong>${formatPercent(main.seat0_win_rate)}</strong></span>
-    <span>한 팀 위주 덱 <strong>${pilotBound}/${main.rows.length}</strong></span>
-    <span>덱 미분류 비율 <strong>${formatPercent(main.unknown_seat_share)}</strong></span>`;
+    <span>Seat 0 win rate <strong>${formatPercent(main.seat0_win_rate)}</strong></span>
+    <span>Pilot-concentrated variants <strong>${pilotBound}/${main.rows.length}</strong></span>
+    <span>Unclassified seats <strong>${formatPercent(main.unknown_seat_share)}</strong></span>`;
 }
 
 function deckRow(row) {
   const arts = (row.main_cards || []).slice(0, 3).map((card) => cardArt(card)).join("");
   const evidence = rowEvidence(row);
+  const price = deckPrice(row);
   const warn = evidence.key !== "high"
     ? `<span class="row-flag" title="${escapeHtml(`${evidence.label} — ${evidence.description}`)}" aria-label="${escapeHtml(evidence.label)}">⚠</span>`
     : "";
   return `<article class="deck-card">
-    <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="${escapeHtml(shortDeckName(row))} 상세 보기">
+    <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="View details for ${escapeHtml(shortDeckName(row))}">
       <span class="deck-arts">${arts || `<span class="card-placeholder" aria-hidden="true">?</span>`}</span>
       <span class="deck-name">
         <strong>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</strong>
-        <span class="deck-tags">${(row.strategy_tags_ko || []).map((tag) => `<em>${escapeHtml(tag)}</em>`).join("") || "<em>기본형</em>"}</span>
+        <span class="deck-tags">${strategyNames(row).map((tag) => `<em>${escapeHtml(tag)}</em>`).join("") || "<em>Standard</em>"}</span>
       </span>
       <span class="deck-stats">
-        <span class="deck-stat stat-bt tier-text-${escapeHtml(row.tier.toLowerCase())}"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>PKC</small></span>
-        <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>승률</small></span>
-        <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>픽률</small></span>
-        <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>판수</small></span>
+        <span class="deck-stat stat-bt tier-text-${escapeHtml(row.tier.toLowerCase())}"><strong>${formatPercent(row.bt_wr_shrunk)}</strong><small>Meta</small></span>
+        <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>Win</small></span>
+        <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>Share</small></span>
+        <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>Games</small></span>
+        <span class="deck-stat stat-price"><strong>${price.count ? `~$${price.total.toFixed(0)}` : "—"}</strong><small>Price</small></span>
       </span>
       <span class="deck-flag">${warn}</span>
     </button>
@@ -243,10 +253,10 @@ function renderDecks() {
     tier: state.tier,
     sort: state.sort,
   });
-  els["result-count"].textContent = `${rows.length}개 변형`;
+  els["result-count"].textContent = `${rows.length} variants`;
   els["deck-grid"].setAttribute("aria-busy", "false");
   if (!rows.length) {
-    els["deck-grid"].innerHTML = `<div class="empty-state"><span aria-hidden="true">⌕</span><h3>조건에 맞는 덱 없음</h3><button type="button" data-reset-filters>필터 초기화</button></div>`;
+    els["deck-grid"].innerHTML = `<div class="empty-state"><span aria-hidden="true">⌕</span><h3>No matching decks</h3><button type="button" data-reset-filters>Reset filters</button></div>`;
     return;
   }
 
@@ -329,12 +339,12 @@ function matchupDeckMini(row, side) {
   return `<div class="matchup-deck matchup-deck-${side}">
     <div class="matchup-deck-art">${cardArt(row.main_cards?.[0])}</div>
     <div>${tierBadge(row.tier)}<p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)}</p><h3>${escapeHtml(shortDeckName(row))}</h3></div>
-    <button type="button" data-open-unit="${escapeHtml(row.unit)}">상세</button>
+    <button type="button" data-open-unit="${escapeHtml(row.unit)}">Details</button>
   </div>`;
 }
 
 function renderMatchupLoading() {
-  els["matchup-result"].innerHTML = `<div class="matchup-loading"><span class="spinner" aria-hidden="true"></span><p>대진 표본 로딩 중…</p></div>`;
+  els["matchup-result"].innerHTML = `<div class="matchup-loading"><span class="spinner" aria-hidden="true"></span><p>Loading direct games…</p></div>`;
 }
 
 async function renderMatchup() {
@@ -342,7 +352,7 @@ async function renderMatchup() {
   try {
     await ensureMatchups();
   } catch (error) {
-    els["matchup-result"].innerHTML = `<div class="inline-error"><strong>상성 데이터 로드 실패</strong><span>${escapeHtml(error.message)}</span><button type="button" data-retry-matchups>다시 시도</button></div>`;
+    els["matchup-result"].innerHTML = `<div class="inline-error"><strong>Could not load matchup data</strong><span>${escapeHtml(error.message)}</span><button type="button" data-retry-matchups>Retry</button></div>`;
     return;
   }
 
@@ -356,9 +366,9 @@ async function renderMatchup() {
   const rateA = result?.rate ?? 0.5;
   const rateB = 1 - rateA;
   const verdict = !result || result.mirror
-    ? "미러전"
-    : rateA >= 0.55 ? `${shortDeckName(rowA)} 우세`
-      : rateA <= 0.45 ? `${shortDeckName(rowA)} 열세` : "팽팽";
+    ? "Mirror match"
+    : rateA >= 0.55 ? `${shortDeckName(rowA)} favored`
+      : rateA <= 0.45 ? `${shortDeckName(rowA)} unfavored` : "Even matchup";
 
   els["matchup-result"].innerHTML = `
     <div class="matchup-stage">
@@ -368,17 +378,17 @@ async function renderMatchup() {
     </div>
     <div class="matchup-scoreboard">
       <div class="matchup-score-head">
-        <div><span>내 덱 승률</span><strong>${result ? formatPercent(rateA) : "—"}</strong></div>
+        <div><span>Your win rate</span><strong>${result ? formatPercent(rateA) : "—"}</strong></div>
         <div class="matchup-verdict"><span>${escapeHtml(viewLabel(state.view, state.aggregates.filters))}</span><strong>${escapeHtml(verdict)}</strong></div>
-        <div><span>상대 덱 승률</span><strong>${result ? formatPercent(rateB) : "—"}</strong></div>
+        <div><span>Opponent win rate</span><strong>${result ? formatPercent(rateB) : "—"}</strong></div>
       </div>
-      <div class="matchup-bar${result ? "" : " is-empty"}" role="img" aria-label="${result ? `${shortDeckName(rowA)} ${formatPercent(rateA)}, ${shortDeckName(rowB)} ${formatPercent(rateB)}` : "직접 대진 표본 없음"}">
+      <div class="matchup-bar${result ? "" : " is-empty"}" role="img" aria-label="${result ? `${shortDeckName(rowA)} ${formatPercent(rateA)}, ${shortDeckName(rowB)} ${formatPercent(rateB)}` : "No direct games"}">
         <span class="matchup-bar-a" style="--share: ${rateA * 100}%"></span>
         <span class="matchup-bar-b" style="--share: ${rateB * 100}%"></span>
       </div>
       <div class="matchup-evidence">
         ${confidenceBadge(confidence)}
-        <p>${result?.mirror ? "동일 변형 셀은 집계에서 제외" : result ? `${formatNumber(result.n)}판 · ${formatNumber(result.wins)}승 ${formatNumber(result.n - result.wins)}패` : "직접 대진 표본 없음"}</p>
+        <p>${result?.mirror ? "Same-variant games are excluded" : result ? `${formatNumber(result.n)} games · ${formatNumber(result.wins)} wins / ${formatNumber(result.n - result.wins)} losses` : "No direct games"}</p>
       </div>
     </div>`;
 }
@@ -413,13 +423,13 @@ function bindMatchup() {
 }
 
 function matchupList(items, label, rows) {
-  if (!items?.length) return `<div class="detail-empty">직접 표본 충분한 상대 없음</div>`;
+  if (!items?.length) return `<div class="detail-empty">No sufficiently sampled opponents</div>`;
   return `<div class="detail-matchup-list">${items.map((item) => {
     const opponent = rows.get(item.vs) || getRow(item.vs, "main");
     const confidence = confidenceFor(item.n, state.aggregates.filters.min_n_cell);
     return `<button type="button" data-compare-opponent="${escapeHtml(item.vs)}">
       <span class="matchup-list-copy"><small>${escapeHtml(label)}</small><strong>${escapeHtml(opponent ? shortDeckName(opponent) : item.vs)}</strong></span>
-      <span class="matchup-list-score"><strong>${formatPercent(item.wr)}</strong><small>${formatNumber(item.n)}판 · ${escapeHtml(confidence.label)}</small></span>
+      <span class="matchup-list-score"><strong>${formatPercent(item.wr)}</strong><small>${formatNumber(item.n)} games · ${escapeHtml(confidence.label)}</small></span>
     </button>`;
   }).join("")}</div>`;
 }
@@ -428,11 +438,28 @@ function deckListText(row) {
   return (row.modal_deck || []).map((card) => `${card.qty} ${card.name}`).join("\n");
 }
 
+function deckPrice(row) {
+  const cards = state.prices?.cards || {};
+  let total = 0;
+  let count = 0;
+  let estimated = 0;
+  for (const card of row.modal_deck || []) {
+    const price = cards[card.name];
+    if (!price) continue;
+    total += Number(price.usd || 0) * Number(card.qty || 0);
+    count += Number(card.qty || 0);
+    if (String(price.source).startsWith("fallback")) estimated += Number(card.qty || 0);
+  }
+  return { total, count, estimated };
+}
+
 function renderDialog(row) {
   const rows = currentRowMap();
   const confidence = rowEvidence(row);
   const cardGallery = (row.main_cards || []).slice(0, 5);
   const modalCount = (row.modal_deck || []).reduce((sum, card) => sum + card.qty, 0);
+  const price = deckPrice(row);
+  const priceLabel = price.count ? `~$${price.total.toFixed(2)}` : "Unavailable";
   els["dialog-content"].innerHTML = `
     <header class="detail-hero">
       <div class="detail-hero-art">${cardGallery.slice(0, 3).map((card, index) => cardArt(card, { eager: index === 0, large: true })).join("")}</div>
@@ -440,42 +467,44 @@ function renderDialog(row) {
         <div class="detail-labels">${tierBadge(row.tier)}${confidenceBadge(confidence)}</div>
         <p>${escapeHtml(ARCHETYPE_KO[row.l1] || row.l1)} · ${escapeHtml(viewLabel(state.view, state.aggregates.filters))}</p>
         <h2 id="dialog-title">${escapeHtml(shortDeckName(row))}</h2>
-        <div class="tag-list is-large">${(row.strategy_tags_ko || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") || "<span>기본형</span>"}</div>
-        <p class="detail-strategy">${escapeHtml(row.strategy || "")}</p>
+        <div class="tag-list is-large">${strategyNames(row).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") || "<span>Standard</span>"}</div>
+        
       </div>
     </header>
 
     <div class="detail-stat-grid">
-      <div><small>PKC 스코어</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
-      <div><small>승률</small><strong>${formatPercent(row.raw_wr)}</strong></div>
-      <div><small>픽률</small><strong>${formatPercent(row.pick_rate)}</strong></div>
-      <div><small>판수</small><strong>${formatNumber(row.seats)}</strong></div>
+      <div><small>Meta Score</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></div>
+      <div><small>Win</small><strong>${formatPercent(row.raw_wr)}</strong></div>
+      <div><small>Share</small><strong>${formatPercent(row.pick_rate)}</strong></div>
+      <div><small>Games</small><strong>${formatNumber(row.seats)}</strong></div>
+      <div><small>Est. Deck Price</small><strong>${priceLabel}</strong></div>
     </div>
 
     <div class="detail-evidence-strip">
-      <div><small>쓴 팀 수</small><strong>${formatNumber(row.team_count)}</strong></div>
-      <div><small>최다 한 팀 비중</small><strong>${formatPercent(row.top_team_share)}</strong></div>
-      <div><small>1번 자리 비중</small><strong>${formatPercent(row.seat0_share)}</strong></div>
+      <div><small>Teams</small><strong>${formatNumber(row.team_count)}</strong></div>
+      <div><small>Top team share</small><strong>${formatPercent(row.top_team_share)}</strong></div>
+      <div><small>Seat 0 share</small><strong>${formatPercent(row.seat0_share)}</strong></div>
     </div>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><h3>상성</h3><span>클릭 시 상성 비교로 이동</span></div>
+      <div class="detail-section-heading"><h3>Matchups</h3><span>Select an opponent to compare</span></div>
       <div class="detail-matchups">
-        <div><h4><span class="down-arrow" aria-hidden="true">↓</span> 카운터</h4>${matchupList(row.counters, "불리", rows)}</div>
-        <div><h4><span class="up-arrow" aria-hidden="true">↑</span> 유리 상대</h4>${matchupList(row.preys, "유리", rows)}</div>
+        <div><h4><span class="down-arrow" aria-hidden="true">↓</span> Counters</h4>${matchupList(row.counters, "Unfavored", rows)}</div>
+        <div><h4><span class="up-arrow" aria-hidden="true">↑</span> Favored</h4>${matchupList(row.preys, "Favored", rows)}</div>
       </div>
     </section>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><h3>대표 카드</h3><span>변형 내 채용률순</span></div>
-      <div class="core-card-grid">${cardGallery.map((card) => `<article>${cardArt(card, { large: true })}<strong>${escapeHtml(card.name)}</strong><span>${formatPercent(card.presence)} 채용</span></article>`).join("")}</div>
+      <div class="detail-section-heading"><h3>Core Cards</h3><span>Sorted by inclusion rate</span></div>
+      <div class="core-card-grid">${cardGallery.map((card) => `<article>${cardArt(card, { large: true })}<strong>${escapeHtml(card.name)}</strong><span>${formatPercent(card.presence)} inclusion</span></article>`).join("")}</div>
     </section>
 
     <section class="detail-section">
-      <div class="detail-section-heading"><h3>대표 리스트</h3><span>${formatPercent(row.modal_deck_share)} 일치 · ${modalCount}장</span></div>
+      <div class="detail-section-heading"><h3>Representative List</h3><span>${formatPercent(row.modal_deck_share)} of variant · ${modalCount} cards</span></div>
+      <p class="price-note">Estimated cheapest-printing market total: <strong>${priceLabel}</strong>. ${price.estimated ? `${price.estimated} cards use fallback estimates. ` : ""}Shipping, tax, condition, and exact printing are excluded.</p>
       <div class="decklist-shell">
         <div class="decklist-grid">${(row.modal_deck || []).map((card) => `<div><strong>${card.qty}</strong><span>${escapeHtml(card.name)}</span></div>`).join("")}</div>
-        <button class="copy-button" type="button" data-copy-deck>덱 리스트 복사</button>
+        <button class="copy-button" type="button" data-copy-deck>Copy decklist</button>
       </div>
     </section>`;
 }
@@ -506,11 +535,11 @@ async function copyDeckList() {
   if (!row || !button) return;
   try {
     await navigator.clipboard.writeText(deckListText(row));
-    button.textContent = "복사 완료 ✓";
+    button.textContent = "Copied ✓";
   } catch {
-    button.textContent = "복사 실패";
+    button.textContent = "Copy failed";
   }
-  window.setTimeout(() => { button.textContent = "덱 리스트 복사"; }, 1800);
+  window.setTimeout(() => { button.textContent = "Copy decklist"; }, 1800);
 }
 
 function compareFromDialog(opponentUnit) {
@@ -559,7 +588,7 @@ function bindDelegatedActions() {
 }
 
 function renderError(error) {
-  document.querySelector("main").innerHTML = `<section class="fatal-error section-shell"><span aria-hidden="true">!</span><h1>데이터 로드 실패</h1><p>${escapeHtml(error.message)}</p><button class="button button-primary" type="button" onclick="window.location.reload()">새로고침</button><a href="./README.md">README 원본</a></section>`;
+  document.querySelector("main").innerHTML = `<section class="fatal-error section-shell"><span aria-hidden="true">!</span><h1>Could not load data</h1><p>${escapeHtml(error.message)}</p><button class="button button-primary" type="button" onclick="window.location.reload()">Reload</button><a href="./README.md">README</a></section>`;
 }
 
 function setupServiceWorker() {
@@ -567,16 +596,6 @@ function setupServiceWorker() {
   navigator.serviceWorker.register("./sw.js").catch(() => {});
 }
 
-function setupNetworkStatus() {
-  window.addEventListener("offline", () => {
-    els["freshness-line"].classList.add("is-offline");
-    els["freshness-line"].innerHTML = `<span aria-hidden="true"></span>오프라인 · 저장 데이터 표시 중`;
-  });
-  window.addEventListener("online", () => {
-    els["freshness-line"].classList.remove("is-offline");
-    renderMeta();
-  });
-}
 
 function openDeepLink() {
   const unit = new URL(window.location.href).searchParams.get("deck");
@@ -590,11 +609,11 @@ async function init() {
   bindDialog();
 
   try {
-    state.aggregates = await fetchJson(DATA_URLS.aggregates);
+    [state.aggregates, state.prices] = await Promise.all([fetchJson(DATA_URLS.aggregates), fetchJson(DATA_URLS.prices)]);
     const preliminaryErrors = validateDatasetShape(state.aggregates, { main: { units: [], cells: {} }, high: { units: [], cells: {} }, elite: { units: [], cells: {} } })
       .filter((error) => !error.includes("matrix unit"));
     if (preliminaryErrors.some((error) => error.includes("rows missing"))) throw new Error(preliminaryErrors.join("; "));
-    renderMeta();
+    renderOverview();
     renderBandChips();
     renderStats();
     renderMethodDiagnostics();
@@ -605,7 +624,7 @@ async function init() {
     bindMatchup();
     openDeepLink();
     setupServiceWorker();
-    setupNetworkStatus();
+
   } catch (error) {
     renderError(error);
   }

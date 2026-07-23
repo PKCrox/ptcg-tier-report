@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ptcg-meta-v4";
+const CACHE_VERSION = "metatcg-v1";
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
 self.addEventListener("install", () => {

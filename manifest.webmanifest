@@ -1,13 +1,13 @@
 {
-  "name": "PTCG Meta Lab",
-  "short_name": "PTCG Meta",
-  "description": "포켓몬 TCG AI 배틀 공개 리플레이 기반 덱 티어와 상성 탐색기",
-  "lang": "ko-KR",
+  "name": "MetaTCG",
+  "short_name": "MetaTCG",
+  "description": "Pokemon TCG deck tiers, metagame share, matchups, decklists, and estimated prices",
+  "lang": "en-US",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#07111f",
-  "theme_color": "#07111f",
+  "background_color": "#07110c",
+  "theme_color": "#07110c",
   "icons": [
     {
       "src": "./assets/app-icon.svg",

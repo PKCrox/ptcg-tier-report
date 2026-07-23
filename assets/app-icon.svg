@@ -1,22 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">PTCG Meta Lab</title>
-  <desc id="desc">파란색 데이터 링 안의 포켓볼 형태 로고</desc>
+  <title id="title">MetaTCG</title>
+  <desc id="desc">연두색 M 데이터 모노그램</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f2139"/>
-      <stop offset="1" stop-color="#07111f"/>
+      <stop offset="0" stop-color="#132219"/>
+      <stop offset="1" stop-color="#07110c"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7ca5ff"/>
-      <stop offset="1" stop-color="#29c7a9"/>
+      <stop offset="0" stop-color="#d6ff70"/>
+      <stop offset="1" stop-color="#72dc42"/>
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="118" fill="url(#bg)"/>
-  <circle cx="256" cy="256" r="164" fill="none" stroke="url(#accent)" stroke-width="24"/>
-  <path d="M94 256h324" fill="none" stroke="#f6f8fb" stroke-width="24"/>
-  <path d="M105 214a164 164 0 0 1 302 0H105Z" fill="#5b8cff" opacity=".92"/>
-  <circle cx="256" cy="256" r="62" fill="#07111f" stroke="#f6f8fb" stroke-width="22"/>
-  <circle cx="256" cy="256" r="22" fill="#29c7a9"/>
-  <circle cx="394" cy="98" r="12" fill="#29c7a9"/>
-  <circle cx="114" cy="405" r="9" fill="#7ca5ff"/>
+  <path d="M112 368V144h58l86 108 86-108h58v224h-66V244l-78 96-78-96v124Z" fill="url(#accent)"/>
+  <circle cx="405" cy="105" r="14" fill="#d6ff70"/>
 </svg>

@@ -1,49 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">PTCG Meta Lab</title>
-  <desc id="desc">포켓몬 TCG AI 배틀 티어와 상성 데이터 제품 소셜 카드</desc>
+  <title id="title">MetaTCG</title>
+  <desc id="desc">Pokémon TCG meta data and deck price social card</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1d33"/>
-      <stop offset=".58" stop-color="#07111f"/>
-      <stop offset="1" stop-color="#081521"/>
+      <stop offset="0" stop-color="#102117"/>
+      <stop offset=".62" stop-color="#07110c"/>
+      <stop offset="1" stop-color="#0b1911"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(960 150) rotate(132) scale(480 420)">
-      <stop stop-color="#29c7a9" stop-opacity=".23"/>
-      <stop offset="1" stop-color="#29c7a9" stop-opacity="0"/>
-    </radialGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#7ca5ff"/>
-      <stop offset="1" stop-color="#29c7a9"/>
+      <stop stop-color="#d6ff70"/>
+      <stop offset="1" stop-color="#72dc42"/>
     </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#b7c4d8" stroke-opacity=".045"/>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1010 130) rotate(135) scale(520 440)">
+      <stop stop-color="#b8f34a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#b8f34a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#b8f34a" stroke-opacity=".045"/>
     </pattern>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <g transform="translate(90 88)">
-    <circle cx="31" cy="31" r="28" fill="none" stroke="#f6f8fb" stroke-width="5"/>
-    <path d="M3 31h56" stroke="#f6f8fb" stroke-width="5"/>
-    <path d="M5 24a28 28 0 0 1 52 0H5Z" fill="#5b8cff"/>
-    <circle cx="31" cy="31" r="10" fill="#07111f" stroke="#f6f8fb" stroke-width="5"/>
-    <circle cx="31" cy="31" r="3" fill="#29c7a9"/>
-    <text x="78" y="24" fill="#f6f8fb" font-family="Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="4">PTCG</text>
-    <text x="78" y="48" fill="#7f90a9" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="6">META LAB</text>
+  <g transform="translate(88 76)">
+    <path d="M0 0h64l18 18v64H18L0 64Z" fill="#b8f34a"/>
+    <text x="41" y="57" text-anchor="middle" fill="#172006" font-family="Arial, sans-serif" font-size="43" font-weight="900">M</text>
+    <text x="105" y="35" fill="#eef7f0" font-family="Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="-1">Meta</text>
+    <text x="176" y="35" fill="#b8f34a" font-family="Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="-1">TCG</text>
+    <text x="106" y="60" fill="#688073" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="5">POKÉMON TCG DATA</text>
   </g>
-  <g transform="translate(90 235)">
-    <text fill="#f6f8fb" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="69" font-weight="800" letter-spacing="-4">수만 판을 뒤져,</text>
-    <text y="88" fill="url(#accent)" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="69" font-weight="800" letter-spacing="-4">이기는 덱의 이유를 찾습니다.</text>
-    <text y="152" fill="#b7c4d8" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="24">포켓몬 TCG AI 배틀 · 덱 티어 · 픽률 · 직접 상성</text>
+  <g transform="translate(88 244)">
+    <text fill="#eef7f0" font-family="Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-4">Pokémon TCG</text>
+    <text y="90" fill="url(#accent)" font-family="Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-4">Meta Overview</text>
+    <text y="154" fill="#a2b9a8" font-family="Arial, sans-serif" font-size="24">DECK TIERS · META SHARE · MATCHUPS · PRICE ESTIMATES</text>
   </g>
-  <g transform="translate(915 348)">
-    <circle cx="90" cy="90" r="116" fill="none" stroke="#5b8cff" stroke-opacity=".22" stroke-width="2"/>
-    <circle cx="90" cy="90" r="82" fill="none" stroke="#29c7a9" stroke-opacity=".3" stroke-width="2" stroke-dasharray="7 8"/>
-    <circle cx="90" cy="90" r="54" fill="#0f2139" stroke="#7ca5ff" stroke-width="9"/>
-    <path d="M36 90h108" stroke="#f6f8fb" stroke-width="9"/>
-    <circle cx="90" cy="90" r="20" fill="#07111f" stroke="#f6f8fb" stroke-width="8"/>
-    <circle cx="90" cy="90" r="6" fill="#29c7a9"/>
+  <g transform="translate(930 250)">
+    <path d="M0 0h155l35 35v155H35L0 155Z" fill="#0d1b13" stroke="#284733" stroke-width="2"/>
+    <path d="M42 142V48h24l36 45 36-45h24v94h-28V90l-32 40-32-40v52Z" fill="url(#accent)"/>
+    <circle cx="158" cy="32" r="7" fill="#d6ff70"/>
   </g>
-  <rect x="90" y="572" width="1020" height="1" fill="#b7c4d8" opacity=".2"/>
-  <text x="90" y="604" fill="#7f90a9" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">PUBLIC REPLAY INTELLIGENCE · PKCROX.GITHUB.IO/PTCG-TIER-REPORT</text>
+  <rect x="88" y="567" width="1024" height="1" fill="#b8f34a" opacity=".18"/>
+  <text x="88" y="601" fill="#688073" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">PUBLIC REPLAY INTELLIGENCE · METATCG.VERCEL.APP</text>
 </svg>
