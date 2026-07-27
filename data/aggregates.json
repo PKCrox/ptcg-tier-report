@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "generated_at_kst": "2026-07-27 12:19 KST",
+ "generated_at_kst": "2026-07-27 14:03 KST",
  "date_range": [
   "2026-07-05",
   "2026-07-25"
@@ -222,94 +222,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 5
       },
       {
+       "cid": 92,
        "name": "Applin",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 2
       },
       {
+       "cid": 1191,
        "name": "Kieran",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1211,
        "name": "Black Belt’s Training",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 74,
        "name": "Rabsca",
        "qty": 1
       },
       {
+       "cid": 73,
        "name": "Rellor",
        "qty": 1
       },
       {
+       "cid": 1092,
        "name": "Secret Box",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       }
@@ -428,94 +451,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 7
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1216,
        "name": "Team Rocket's Ariana",
        "qty": 4
       },
       {
+       "cid": 15,
        "name": "Team Rocket's Energy",
        "qty": 4
       },
       {
+       "cid": 401,
        "name": "Team Rocket's Spidops",
        "qty": 4
       },
       {
+       "cid": 400,
        "name": "Team Rocket's Tarountula",
        "qty": 4
       },
       {
+       "cid": 1134,
        "name": "Team Rocket's Transceiver",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 3
       },
       {
+       "cid": 1218,
        "name": "Team Rocket's Giovanni",
        "qty": 3
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 2
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 2
       },
       {
+       "cid": 431,
        "name": "Team Rocket's Mewtwo ex",
        "qty": 2
       },
       {
+       "cid": 463,
        "name": "Team Rocket's Murkrow",
        "qty": 2
       },
       {
+       "cid": 1220,
        "name": "Team Rocket's Proton",
        "qty": 2
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1217,
        "name": "Team Rocket's Archer",
        "qty": 1
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 1
       },
       {
+       "cid": 432,
        "name": "Team Rocket's Wobbuffet",
        "qty": 1
       }
@@ -630,86 +676,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1262,
        "name": "Surfing Beach",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 861,
        "name": "Mega Froslass ex",
        "qty": 3
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 3
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 3
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1224,
        "name": "Cheren",
        "qty": 2
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 2
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 2
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 1
       }
@@ -830,82 +897,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 5
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 387,
        "name": "Cynthia's Spiritomb",
        "qty": 2
       },
       {
+       "cid": 1261,
        "name": "Forest of Vitality",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1203,
        "name": "Surfer",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -1024,78 +1111,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -1216,86 +1322,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 3
       },
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 2
       },
       {
+       "cid": 861,
        "name": "Mega Froslass ex",
        "qty": 2
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 174,
        "name": "Fan Rotom",
        "qty": 1
       }
@@ -1416,74 +1543,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 6
       },
       {
+       "cid": 92,
        "name": "Applin",
        "qty": 4
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 247,
        "name": "Swirlix",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -1606,94 +1751,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 2
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 2
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -1816,102 +1984,127 @@
      ],
      "modal_deck": [
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 132,
        "name": "Dusclops",
        "qty": 2
       },
       {
+       "cid": 131,
        "name": "Duskull",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 133,
        "name": "Dusknoir",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 791,
        "name": "Moltres",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -2034,74 +2227,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 8
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 164,
        "name": "Comfey",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 817,
        "name": "Bramblin",
        "qty": 3
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 3
       },
       {
+       "cid": 1139,
        "name": "Energy Recycler",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 818,
        "name": "Brambleghast",
        "qty": 2
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 2
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 2
       },
       {
+       "cid": 1095,
        "name": "Dangerous Laser",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -2224,90 +2435,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -2430,78 +2663,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -2626,74 +2878,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -2814,70 +3084,87 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 17,
        "name": "Ignition Energy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1192,
        "name": "Carmine",
        "qty": 3
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 3
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 132,
        "name": "Dusclops",
        "qty": 2
       },
       {
+       "cid": 133,
        "name": "Dusknoir",
        "qty": 2
       },
       {
+       "cid": 131,
        "name": "Duskull",
        "qty": 2
       },
       {
+       "cid": 1167,
        "name": "Deluxe Bomb",
        "qty": 1
       }
@@ -2992,86 +3279,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 3
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1260,
        "name": "Risky Ruins",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -3192,102 +3500,127 @@
      ],
      "modal_deck": [
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 3
       },
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 3
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 3
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 2
       },
       {
+       "cid": 791,
        "name": "Moltres",
        "qty": 2
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 2
       },
       {
+       "cid": 109,
        "name": "Abra",
        "qty": 1
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 1
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 174,
        "name": "Fan Rotom",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -3406,66 +3739,82 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 15
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1202,
        "name": "Drayton",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 649,
        "name": "Marnie's Morpeko",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 2
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -3562,78 +3911,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -3740,86 +4108,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 7
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 655,
        "name": "Celebi",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 42,
        "name": "Applin",
        "qty": 2
       },
       {
+       "cid": 92,
        "name": "Applin",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1211,
        "name": "Black Belt’s Training",
        "qty": 1
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 1
       },
       {
+       "cid": 1102,
        "name": "Dusk Ball",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1155,
        "name": "Survival Brace",
        "qty": 1
       }
@@ -3940,94 +4329,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1156,
        "name": "Lucky Helmet",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -4128,90 +4540,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 2
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -4326,70 +4760,87 @@
      ],
      "modal_deck": [
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 3
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 3
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 174,
        "name": "Fan Rotom",
        "qty": 1
       }
@@ -4492,86 +4943,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -4694,78 +5166,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -4888,98 +5379,122 @@
      ],
      "modal_deck": [
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 1186,
        "name": "Eri",
        "qty": 2
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1242,
        "name": "Community Center",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1204,
        "name": "Lisia’s Appeal",
        "qty": 1
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -5082,90 +5597,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1113,
        "name": "N’s PP Up",
        "qty": 4
       },
       {
+       "cid": 293,
        "name": "N’s Zoroark ex",
        "qty": 4
       },
       {
+       "cid": 292,
        "name": "N’s Zorua",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1205,
        "name": "Cyrano",
        "qty": 3
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 3
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1253,
        "name": "N’s Castle",
        "qty": 2
       },
       {
+       "cid": 303,
        "name": "N’s Reshiram",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 1
       },
       {
+       "cid": 906,
        "name": "N's Zekrom",
        "qty": 1
       },
       {
+       "cid": 258,
        "name": "N’s Darmanitan",
        "qty": 1
       },
       {
+       "cid": 257,
        "name": "N’s Darumaka",
        "qty": 1
       },
       {
+       "cid": 141,
        "name": "Pecharunt ex",
        "qty": 1
       }
@@ -5288,74 +5825,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 17,
        "name": "Ignition Energy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 3
       },
       {
+       "cid": 1223,
        "name": "Harlequin",
        "qty": 2
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       }
@@ -5478,86 +6033,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -5678,82 +6254,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 1210,
        "name": "Brock’s Scouting",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1236,
        "name": "Urbain",
        "qty": 4
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 3
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 3
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 2
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 1
       },
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 1
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -5876,78 +6472,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -6056,106 +6671,132 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 7
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 745,
        "name": "Ralts",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 3
       },
       {
+       "cid": 746,
        "name": "Kirlia",
        "qty": 3
       },
       {
+       "cid": 747,
        "name": "Mega Gardevoir ex",
        "qty": 3
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 2
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 2
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 1
       },
       {
+       "cid": 597,
        "name": "Frillish",
        "qty": 1
       },
       {
+       "cid": 1249,
        "name": "Grand Tree",
        "qty": 1
       },
       {
+       "cid": 184,
        "name": "Latias ex",
        "qty": 1
       },
       {
+       "cid": 272,
        "name": "Lillie’s Clefairy ex",
        "qty": 1
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 1
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 183,
        "name": "Smoochum",
        "qty": 1
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 1
       }
@@ -6262,86 +6903,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 4
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1146,
        "name": "Wondrous Patch",
        "qty": 1
       }
@@ -6448,74 +7110,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 3
       },
       {
+       "cid": 1202,
        "name": "Drayton",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -6636,94 +7316,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 2
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 2
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1260,
        "name": "Risky Ruins",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 306,
        "name": "Dudunsparce ex",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       }
@@ -6818,70 +7521,87 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 15
       },
       {
+       "cid": 1102,
        "name": "Dusk Ball",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 678,
        "name": "Mega Lucario ex",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1141,
        "name": "Premium Power Pro",
        "qty": 4
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 3
       },
       {
+       "cid": 677,
        "name": "Riolu",
        "qty": 3
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 674,
        "name": "Hariyama",
        "qty": 2
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 673,
        "name": "Makuhita",
        "qty": 2
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 2
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -6996,86 +7716,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 214,
        "name": "Togekiss",
        "qty": 1
       },
       {
+       "cid": 959,
        "name": "Togepi",
        "qty": 1
       },
       {
+       "cid": 1146,
        "name": "Wondrous Patch",
        "qty": 1
       }
@@ -7196,74 +7937,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 122,
        "name": "Tatsugiri",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -7367,102 +8126,127 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 8
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 116,
        "name": "Okidogi",
        "qty": 3
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 3
       },
       {
+       "cid": 1238,
        "name": "Tarragon",
        "qty": 3
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 2
       },
       {
+       "cid": 1052,
        "name": "Barbaracle",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1051,
        "name": "Binacle",
        "qty": 2
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 1187,
        "name": "Morty’s Conviction",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 1
       },
       {
+       "cid": 135,
        "name": "Bloodmoon Ursaluna",
        "qty": 1
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 12,
        "name": "Legacy Energy",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -7585,86 +8369,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 3
       },
       {
+       "cid": 1261,
        "name": "Forest of Vitality",
        "qty": 2
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 2
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1208,
        "name": "Iris’s Fighting Spirit",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1203,
        "name": "Surfer",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -7771,102 +8576,127 @@
      ],
      "modal_deck": [
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 2
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 2
       },
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 1
       },
       {
+       "cid": 1190,
        "name": "Bianca’s Devotion",
        "qty": 1
       },
       {
+       "cid": 1212,
        "name": "Cook",
        "qty": 1
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1186,
        "name": "Eri",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 1
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -7989,82 +8819,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 387,
        "name": "Cynthia's Spiritomb",
        "qty": 2
       },
       {
+       "cid": 1261,
        "name": "Forest of Vitality",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -8183,98 +9033,122 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 164,
        "name": "Comfey",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 98,
        "name": "Chandelure",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 97,
        "name": "Litwick",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 2
       },
       {
+       "cid": 1186,
        "name": "Eri",
        "qty": 2
       },
       {
+       "cid": 1166,
        "name": "Gravity Gemstone",
        "qty": 2
       },
       {
+       "cid": 494,
        "name": "Lampent",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       }
@@ -8375,90 +9249,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 6
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 506,
        "name": "Cubchoo",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 3
       },
       {
+       "cid": 1166,
        "name": "Gravity Gemstone",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 2
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 2
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -8581,62 +9477,77 @@
      ],
      "modal_deck": [
       {
+       "cid": 8,
        "name": "Basic {M} Energy",
        "qty": 13
       },
       {
+       "cid": 190,
        "name": "Archaludon ex",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 169,
        "name": "Duraludon",
        "qty": 4
       },
       {
+       "cid": 1185,
        "name": "Explorer’s Guidance",
        "qty": 4
       },
       {
+       "cid": 1244,
        "name": "Full Metal Lab",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -8730,62 +9641,77 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 15
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 506,
        "name": "Cubchoo",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 2
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       }
@@ -8875,90 +9801,112 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 2
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -9048,74 +9996,92 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       }
@@ -9211,102 +10177,127 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 2
       },
       {
+       "cid": 1246,
        "name": "Jamming Tower",
        "qty": 2
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 2
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 1
       },
       {
+       "cid": 306,
        "name": "Dudunsparce ex",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 1240,
        "name": "Rosa's Encouragement",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -9404,82 +10395,102 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 11
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 827,
        "name": "Carvanha",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 828,
        "name": "Mega Sharpedo ex",
        "qty": 4
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 2
       },
       {
+       "cid": 1246,
        "name": "Jamming Tower",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 2
       },
       {
+       "cid": 833,
        "name": "Toxel",
        "qty": 2
       },
       {
+       "cid": 834,
        "name": "Toxtricity",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 829,
        "name": "Seviper",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -9585,86 +10596,107 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 10
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 116,
        "name": "Okidogi",
        "qty": 3
       },
       {
+       "cid": 1238,
        "name": "Tarragon",
        "qty": 3
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 2
       },
       {
+       "cid": 1052,
        "name": "Barbaracle",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1051,
        "name": "Binacle",
        "qty": 2
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 2
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 2
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 135,
        "name": "Bloodmoon Ursaluna",
        "qty": 1
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -9754,62 +10786,77 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 8,
        "name": "Basic {M} Energy",
        "qty": 14
       },
       {
+       "cid": 190,
        "name": "Archaludon ex",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 169,
        "name": "Duraludon",
        "qty": 4
       },
       {
+       "cid": 1185,
        "name": "Explorer’s Guidance",
        "qty": 4
       },
       {
+       "cid": 1244,
        "name": "Full Metal Lab",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 57,
        "name": "Relicanth",
        "qty": 1
       }
@@ -9930,74 +10977,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1202,
        "name": "Drayton",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -10124,74 +11189,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1228,
        "name": "Acerola's Mischief",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 4
       },
       {
+       "cid": 164,
        "name": "Comfey",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 3
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 2
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 2
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -10304,86 +11387,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -10504,90 +11608,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 9
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1187,
        "name": "Morty’s Conviction",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 116,
        "name": "Okidogi",
        "qty": 3
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 3
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 2
       },
       {
+       "cid": 1052,
        "name": "Barbaracle",
        "qty": 2
       },
       {
+       "cid": 1051,
        "name": "Binacle",
        "qty": 2
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1238,
        "name": "Tarragon",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1118,
        "name": "Energy Retrieval",
        "qty": 1
       },
       {
+       "cid": 12,
        "name": "Legacy Energy",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -10694,90 +11820,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -10862,70 +12010,87 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 8,
        "name": "Basic {M} Energy",
        "qty": 11
       },
       {
+       "cid": 190,
        "name": "Archaludon ex",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 169,
        "name": "Duraludon",
        "qty": 4
       },
       {
+       "cid": 1244,
        "name": "Full Metal Lab",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1185,
        "name": "Explorer’s Guidance",
        "qty": 3
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 57,
        "name": "Relicanth",
        "qty": 1
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -11017,66 +12182,82 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 16
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 506,
        "name": "Cubchoo",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 2
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 2
       },
       {
+       "cid": 209,
        "name": "Chien-Pao",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       }
@@ -11197,66 +12378,82 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 11
       },
       {
+       "cid": 1102,
        "name": "Dusk Ball",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 678,
        "name": "Mega Lucario ex",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1141,
        "name": "Premium Power Pro",
        "qty": 4
       },
       {
+       "cid": 677,
        "name": "Riolu",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1192,
        "name": "Carmine",
        "qty": 3
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 3
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -11354,74 +12551,92 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 12
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 506,
        "name": "Cubchoo",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1208,
        "name": "Iris’s Fighting Spirit",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 2
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 58,
        "name": "Great Tusk",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       }
@@ -11540,78 +12755,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 6
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 164,
        "name": "Comfey",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1228,
        "name": "Acerola's Mischief",
        "qty": 3
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 3
       },
       {
+       "cid": 818,
        "name": "Brambleghast",
        "qty": 2
       },
       {
+       "cid": 817,
        "name": "Bramblin",
        "qty": 2
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 2
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 1095,
        "name": "Dangerous Laser",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -11717,66 +12951,82 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 8,
        "name": "Basic {M} Energy",
        "qty": 11
       },
       {
+       "cid": 190,
        "name": "Archaludon ex",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 169,
        "name": "Duraludon",
        "qty": 4
       },
       {
+       "cid": 1185,
        "name": "Explorer’s Guidance",
        "qty": 4
       },
       {
+       "cid": 1244,
        "name": "Full Metal Lab",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 1
       },
       {
+       "cid": 57,
        "name": "Relicanth",
        "qty": 1
       }
@@ -11950,94 +13200,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 7
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1216,
        "name": "Team Rocket's Ariana",
        "qty": 4
       },
       {
+       "cid": 15,
        "name": "Team Rocket's Energy",
        "qty": 4
       },
       {
+       "cid": 401,
        "name": "Team Rocket's Spidops",
        "qty": 4
       },
       {
+       "cid": 400,
        "name": "Team Rocket's Tarountula",
        "qty": 4
       },
       {
+       "cid": 1134,
        "name": "Team Rocket's Transceiver",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 3
       },
       {
+       "cid": 1218,
        "name": "Team Rocket's Giovanni",
        "qty": 3
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 2
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 2
       },
       {
+       "cid": 431,
        "name": "Team Rocket's Mewtwo ex",
        "qty": 2
       },
       {
+       "cid": 463,
        "name": "Team Rocket's Murkrow",
        "qty": 2
       },
       {
+       "cid": 1220,
        "name": "Team Rocket's Proton",
        "qty": 2
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1217,
        "name": "Team Rocket's Archer",
        "qty": 1
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 1
       },
       {
+       "cid": 432,
        "name": "Team Rocket's Wobbuffet",
        "qty": 1
       }
@@ -12158,82 +13431,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 5
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 387,
        "name": "Cynthia's Spiritomb",
        "qty": 2
       },
       {
+       "cid": 1261,
        "name": "Forest of Vitality",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1203,
        "name": "Surfer",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -12352,78 +13645,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -12538,86 +13850,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1262,
        "name": "Surfing Beach",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 861,
        "name": "Mega Froslass ex",
        "qty": 3
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 3
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 3
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1224,
        "name": "Cheren",
        "qty": 2
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 2
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 2
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 1
       }
@@ -12734,102 +14067,127 @@
      ],
      "modal_deck": [
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 132,
        "name": "Dusclops",
        "qty": 2
       },
       {
+       "cid": 131,
        "name": "Duskull",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 133,
        "name": "Dusknoir",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 791,
        "name": "Moltres",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -12919,82 +14277,102 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 9
       },
       {
+       "cid": 42,
        "name": "Applin",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 1211,
        "name": "Black Belt’s Training",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 2
       },
       {
+       "cid": 100,
        "name": "Goldeen",
        "qty": 2
       },
       {
+       "cid": 240,
        "name": "Seaking",
        "qty": 2
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -13113,74 +14491,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -13277,74 +14673,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 6
       },
       {
+       "cid": 92,
        "name": "Applin",
        "qty": 4
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 247,
        "name": "Swirlix",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -13441,78 +14855,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -13617,78 +15050,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -13787,74 +15239,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 17,
        "name": "Ignition Energy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 3
       },
       {
+       "cid": 1223,
        "name": "Harlequin",
        "qty": 2
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       }
@@ -13977,90 +15447,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -14183,78 +15675,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -14354,78 +15865,97 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -14534,70 +16064,87 @@
      ],
      "modal_deck": [
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 3
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 3
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 174,
        "name": "Fan Rotom",
        "qty": 1
       }
@@ -14708,90 +16255,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       },
       {
+       "cid": 1146,
        "name": "Wondrous Patch",
        "qty": 1
       }
@@ -14912,82 +16481,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 1210,
        "name": "Brock’s Scouting",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1236,
        "name": "Urbain",
        "qty": 4
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 3
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 3
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 2
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 1
       },
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 1
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -15088,90 +16677,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 6
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 506,
        "name": "Cubchoo",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 3
       },
       {
+       "cid": 1166,
        "name": "Gravity Gemstone",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 2
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 2
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1247,
        "name": "Neutralization Zone",
        "qty": 1
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 1
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -15286,86 +16897,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 3
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1260,
        "name": "Risky Ruins",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -15467,74 +17099,92 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 122,
        "name": "Tatsugiri",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -15643,90 +17293,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 9
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1187,
        "name": "Morty’s Conviction",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 116,
        "name": "Okidogi",
        "qty": 3
       },
       {
+       "cid": 676,
        "name": "Solrock",
        "qty": 3
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 2
       },
       {
+       "cid": 1052,
        "name": "Barbaracle",
        "qty": 2
       },
       {
+       "cid": 1051,
        "name": "Binacle",
        "qty": 2
       },
       {
+       "cid": 675,
        "name": "Lunatone",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1238,
        "name": "Tarragon",
        "qty": 2
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 1
       },
       {
+       "cid": 1118,
        "name": "Energy Retrieval",
        "qty": 1
       },
       {
+       "cid": 12,
        "name": "Legacy Energy",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -15839,86 +17511,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -16041,98 +17734,122 @@
      ],
      "modal_deck": [
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 1186,
        "name": "Eri",
        "qty": 2
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1242,
        "name": "Community Center",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1204,
        "name": "Lisia’s Appeal",
        "qty": 1
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -16243,90 +17960,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 3
       },
       {
+       "cid": 1213,
        "name": "Judge",
        "qty": 2
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 2
       },
       {
+       "cid": 1194,
        "name": "Colress’s Tenacity",
        "qty": 1
       },
       {
+       "cid": 387,
        "name": "Cynthia's Spiritomb",
        "qty": 1
       },
       {
+       "cid": 1249,
        "name": "Grand Tree",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1141,
        "name": "Premium Power Pro",
        "qty": 1
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       }
@@ -16441,94 +18180,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1156,
        "name": "Lucky Helmet",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -16651,78 +18413,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -16893,78 +18674,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -17085,82 +18885,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 5
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 380,
        "name": "Cynthia's Gabite",
        "qty": 4
       },
       {
+       "cid": 379,
        "name": "Cynthia's Gible",
        "qty": 4
       },
       {
+       "cid": 341,
        "name": "Cynthia's Roselia",
        "qty": 4
       },
       {
+       "cid": 1142,
        "name": "Fighting Gong",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 20,
        "name": "Rock Fighting Energy",
        "qty": 4
       },
       {
+       "cid": 381,
        "name": "Cynthia's Garchomp ex",
        "qty": 3
       },
       {
+       "cid": 1173,
        "name": "Cynthia's Power Weight",
        "qty": 3
       },
       {
+       "cid": 342,
        "name": "Cynthia's Roserade",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 387,
        "name": "Cynthia's Spiritomb",
        "qty": 2
       },
       {
+       "cid": 1261,
        "name": "Forest of Vitality",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1203,
        "name": "Surfer",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -17279,94 +19099,117 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 7
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1216,
        "name": "Team Rocket's Ariana",
        "qty": 4
       },
       {
+       "cid": 15,
        "name": "Team Rocket's Energy",
        "qty": 4
       },
       {
+       "cid": 401,
        "name": "Team Rocket's Spidops",
        "qty": 4
       },
       {
+       "cid": 400,
        "name": "Team Rocket's Tarountula",
        "qty": 4
       },
       {
+       "cid": 1134,
        "name": "Team Rocket's Transceiver",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 3
       },
       {
+       "cid": 1218,
        "name": "Team Rocket's Giovanni",
        "qty": 3
       },
       {
+       "cid": 1119,
        "name": "Energy Search",
        "qty": 2
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 2
       },
       {
+       "cid": 431,
        "name": "Team Rocket's Mewtwo ex",
        "qty": 2
       },
       {
+       "cid": 463,
        "name": "Team Rocket's Murkrow",
        "qty": 2
       },
       {
+       "cid": 1220,
        "name": "Team Rocket's Proton",
        "qty": 2
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1217,
        "name": "Team Rocket's Archer",
        "qty": 1
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 1
       },
       {
+       "cid": 432,
        "name": "Team Rocket's Wobbuffet",
        "qty": 1
       }
@@ -17489,102 +19332,127 @@
      ],
      "modal_deck": [
       {
+       "cid": 2,
        "name": "Basic {R} Energy",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 120,
        "name": "Drakloak",
        "qty": 4
       },
       {
+       "cid": 119,
        "name": "Dreepy",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 3
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 3
       },
       {
+       "cid": 121,
        "name": "Dragapult ex",
        "qty": 3
       },
       {
+       "cid": 132,
        "name": "Dusclops",
        "qty": 2
       },
       {
+       "cid": 131,
        "name": "Duskull",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 1256,
        "name": "Team Rocket's Watchtower",
        "qty": 2
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 1
       },
       {
+       "cid": 133,
        "name": "Dusknoir",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1071,
        "name": "Meowth ex",
        "qty": 1
       },
       {
+       "cid": 791,
        "name": "Moltres",
        "qty": 1
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -17699,86 +19567,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 9
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1262,
        "name": "Surfing Beach",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 861,
        "name": "Mega Froslass ex",
        "qty": 3
       },
       {
+       "cid": 1145,
        "name": "Mega Signal",
        "qty": 3
       },
       {
+       "cid": 1031,
        "name": "Mega Starmie ex",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 1030,
        "name": "Staryu",
        "qty": 3
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1224,
        "name": "Cheren",
        "qty": 2
       },
       {
+       "cid": 666,
        "name": "Cinderace",
        "qty": 2
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 2
       },
       {
+       "cid": 1189,
        "name": "Salvatore",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 1
       }
@@ -17875,74 +19764,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 6
       },
       {
+       "cid": 92,
        "name": "Applin",
        "qty": 4
       },
       {
+       "cid": 1175,
        "name": "Brave Bangle",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1094,
        "name": "Bug Catching Set",
        "qty": 4
       },
       {
+       "cid": 93,
        "name": "Dipplin",
        "qty": 4
       },
       {
+       "cid": 1245,
        "name": "Festival Grounds",
        "qty": 4
       },
       {
+       "cid": 89,
        "name": "Grookey",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 247,
        "name": "Swirlix",
        "qty": 4
       },
       {
+       "cid": 90,
        "name": "Thwackey",
        "qty": 4
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -18065,90 +19972,112 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 2
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 2
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -18245,78 +20174,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 3
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 3
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 1
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -18421,78 +20369,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 65,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }
@@ -18601,70 +20568,87 @@
      ],
      "modal_deck": [
       {
+       "cid": 1174,
        "name": "Air Balloon",
        "qty": 4
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 848,
        "name": "Buneary",
        "qty": 4
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 4
       },
       {
+       "cid": 1229,
        "name": "Wally's Compassion",
        "qty": 4
       },
       {
+       "cid": 849,
        "name": "Mega Lopunny ex",
        "qty": 3
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 3
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 174,
        "name": "Fan Rotom",
        "qty": 1
       }
@@ -18789,74 +20773,92 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -18971,82 +20973,102 @@
      ],
      "modal_deck": [
       {
+       "cid": 1210,
        "name": "Brock’s Scouting",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1198,
        "name": "Crispin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 16,
        "name": "Prism Energy",
        "qty": 4
       },
       {
+       "cid": 1236,
        "name": "Urbain",
        "qty": 4
       },
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 3
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 3
       },
       {
+       "cid": 117,
        "name": "Cornerstone Mask Ogerpon ex",
        "qty": 2
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 2
       },
       {
+       "cid": 414,
        "name": "Team Rocket's Articuno",
        "qty": 2
       },
       {
+       "cid": 6,
        "name": "Basic {F} Energy",
        "qty": 1
       },
       {
+       "cid": 3,
        "name": "Basic {W} Energy",
        "qty": 1
       },
       {
+       "cid": 1120,
        "name": "Crushing Hammer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       }
@@ -19169,78 +21191,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 4
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 4
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 4
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 2
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 343,
        "name": "Shaymin",
        "qty": 1
       }
@@ -19347,78 +21388,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 104,
        "name": "Froslass",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 2
       },
       {
+       "cid": 860,
        "name": "Snorunt",
        "qty": 2
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1080,
        "name": "Unfair Stamp",
        "qty": 1
       }
@@ -19533,86 +21593,107 @@
      ],
      "modal_deck": [
       {
+       "cid": 7,
        "name": "Basic {D} Energy",
        "qty": 10
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 648,
        "name": "Marnie's Grimmsnarl ex",
        "qty": 4
       },
       {
+       "cid": 646,
        "name": "Marnie's Impidimp",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 112,
        "name": "Munkidori",
        "qty": 3
       },
       {
+       "cid": 1259,
        "name": "Spikemuth Gym",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 2
       },
       {
+       "cid": 647,
        "name": "Marnie's Morgrem",
        "qty": 2
       },
       {
+       "cid": 235,
        "name": "Budew",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1260,
        "name": "Risky Ruins",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       },
       {
+       "cid": 689,
        "name": "Yveltal",
        "qty": 1
       }
@@ -19723,98 +21804,122 @@
      ],
      "modal_deck": [
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 4
       },
       {
+       "cid": 18,
        "name": "Grow Grass Energy",
        "qty": 4
       },
       {
+       "cid": 1147,
        "name": "Jumbo Ice Cream",
        "qty": 4
       },
       {
+       "cid": 1227,
        "name": "Lillie's Determination",
        "qty": 4
       },
       {
+       "cid": 756,
        "name": "Mega Kangaskhan ex",
        "qty": 4
       },
       {
+       "cid": 11,
        "name": "Mist Energy",
        "qty": 4
       },
       {
+       "cid": 14,
        "name": "Spiky Energy",
        "qty": 4
       },
       {
+       "cid": 1219,
        "name": "Team Rocket's Petrel",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 3
       },
       {
+       "cid": 345,
        "name": "Crustle",
        "qty": 3
       },
       {
+       "cid": 344,
        "name": "Dwebble",
        "qty": 3
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 3
       },
       {
+       "cid": 1122,
        "name": "Pokégear 3.0",
        "qty": 3
       },
       {
+       "cid": 1186,
        "name": "Eri",
        "qty": 2
       },
       {
+       "cid": 1123,
        "name": "Switch",
        "qty": 2
       },
       {
+       "cid": 1,
        "name": "Basic {G} Energy",
        "qty": 1
       },
       {
+       "cid": 1242,
        "name": "Community Center",
        "qty": 1
       },
       {
+       "cid": 1087,
        "name": "Hand Trimmer",
        "qty": 1
       },
       {
+       "cid": 1161,
        "name": "Handheld Fan",
        "qty": 1
       },
       {
+       "cid": 1159,
        "name": "Hero’s Cape",
        "qty": 1
       },
       {
+       "cid": 1204,
        "name": "Lisia’s Appeal",
        "qty": 1
       },
       {
+       "cid": 1257,
        "name": "Team Rocket's Factory",
        "qty": 1
       },
       {
+       "cid": 1121,
        "name": "Ultra Ball",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -19904,94 +22009,117 @@
      "preys": [],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 3
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 3
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 3
       },
       {
+       "cid": 1266,
        "name": "Nighttime Mine",
        "qty": 2
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 140,
        "name": "Fezandipiti ex",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1156,
        "name": "Lucky Helmet",
        "qty": 1
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       },
       {
+       "cid": 1137,
        "name": "Tool Scrapper",
        "qty": 1
       },
       {
+       "cid": 1197,
        "name": "Xerosic’s Machinations",
        "qty": 1
       }
@@ -20114,78 +22242,97 @@
      ],
      "modal_deck": [
       {
+       "cid": 741,
        "name": "Abra",
        "qty": 4
       },
       {
+       "cid": 743,
        "name": "Alakazam",
        "qty": 4
       },
       {
+       "cid": 1086,
        "name": "Buddy-Buddy Poffin",
        "qty": 4
       },
       {
+       "cid": 1231,
        "name": "Dawn",
        "qty": 4
       },
       {
+       "cid": 305,
        "name": "Dunsparce",
        "qty": 4
       },
       {
+       "cid": 1081,
        "name": "Enhanced Hammer",
        "qty": 4
       },
       {
+       "cid": 1225,
        "name": "Hilda",
        "qty": 4
       },
       {
+       "cid": 742,
        "name": "Kadabra",
        "qty": 4
       },
       {
+       "cid": 1152,
        "name": "Poké Pad",
        "qty": 4
       },
       {
+       "cid": 1079,
        "name": "Rare Candy",
        "qty": 4
       },
       {
+       "cid": 19,
        "name": "Telepath Psychic Energy",
        "qty": 4
       },
       {
+       "cid": 5,
        "name": "Basic {P} Energy",
        "qty": 3
       },
       {
+       "cid": 1182,
        "name": "Boss’s Orders",
        "qty": 3
       },
       {
+       "cid": 66,
        "name": "Dudunsparce",
        "qty": 3
       },
       {
+       "cid": 1097,
        "name": "Night Stretcher",
        "qty": 3
       },
       {
+       "cid": 1264,
        "name": "Battle Cage",
        "qty": 1
       },
       {
+       "cid": 13,
        "name": "Enriching Energy",
        "qty": 1
       },
       {
+       "cid": 1184,
        "name": "Lana’s Aid",
        "qty": 1
       },
       {
+       "cid": 1129,
        "name": "Sacred Ash",
        "qty": 1
       }

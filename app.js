@@ -152,23 +152,90 @@ function updateThemeButton(theme) {
   els["theme-toggle"].setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
 }
 
+function priceSnapshotLabel() {
+  const value = state.prices?.generated_at;
+  if (!value) return "Snapshot date unavailable";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
 
 function renderOverview() {
   const insights = deriveInsights(state.aggregates);
-  const signals = [
-    { label: "META LEADER", row: insights.strongest, value: insights.strongest ? formatPercent(insights.strongest.bt_wr_shrunk) : "—", note: "Meta Score" },
-    { label: "MOST PLAYED", row: insights.mostPlayed, value: insights.mostPlayed ? formatPercent(insights.mostPlayed.pick_rate) : "—", note: "Overall meta share" },
-    { label: "TOP 50 LEADER", row: insights.eliteLeader, value: insights.eliteLeader ? formatPercent(insights.eliteLeader.bt_wr_shrunk) : "—", note: "Top 50 Meta Score" },
+  const snapshotSignals = [
+    {
+      label: "MOST PLAYED",
+      row: insights.mostPlayed,
+      detail: insights.mostPlayed
+        ? `${formatPercent(insights.mostPlayed.pick_rate)} share · ${formatNumber(insights.mostPlayed.seats)} games`
+        : "Unavailable",
+    },
+    {
+      label: "TOP 50 LEADER",
+      row: insights.eliteLeader,
+      detail: insights.eliteLeader
+        ? `${formatPercent(insights.eliteLeader.bt_wr_shrunk)} Meta Score · ${formatNumber(insights.eliteLeader.seats)} games`
+        : "Unavailable",
+    },
+    {
+      label: "HIGH-VOLUME LEADER",
+      row: insights.highVolumeLeader,
+      detail: insights.highVolumeLeader
+        ? `${formatPercent(insights.highVolumeLeader.bt_wr_shrunk)} Meta Score · ${formatNumber(insights.highVolumeLeader.seats)} games`
+        : "Unavailable",
+    },
   ];
   els["signal-board"].innerHTML = `
-    <div class="signal-board-head"><div><p class="section-kicker">MARKET SIGNALS</p><h2>Key Meta Signals</h2></div><a href="#tiers">View all decks <span aria-hidden="true">→</span></a></div>
-    <div class="signal-grid">${signals.map((signal, index) => signal.row ? `
-      <button type="button" data-open-unit="${escapeHtml(signal.row.unit)}">
-        <span class="signal-index">0${index + 1}</span>
-        <span class="signal-art">${cardArt(signal.row.main_cards?.[0], { eager: index === 0 })}</span>
-        <span class="signal-copy"><small>${escapeHtml(signal.label)}</small><strong>${escapeHtml(shortDeckName(signal.row))}</strong><em>${escapeHtml(ARCHETYPE_KO[signal.row.l1] || signal.row.l1)}</em></span>
-        <span class="signal-value"><strong>${escapeHtml(signal.value)}</strong><small>${escapeHtml(signal.note)}</small></span>
-      </button>` : "").join("")}</div>`;
+    <div class="signal-board-head">
+      <div>
+        <p class="section-kicker">META SNAPSHOT</p>
+        <h2>Top Contenders</h2>
+        <p class="signal-board-note">Five leaders by opponent-adjusted Meta Score, with usage and raw results</p>
+      </div>
+      <a href="#tiers">View all decks <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="signal-layout">
+      <section class="signal-leaders" aria-label="Top five decks by Meta Score">
+        <div class="signal-panel-head"><span>Rank &amp; deck</span><span>Performance</span></div>
+        <div class="signal-leader-list">${insights.leaders.map((row, index) => `
+          <button class="signal-leader-row" type="button" data-open-unit="${escapeHtml(row.unit)}">
+            <span class="signal-rank">${String(index + 1).padStart(2, "0")}</span>
+            <span class="signal-art">${cardArt(row.main_cards?.[0], { eager: index === 0 })}</span>
+            <span class="signal-copy">
+              <strong>${escapeHtml(shortDeckName(row))}</strong>
+              <em>${escapeHtml(rowEvidence(row).label)} · ${escapeHtml(row.tier)} tier</em>
+            </span>
+            <span class="signal-metrics">
+              <span><small>Meta</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></span>
+              <span><small>Win</small><strong>${formatPercent(row.raw_wr)}</strong></span>
+              <span><small>Share</small><strong>${formatPercent(row.pick_rate)}</strong></span>
+              <span><small>Games</small><strong>${formatNumber(row.seats)}</strong></span>
+            </span>
+          </button>`).join("")}
+        </div>
+      </section>
+      <aside class="signal-sidebar" aria-label="Additional meta signals">
+        ${snapshotSignals.map((signal) => signal.row ? `
+          <button class="snapshot-signal" type="button" data-open-unit="${escapeHtml(signal.row.unit)}">
+            <span class="snapshot-art">${cardArt(signal.row.main_cards?.[0])}</span>
+            <span class="snapshot-copy">
+              <small>${escapeHtml(signal.label)}</small>
+              <strong>${escapeHtml(shortDeckName(signal.row))}</strong>
+              <em>${escapeHtml(signal.detail)}</em>
+            </span>
+          </button>` : "").join("")}
+        <div class="dataset-snapshot-card">
+          <small>OBSERVED SAMPLE</small>
+          <strong>${formatNumber(state.aggregates.views.main.games)} games</strong>
+          <p>${formatNumber(state.aggregates.views.main.rows.length)} variants · ${escapeHtml((state.aggregates.date_range || []).join(" – "))}</p>
+        </div>
+      </aside>
+    </div>`;
 }
 
 function selectedBandSource() {
@@ -225,6 +292,10 @@ function deckRow(row) {
   const arts = (row.main_cards || []).slice(0, 3).map((card) => cardArt(card)).join("");
   const evidence = rowEvidence(row);
   const price = deckPrice(row);
+  const priceText = deckPriceLabel(price, 0);
+  const priceTitle = price.complete
+    ? `Exact-printing estimate · ${priceSnapshotLabel()}`
+    : "Price unavailable — incomplete market data";
   const warn = evidence.key !== "high"
     ? `<span class="row-flag" title="${escapeHtml(`${evidence.label} — ${evidence.description}`)}" aria-label="${escapeHtml(evidence.label)}">⚠</span>`
     : "";
@@ -240,7 +311,7 @@ function deckRow(row) {
         <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>Win</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>Share</small></span>
         <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>Games</small></span>
-        <span class="deck-stat stat-price"><strong>${price.count ? `~$${price.total.toFixed(0)}` : "—"}</strong><small>Price</small></span>
+        <span class="deck-stat stat-price" title="${escapeHtml(priceTitle)}"><strong>${escapeHtml(priceText)}</strong><small>${price.complete ? "Price" : "Priced"}</small></span>
       </span>
       <span class="deck-flag">${warn}</span>
     </button>
@@ -441,16 +512,40 @@ function deckListText(row) {
 function deckPrice(row) {
   const cards = state.prices?.cards || {};
   let total = 0;
-  let count = 0;
-  let estimated = 0;
+  let totalCopies = 0;
+  let pricedCopies = 0;
+  let estimatedCopies = 0;
+  let lowBasisCopies = 0;
+  const missing = [];
   for (const card of row.modal_deck || []) {
-    const price = cards[card.name];
-    if (!price) continue;
-    total += Number(price.usd || 0) * Number(card.qty || 0);
-    count += Number(card.qty || 0);
-    if (String(price.source).startsWith("fallback")) estimated += Number(card.qty || 0);
+    const qty = Number(card.qty || 0);
+    totalCopies += qty;
+    const price = cards[String(card.cid)];
+    const usd = Number(price?.usd);
+    if (!price || !Number.isFinite(usd) || usd <= 0) {
+      missing.push({ cid: card.cid, name: card.name, qty });
+      continue;
+    }
+    total += usd * qty;
+    pricedCopies += qty;
+    if (price.source === "basic-energy-default") estimatedCopies += qty;
+    if (price.basis === "low") lowBasisCopies += qty;
   }
-  return { total, count, estimated };
+  return {
+    total,
+    totalCopies,
+    pricedCopies,
+    estimatedCopies,
+    lowBasisCopies,
+    missing,
+    complete: totalCopies > 0 && pricedCopies === totalCopies,
+  };
+}
+
+function deckPriceLabel(price, digits = 2) {
+  if (price.complete) return `~$${price.total.toFixed(digits)}`;
+  if (price.pricedCopies) return `${price.pricedCopies}/${price.totalCopies}`;
+  return "—";
 }
 
 function renderDialog(row) {
@@ -459,7 +554,20 @@ function renderDialog(row) {
   const cardGallery = (row.main_cards || []).slice(0, 5);
   const modalCount = (row.modal_deck || []).reduce((sum, card) => sum + card.qty, 0);
   const price = deckPrice(row);
-  const priceLabel = price.count ? `~$${price.total.toFixed(2)}` : "Unavailable";
+  const priceLabel = price.complete
+    ? deckPriceLabel(price)
+    : price.pricedCopies
+      ? `Partial (${price.pricedCopies}/${price.totalCopies})`
+      : "Unavailable";
+  const coverageNote = price.complete
+    ? "Based on the exact set and collector number for the representative list."
+    : `Price unavailable because ${price.totalCopies - price.pricedCopies} cards lack market data.`;
+  const estimateNote = price.estimatedCopies
+    ? ` ${price.estimatedCopies} Basic Energy cards use the $0.05 default.`
+    : "";
+  const lowBasisNote = price.lowBasisCopies
+    ? ` ${price.lowBasisCopies} cards use low price because market price was unavailable.`
+    : "";
   els["dialog-content"].innerHTML = `
     <header class="detail-hero">
       <div class="detail-hero-art">${cardGallery.slice(0, 3).map((card, index) => cardArt(card, { eager: index === 0, large: true })).join("")}</div>
@@ -501,7 +609,7 @@ function renderDialog(row) {
 
     <section class="detail-section">
       <div class="detail-section-heading"><h3>Representative List</h3><span>${formatPercent(row.modal_deck_share)} of variant · ${modalCount} cards</span></div>
-      <p class="price-note">Estimated cheapest-printing market total: <strong>${priceLabel}</strong>. ${price.estimated ? `${price.estimated} cards use fallback estimates. ` : ""}Shipping, tax, condition, and exact printing are excluded.</p>
+      <p class="price-note">Exact-printing estimate: <strong>${priceLabel}</strong>. ${escapeHtml(coverageNote)}${escapeHtml(estimateNote)}${escapeHtml(lowBasisNote)} TCGplayer data via TCGCSV, snapshot ${escapeHtml(priceSnapshotLabel())}; shipping, tax, condition, and regional prices are excluded.</p>
       <div class="decklist-shell">
         <div class="decklist-grid">${(row.modal_deck || []).map((card) => `<div><strong>${card.qty}</strong><span>${escapeHtml(card.name)}</span></div>`).join("")}</div>
         <button class="copy-button" type="button" data-copy-deck>Copy decklist</button>

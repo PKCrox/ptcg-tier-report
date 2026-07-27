@@ -119,9 +119,12 @@ export function archetypeDistribution(view) {
 export function deriveInsights(aggregates) {
   const mainRows = aggregates?.views?.main?.rows || [];
   const eliteRows = aggregates?.views?.elite?.rows || [];
+  const leaders = [...mainRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk || b.seats - a.seats).slice(0, 5);
   return {
-    strongest: [...mainRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0],
+    leaders,
+    strongest: leaders[0],
     mostPlayed: [...mainRows].sort((a, b) => b.pick_rate - a.pick_rate)[0],
+    highVolumeLeader: [...mainRows].filter((row) => row.seats >= 5000).sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk || b.seats - a.seats)[0],
     eliteLeader: [...eliteRows].sort((a, b) => b.bt_wr_shrunk - a.bt_wr_shrunk)[0],
   };
 }

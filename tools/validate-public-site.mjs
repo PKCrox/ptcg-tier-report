@@ -51,6 +51,18 @@ const allowedRowKeys = new Set([
   "team_count", "top_team_share", "seat0_share",
 ]);
 
+const allowedModalCardKeys = new Set(["cid", "name", "qty"]);
+
+const allowedPriceTopLevelKeys = new Set([
+  "schema_version", "currency", "generated_at", "source_modified_at",
+  "provider", "method", "coverage", "cards",
+]);
+
+const allowedPriceCardKeys = new Set([
+  "name", "set", "number", "usd", "currency", "source", "basis",
+  "printing", "groupId", "productId", "variant", "market", "low",
+]);
+
 // Generic leak patterns only. Identifier-specific tokens live in the internal
 // pre-push checker (not in this public repo).
 const forbiddenArtifactTerms = [
@@ -113,6 +125,13 @@ function validateRows(viewKey, view, filters) {
     if (!Array.isArray(row.main_cards) || !Array.isArray(row.modal_deck)) fail(`${label}: card arrays missing`);
     const deckSize = row.modal_deck.reduce((sum, card) => sum + Number(card.qty || 0), 0);
     if (row.modal_deck.length && deckSize !== 60) fail(`${label}: representative deck has ${deckSize}, expected 60`);
+    for (const [cardIndex, card] of row.modal_deck.entries()) {
+      const cardLabel = `${label}.modal_deck[${cardIndex}]`;
+      assertAllowedKeys(card, allowedModalCardKeys, cardLabel);
+      if (!Number.isInteger(card.cid) || card.cid < 1) fail(`${cardLabel}.cid must be a positive integer`);
+      if (typeof card.name !== "string" || !card.name) fail(`${cardLabel}.name missing`);
+      if (!Number.isInteger(card.qty) || card.qty < 1) fail(`${cardLabel}.qty must be a positive integer`);
+    }
     for (const side of ["counters", "preys"]) {
       if (!Array.isArray(row[side])) fail(`${label}.${side}: expected array`);
       for (const cell of row[side] || []) {
@@ -157,9 +176,11 @@ for (const file of requiredFiles) {
 let aggregates;
 let matchups;
 let manifest;
+let prices;
 try { aggregates = JSON.parse(await read("data/aggregates.json")); } catch (error) { fail(`aggregates JSON invalid: ${error.message}`); }
 try { matchups = JSON.parse(await read("data/matchups.json")); } catch (error) { fail(`matchups JSON invalid: ${error.message}`); }
 try { manifest = JSON.parse(await read("data/manifest.json")); } catch (error) { fail(`manifest JSON invalid: ${error.message}`); }
+try { prices = JSON.parse(await read("data/prices.json")); } catch (error) { fail(`prices JSON invalid: ${error.message}`); }
 
 if (aggregates) {
   assertAllowedKeys(aggregates, allowedTopLevel, "aggregates");
@@ -192,9 +213,91 @@ if (aggregates) {
   }
 }
 
+if (prices) {
+  assertAllowedKeys(prices, allowedPriceTopLevelKeys, "prices");
+  if (prices.schema_version !== 4) fail(`price schema_version must be 4, got ${prices.schema_version}`);
+  if (prices.currency !== "USD") fail(`price currency must be USD, got ${prices.currency}`);
+  if (!Number.isFinite(Date.parse(prices.generated_at))) fail(`price generated_at is invalid: ${prices.generated_at}`);
+  if (prices.provider?.name !== "TCGCSV" || prices.provider?.underlying_market !== "TCGplayer") {
+    fail("price provider contract must identify TCGCSV and TCGplayer");
+  }
+  if (!prices.cards || typeof prices.cards !== "object" || Array.isArray(prices.cards)) {
+    fail("price cards map missing");
+  } else {
+    for (const [cid, price] of Object.entries(prices.cards)) {
+      assertAllowedKeys(price, allowedPriceCardKeys, `prices.cards.${cid}`);
+      if (!/^[1-9]\d*$/.test(cid)) fail(`prices.cards.${cid}: key must be a positive card id`);
+      if (typeof price.name !== "string" || !price.name) fail(`prices.cards.${cid}.name missing`);
+      if (!Number.isFinite(price.usd) || price.usd <= 0) fail(`prices.cards.${cid}.usd must be positive`);
+      if (price.currency !== "USD") fail(`prices.cards.${cid}.currency must be USD`);
+      if (!["tcgcsv/tcgplayer", "basic-energy-default"].includes(price.source)) {
+        fail(`prices.cards.${cid}.source is unsupported: ${price.source}`);
+      }
+      if (!["market", "low", "default"].includes(price.basis)) {
+        fail(`prices.cards.${cid}.basis is unsupported: ${price.basis}`);
+      }
+      if (price.source === "tcgcsv/tcgplayer") {
+        if (!Number.isInteger(price.groupId) || !Number.isInteger(price.productId)) {
+          fail(`prices.cards.${cid}: TCGCSV identifiers missing`);
+        }
+        if (!price.printing) fail(`prices.cards.${cid}: exact printing label missing`);
+      } else if (price.basis !== "default" || price.usd !== 0.05) {
+        fail(`prices.cards.${cid}: Basic Energy default must be exactly $0.05`);
+      }
+    }
+  }
+
+  if (aggregates && prices.cards) {
+    const requiredCardIds = new Set();
+    for (const viewKey of viewKeys) {
+      const rows = aggregates.views?.[viewKey]?.rows || [];
+      let pricedCopies = 0;
+      let cardCopies = 0;
+      let completeDecks = 0;
+      for (const row of rows) {
+        let deckPricedCopies = 0;
+        let deckCopies = 0;
+        for (const card of row.modal_deck || []) {
+          requiredCardIds.add(String(card.cid));
+          deckCopies += card.qty;
+          cardCopies += card.qty;
+          const price = prices.cards[String(card.cid)];
+          if (!price) {
+            fail(`${viewKey}/${row.unit}: missing price for card ${card.cid} ${card.name}`);
+            continue;
+          }
+          if (price.name !== card.name) {
+            fail(`${viewKey}/${row.unit}: card ${card.cid} price name mismatch (${price.name} != ${card.name})`);
+          }
+          deckPricedCopies += card.qty;
+          pricedCopies += card.qty;
+        }
+        if (deckCopies === 60 && deckPricedCopies === 60) completeDecks += 1;
+      }
+      const declared = prices.coverage?.views?.[viewKey];
+      const actual = { decks: rows.length, complete_decks: completeDecks, card_copies: cardCopies, priced_copies: pricedCopies };
+      for (const [field, value] of Object.entries(actual)) {
+        if (declared?.[field] !== value) {
+          fail(`price coverage ${viewKey}.${field} is ${declared?.[field]}, expected ${value}`);
+        }
+      }
+      if (completeDecks !== rows.length) fail(`${viewKey}: only ${completeDecks}/${rows.length} representative decks have 60-card price coverage`);
+    }
+    const priceIds = Object.keys(prices.cards);
+    if (prices.coverage?.card_ids !== requiredCardIds.size) {
+      fail(`price coverage card_ids is ${prices.coverage?.card_ids}, expected ${requiredCardIds.size}`);
+    }
+    if (prices.coverage?.priced_card_ids !== priceIds.length) {
+      fail(`price coverage priced_card_ids is ${prices.coverage?.priced_card_ids}, expected ${priceIds.length}`);
+    }
+    const extraIds = priceIds.filter((cid) => !requiredCardIds.has(cid));
+    if (extraIds.length) fail(`price map contains ${extraIds.length} unused card ids`);
+  }
+}
+
 if (manifest) {
   if (manifest.schema_version !== 2) fail("manifest schema_version must be 2");
-  for (const file of ["aggregates.json", "matchups.json"]) {
+  for (const file of ["aggregates.json", "matchups.json", "prices.json"]) {
     const contents = await read(`data/${file}`);
     const bytes = Buffer.byteLength(contents);
     const digest = createHash("sha256").update(contents).digest("hex");
@@ -213,7 +316,7 @@ try {
   if (process.env.VERCEL !== "1") fail(`could not audit tracked files: ${error.message}`);
 }
 
-for (const file of ["index.html", "styles.css", "app.js", "manifest.webmanifest", "sw.js", "assets/site-data.js", "data/aggregates.json", "data/matchups.json"]) {
+for (const file of ["index.html", "styles.css", "app.js", "manifest.webmanifest", "sw.js", "assets/site-data.js", "data/aggregates.json", "data/matchups.json", "data/prices.json"]) {
   const contents = (await read(file)).toLocaleLowerCase();
   for (const term of forbiddenArtifactTerms) {
     if (contents.includes(term.toLocaleLowerCase())) fail(`${file}: forbidden public term '${term}'`);
@@ -236,4 +339,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`public-site validation passed: ${viewKeys.map((key) => `${aggregates.views[key].rows.length} ${key}`).join(", ")} variants, schema v${aggregates.schema_version}`);
+console.log(`public-site validation passed: ${viewKeys.map((key) => `${aggregates.views[key].rows.length} ${key}`).join(", ")} variants, ${prices.coverage.card_ids} exact card prices`);

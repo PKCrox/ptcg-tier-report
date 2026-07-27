@@ -181,6 +181,9 @@ try {
   await navigate(baseUrl);
   const expectedCounts = await evaluate(`fetch('./data/aggregates.json').then((response) => response.json()).then((data) => ({main: data.views.main.rows.length, high: data.views.high.rows.length, elite: data.views.elite.rows.length}))`);
   assert(await evaluate(`document.querySelectorAll('.deck-card').length === ${expectedCounts.main}`), `desktop should render all ${expectedCounts.main} main variants`);
+  assert(await evaluate("document.querySelectorAll('.signal-leader-row').length === 5"), "overview should show five Meta Score leaders");
+  assert(await evaluate("document.querySelectorAll('.snapshot-signal').length === 3"), "overview should show three supporting meta signals");
+  assert(await evaluate("document.querySelectorAll('.stat-price strong').length > 0 && [...document.querySelectorAll('.stat-price strong')].every((node) => node.textContent.trim().startsWith('~$'))"), "every rendered deck should have a complete price");
   assert(await evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"), "desktop has horizontal overflow");
   assert(await evaluate("document.querySelectorAll('h1').length === 1"), "page must expose one h1");
   await screenshot("/tmp/ptcg-qa-desktop.png");

@@ -2,13 +2,13 @@
 
 Kaggle **Pokémon TCG AI Battle** 공개 리플레이 기반 덱 티어·픽률·상성 통계.
 
-[**티어표 열기 →**](https://pkcrox.github.io/ptcg-tier-report/)
+[**티어표 열기 →**](https://metatcg.vercel.app/)
 
 ## 최신 스냅샷
 
 | 항목 | 값 |
 |:--|:--|
-| 갱신 | 2026-07-27 12:19 KST |
+| 갱신 | 2026-07-27 14:03 KST |
 | 리플레이 기간 | 2026-07-05 ~ 2026-07-25 |
 | 관측 코호트 | 현재 LB에서 양측 **800+**인 팀의 과거 경기 |
 | 표본 | **75,608판** · 62개 변형 |
@@ -30,18 +30,18 @@ Kaggle **Pokémon TCG AI Battle** 공개 리플레이 기반 덱 티어·픽률�
 
 | # | 티어 | 변형 | PKC 스코어 | 픽률 | 판수 | 팀 편중 |
 |--:|:--:|:--|--:|--:|--:|:--|
-| 1 | **S** | [Thwackey (기본)](https://pkcrox.github.io/ptcg-tier-report/?deck=thwackey) | 60.3% | 1.0% | 1,481 | 한 팀 위주 |
-| 2 | **S** | [Rocket · 가속](https://pkcrox.github.io/ptcg-tier-report/?deck=rocket%5Benergy_turbo%5D) | 60.1% | 8.2% | 12,383 | 여러 팀 사용 |
-| 3 | **S** | [눈여아 · 손패·힐](https://pkcrox.github.io/ptcg-tier-report/?deck=froslass%5Bhand_disruption%2Bheal_tech%5D) | 58.0% | 0.4% | 654 | 한 팀 위주 |
-| 4 | **S** | [난천 한카리아스 · 맷집·가속](https://pkcrox.github.io/ptcg-tier-report/?deck=cynthia%5Bbulk_boost%2Benergy_turbo%5D) | 57.8% | 5.9% | 8,898 | 소수 팀 위주 |
-| 5 | **S** | [마리 오롱털 · 회수](https://pkcrox.github.io/ptcg-tier-report/?deck=marnie%5Brecovery_loop%5D) | 57.3% | 20.6% | 31,154 | 여러 팀 사용 |
-| 6 | **S** | [눈여아 · 힐·벽](https://pkcrox.github.io/ptcg-tier-report/?deck=froslass%5Bheal_tech%2Bprevention_wall%5D) | 57.1% | 0.3% | 476 | 한 팀 위주 |
-| 7 | **S** | [Thwackey · 손패·회수](https://pkcrox.github.io/ptcg-tier-report/?deck=thwackey%5Bhand_disruption%2Brecovery_loop%5D) | 57.0% | 0.4% | 612 | 한 팀 위주 |
-| 8 | **S** | [드래펄트 · 거스트·벽·회수](https://pkcrox.github.io/ptcg-tier-report/?deck=dragapult%5Bgust_pressure%2Bprevention_wall%2Brecovery_loop%5D) | 56.7% | 0.7% | 1,008 | 소수 팀 위주 |
-| 9 | **S** | [드래펄트 · 견제·거스트·벽](https://pkcrox.github.io/ptcg-tier-report/?deck=dragapult%5Benergy_denial%2Bgust_pressure%2Bprevention_wall%5D) | 56.5% | 2.3% | 3,458 | 소수 팀 위주 |
-| 10 | **S** | [큐아링 컨트롤 · 견제·손패·회수](https://pkcrox.github.io/ptcg-tier-report/?deck=comfey_control%5Benergy_denial%2Bhand_disruption%2Brecovery_loop%5D) | 55.9% | 0.2% | 333 | 한 팀 위주 |
-| 11 | **S** | [후딘 · 견제·거스트·손패](https://pkcrox.github.io/ptcg-tier-report/?deck=alakazam%5Benergy_denial%2Bgust_pressure%2Bhand_disruption%5D) | 54.9% | 29.6% | 44,764 | 여러 팀 사용 |
-| 12 | **S** | [암팰리스 · 손패·힐·벽](https://pkcrox.github.io/ptcg-tier-report/?deck=crustle%5Bhand_disruption%2Bheal_tech%2Bprevention_wall%5D) | 54.8% | 10.4% | 15,763 | 여러 팀 사용 |
+| 1 | **S** | [Thwackey (기본)](https://metatcg.vercel.app/?deck=thwackey) | 60.3% | 1.0% | 1,481 | 한 팀 위주 |
+| 2 | **S** | [Rocket · 가속](https://metatcg.vercel.app/?deck=rocket%5Benergy_turbo%5D) | 60.1% | 8.2% | 12,383 | 여러 팀 사용 |
+| 3 | **S** | [눈여아 · 손패·힐](https://metatcg.vercel.app/?deck=froslass%5Bhand_disruption%2Bheal_tech%5D) | 58.0% | 0.4% | 654 | 한 팀 위주 |
+| 4 | **S** | [난천 한카리아스 · 맷집·가속](https://metatcg.vercel.app/?deck=cynthia%5Bbulk_boost%2Benergy_turbo%5D) | 57.8% | 5.9% | 8,898 | 소수 팀 위주 |
+| 5 | **S** | [마리 오롱털 · 회수](https://metatcg.vercel.app/?deck=marnie%5Brecovery_loop%5D) | 57.3% | 20.6% | 31,154 | 여러 팀 사용 |
+| 6 | **S** | [눈여아 · 힐·벽](https://metatcg.vercel.app/?deck=froslass%5Bheal_tech%2Bprevention_wall%5D) | 57.1% | 0.3% | 476 | 한 팀 위주 |
+| 7 | **S** | [Thwackey · 손패·회수](https://metatcg.vercel.app/?deck=thwackey%5Bhand_disruption%2Brecovery_loop%5D) | 57.0% | 0.4% | 612 | 한 팀 위주 |
+| 8 | **S** | [드래펄트 · 거스트·벽·회수](https://metatcg.vercel.app/?deck=dragapult%5Bgust_pressure%2Bprevention_wall%2Brecovery_loop%5D) | 56.7% | 0.7% | 1,008 | 소수 팀 위주 |
+| 9 | **S** | [드래펄트 · 견제·거스트·벽](https://metatcg.vercel.app/?deck=dragapult%5Benergy_denial%2Bgust_pressure%2Bprevention_wall%5D) | 56.5% | 2.3% | 3,458 | 소수 팀 위주 |
+| 10 | **S** | [큐아링 컨트롤 · 견제·손패·회수](https://metatcg.vercel.app/?deck=comfey_control%5Benergy_denial%2Bhand_disruption%2Brecovery_loop%5D) | 55.9% | 0.2% | 333 | 한 팀 위주 |
+| 11 | **S** | [후딘 · 견제·거스트·손패](https://metatcg.vercel.app/?deck=alakazam%5Benergy_denial%2Bgust_pressure%2Bhand_disruption%5D) | 54.9% | 29.6% | 44,764 | 여러 팀 사용 |
+| 12 | **S** | [암팰리스 · 손패·힐·벽](https://metatcg.vercel.app/?deck=crustle%5Bhand_disruption%2Bheal_tech%2Bprevention_wall%5D) | 54.8% | 10.4% | 15,763 | 여러 팀 사용 |
 
 ## 방법론과 한계
 
@@ -55,8 +55,9 @@ Kaggle **Pokémon TCG AI Battle** 공개 리플레이 기반 덱 티어·픽률�
 ## 공개 데이터 계약
 
 - [`data/aggregates.json`](data/aggregates.json) — schema v2, 변형·지표·증거 진단
-- [`data/matchups.json`](data/matchups.json) — main / elite 직접 대진 셀
-- [`data/manifest.json`](data/manifest.json) — 바이트 수와 SHA-256 체크섬
+- [`data/matchups.json`](data/matchups.json) — main / high / elite 직접 대진 셀
+- [`data/prices.json`](data/prices.json) — schema v4, 카드 ID별 정확한 세트·번호와 TCGplayer 가격
+- [`data/manifest.json`](data/manifest.json) — 세 공개 데이터 파일의 바이트 수와 SHA-256 체크섬
 - 빌드는 공개 필드 allowlist와 금지 키 검사를 통과해야 하며 `dist/`만 Pages에 배포합니다.
 
 ## 로컬 미리보기
@@ -68,6 +69,6 @@ npm run build
 npm run serve
 ```
 
-원본 데이터: [Kaggle pokemon-tcg-ai-battle](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle) · 카드 이미지: [Limitless TCG](https://limitlesstcg.com)
+원본 데이터: [Kaggle pokemon-tcg-ai-battle](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle) · 가격: [TCGCSV / TCGplayer](https://tcgcsv.com/) · 카드 이미지: [Limitless TCG](https://limitlesstcg.com)
 
-*Generated by tier_site pipeline · 2026-07-27 12:19 KST*
+*Generated by tier_site pipeline · 2026-07-27 14:03 KST*
