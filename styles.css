@@ -137,18 +137,13 @@ h1, h2, h3, h4, p { margin: 0; }
 .signal-metrics strong { display: block; margin-top: 1px; color: var(--text-dim); font: 750 .79rem ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 .signal-metrics > span:first-child strong { color: var(--accent); font-weight: 850; }
 .signal-sidebar { display: flex; flex-direction: column; min-width: 0; border-left: 1px solid var(--border); }
-.snapshot-signal { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 10px; align-items: center; width: 100%; padding: 13px; border: 0; border-bottom: 1px solid var(--border-soft); background: none; text-align: left; }
+.snapshot-signal { display: grid; flex: 1; grid-template-columns: 40px minmax(0, 1fr); gap: 10px; align-items: center; width: 100%; padding: 13px; border: 0; border-bottom: 1px solid var(--border-soft); background: none; text-align: left; }
 .snapshot-art .card-art-wrap { width: 40px; height: 40px; aspect-ratio: auto; border-radius: 2px; }
 .snapshot-art .card-art { object-fit: cover; object-position: center 22%; transform: scale(1.8); }
 .snapshot-copy { min-width: 0; }
 .snapshot-copy small { display: block; color: var(--accent); font: 750 .6rem ui-monospace, monospace; letter-spacing: .08em; }
 .snapshot-copy strong { display: block; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .81rem; }
 .snapshot-copy em { display: block; margin-top: 2px; overflow: hidden; color: var(--text-faint); font-size: .67rem; font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
-.dataset-snapshot-card { display: flex; flex: 1; flex-direction: column; justify-content: center; padding: 13px; border-bottom: 1px solid var(--border-soft); }
-.dataset-snapshot-card small { display: block; color: var(--accent); font: 750 .6rem ui-monospace, monospace; letter-spacing: .08em; }
-.dataset-snapshot-card strong { display: block; margin-top: 3px; font: 800 .94rem ui-monospace, monospace; font-variant-numeric: tabular-nums; }
-.dataset-snapshot-card p { margin-top: 4px; color: var(--text-faint); font-size: .69rem; }
-
 /* section headings and toolbar */
 .page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 58px 0 14px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
 .page-meta { color: var(--text-faint); font-size: .8rem; }
@@ -172,7 +167,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .result-count { color: var(--text-faint); font-size: .78rem; margin-left: 4px; }
 
 /* tier table */
-.table-head, .deck-card-button { display: grid; grid-template-columns: 148px minmax(0, 1fr) 82px 76px 76px 76px 76px 30px; align-items: center; gap: 10px; }
+.table-head, .deck-card-button { display: grid; grid-template-columns: 148px minmax(0, 1fr) 82px 76px 76px 76px 76px; align-items: center; gap: 10px; }
 .table-head { padding: 5px 14px 7px calc(50px + 10px + 14px); color: var(--text-faint); font: 750 .68rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .06em; }
 .table-head span { text-align: center; }
 .table-head .col-deck { grid-column: 1 / span 2; text-align: left; }
@@ -208,8 +203,6 @@ h1, h2, h3, h4, p { margin: 0; }
 .deck-stat strong { color: var(--text-dim); font: 650 .89rem ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; }
 .deck-stat.stat-bt strong { font-size: .97rem; font-weight: 850; }
 .deck-stat small { display: none; }
-.deck-flag { text-align: center; }
-.row-flag { color: var(--warn); font-size: .9rem; cursor: help; }
 .empty-state { display: grid; place-items: center; gap: 8px; padding: 44px 16px; text-align: center; background: var(--panel); border: 1px solid var(--border-soft); border-radius: var(--radius); color: var(--text-dim); }
 .empty-state span { font-size: 1.6rem; }
 .empty-state button { border: 1px solid var(--border); background: var(--panel-soft); padding: 7px 14px; border-radius: var(--radius-sm); font-weight: 650; }
@@ -356,10 +349,9 @@ h1, h2, h3, h4, p { margin: 0; }
 
 @media (max-width: 940px) {
   .signal-layout { grid-template-columns: 1fr; }
-  .signal-sidebar { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-left: 0; }
+  .signal-sidebar { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border); border-left: 0; }
   .snapshot-signal { border-right: 1px solid var(--border-soft); border-bottom: 0; }
-  .dataset-snapshot-card { border-right: 1px solid var(--border-soft); border-bottom: 0; }
-  .table-head, .deck-card-button { grid-template-columns: 148px minmax(0, 1fr) 72px 72px 72px 72px 30px; }
+  .table-head, .deck-card-button { grid-template-columns: 148px minmax(0, 1fr) 72px 72px 72px 72px; }
   .table-head span:nth-child(3), .deck-stats .deck-stat:nth-of-type(2) { display: none; }
 }
 
@@ -382,17 +374,15 @@ h1, h2, h3, h4, p { margin: 0; }
   .signal-metrics > span { text-align: left; }
   .signal-sidebar { grid-template-columns: 1fr; }
   .snapshot-signal { border-right: 0; border-bottom: 1px solid var(--border-soft); }
-  .dataset-snapshot-card { border-right: 0; border-bottom: 1px solid var(--border-soft); }
 
   .page-head, .section-head { flex-direction: column; align-items: flex-start; gap: 5px; margin-top: 42px; }
   .table-head { display: none; }
   .tier-group { grid-template-columns: 1fr; gap: 6px; padding: 8px; }
   .tier-rail { flex-direction: row; align-items: center; padding: 0 0 6px; border-right: 0; border-bottom: 1px solid var(--border-soft); }
   .tier-badge { width: 26px; height: 26px; font-size: .82rem; }
-  .deck-card-button { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "arts flag" "name name" "stats stats"; gap: 6px; padding: 10px 4px; }
+  .deck-card-button { grid-template-columns: minmax(0, 1fr); grid-template-areas: "arts" "name" "stats"; gap: 6px; padding: 10px 4px; }
   .deck-arts { grid-area: arts; }
   .deck-name { grid-area: name; }
-  .deck-flag { grid-area: flag; align-self: start; }
   .deck-stats { display: flex; grid-area: stats; gap: 15px; }
   .deck-stats .deck-stat { flex-direction: row; gap: 5px; align-items: baseline; text-align: left; }
   .deck-stats .deck-stat:nth-of-type(2) { display: none; }

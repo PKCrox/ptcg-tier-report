@@ -183,6 +183,8 @@ try {
   assert(await evaluate(`document.querySelectorAll('.deck-card').length === ${expectedCounts.main}`), `desktop should render all ${expectedCounts.main} main variants`);
   assert(await evaluate("document.querySelectorAll('.signal-leader-row').length === 5"), "overview should show five Meta Score leaders");
   assert(await evaluate("document.querySelectorAll('.snapshot-signal').length === 3"), "overview should show three supporting meta signals");
+  assert(await evaluate("!document.body.innerText.includes('OBSERVED SAMPLE')"), "overview should not expose the observed-sample card");
+  assert(await evaluate("document.querySelectorAll('.row-flag').length === 0"), "deck rows should not show ambiguous warning icons");
   assert(await evaluate("document.querySelectorAll('.stat-price strong').length > 0 && [...document.querySelectorAll('.stat-price strong')].every((node) => node.textContent.trim().startsWith('~$'))"), "every rendered deck should have a complete price");
   assert(await evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"), "desktop has horizontal overflow");
   assert(await evaluate("document.querySelectorAll('h1').length === 1"), "page must expose one h1");

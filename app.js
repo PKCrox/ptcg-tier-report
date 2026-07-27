@@ -208,7 +208,7 @@ function renderOverview() {
             <span class="signal-art">${cardArt(row.main_cards?.[0], { eager: index === 0 })}</span>
             <span class="signal-copy">
               <strong>${escapeHtml(shortDeckName(row))}</strong>
-              <em>${escapeHtml(rowEvidence(row).label)} · ${escapeHtml(row.tier)} tier</em>
+              <em>${escapeHtml(row.tier)} tier</em>
             </span>
             <span class="signal-metrics">
               <span><small>Meta</small><strong>${formatPercent(row.bt_wr_shrunk)}</strong></span>
@@ -229,11 +229,6 @@ function renderOverview() {
               <em>${escapeHtml(signal.detail)}</em>
             </span>
           </button>` : "").join("")}
-        <div class="dataset-snapshot-card">
-          <small>OBSERVED SAMPLE</small>
-          <strong>${formatNumber(state.aggregates.views.main.games)} games</strong>
-          <p>${formatNumber(state.aggregates.views.main.rows.length)} variants · ${escapeHtml((state.aggregates.date_range || []).join(" – "))}</p>
-        </div>
       </aside>
     </div>`;
 }
@@ -290,15 +285,11 @@ function renderMethodDiagnostics() {
 
 function deckRow(row) {
   const arts = (row.main_cards || []).slice(0, 3).map((card) => cardArt(card)).join("");
-  const evidence = rowEvidence(row);
   const price = deckPrice(row);
   const priceText = deckPriceLabel(price, 0);
   const priceTitle = price.complete
-    ? `Exact-printing estimate · ${priceSnapshotLabel()}`
+    ? `Simulated set/number estimate · ${priceSnapshotLabel()}`
     : "Price unavailable — incomplete market data";
-  const warn = evidence.key !== "high"
-    ? `<span class="row-flag" title="${escapeHtml(`${evidence.label} — ${evidence.description}`)}" aria-label="${escapeHtml(evidence.label)}">⚠</span>`
-    : "";
   return `<article class="deck-card">
     <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="View details for ${escapeHtml(shortDeckName(row))}">
       <span class="deck-arts">${arts || `<span class="card-placeholder" aria-hidden="true">?</span>`}</span>
@@ -313,7 +304,6 @@ function deckRow(row) {
         <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>Games</small></span>
         <span class="deck-stat stat-price" title="${escapeHtml(priceTitle)}"><strong>${escapeHtml(priceText)}</strong><small>${price.complete ? "Price" : "Priced"}</small></span>
       </span>
-      <span class="deck-flag">${warn}</span>
     </button>
   </article>`;
 }
@@ -560,7 +550,7 @@ function renderDialog(row) {
       ? `Partial (${price.pricedCopies}/${price.totalCopies})`
       : "Unavailable";
   const coverageNote = price.complete
-    ? "Based on the exact set and collector number for the representative list."
+    ? "Based on the simulated set and collector number; alternate-art and promo versions are excluded."
     : `Price unavailable because ${price.totalCopies - price.pricedCopies} cards lack market data.`;
   const estimateNote = price.estimatedCopies
     ? ` ${price.estimatedCopies} Basic Energy cards use the $0.05 default.`
@@ -609,7 +599,7 @@ function renderDialog(row) {
 
     <section class="detail-section">
       <div class="detail-section-heading"><h3>Representative List</h3><span>${formatPercent(row.modal_deck_share)} of variant · ${modalCount} cards</span></div>
-      <p class="price-note">Exact-printing estimate: <strong>${priceLabel}</strong>. ${escapeHtml(coverageNote)}${escapeHtml(estimateNote)}${escapeHtml(lowBasisNote)} TCGplayer data via TCGCSV, snapshot ${escapeHtml(priceSnapshotLabel())}; shipping, tax, condition, and regional prices are excluded.</p>
+      <p class="price-note">Deck estimate: <strong>${priceLabel}</strong>. ${escapeHtml(coverageNote)}${escapeHtml(estimateNote)}${escapeHtml(lowBasisNote)} The lowest market-priced finish for each matched product is used. TCGplayer data via TCGCSV, snapshot ${escapeHtml(priceSnapshotLabel())}; shipping, tax, condition, and regional prices are excluded.</p>
       <div class="decklist-shell">
         <div class="decklist-grid">${(row.modal_deck || []).map((card) => `<div><strong>${card.qty}</strong><span>${escapeHtml(card.name)}</span></div>`).join("")}</div>
         <button class="copy-button" type="button" data-copy-deck>Copy decklist</button>

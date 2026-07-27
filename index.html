@@ -117,7 +117,6 @@
         <span>Share</span>
         <span>Games</span>
         <span>Est. Price</span>
-        <span class="col-flag"></span>
       </div>
 
       <div class="tier-table" id="deck-grid" data-testid="deck-grid" aria-busy="true">
@@ -166,9 +165,9 @@
         <ul>
           <li><strong>Meta Score</strong> adjusts win rate for opponent strength and determines tier placement.</li>
           <li><strong>Sample adjustment</strong> pulls low-volume decks toward 50% to reduce small-sample inflation.</li>
-          <li><strong>Pilot concentration ⚠</strong> flags variants where one team supplies 80%+ of games or fewer than three teams played the deck.</li>
+          <li><strong>Pilot concentration</strong> appears as a labeled badge inside deck details when one team supplies 80%+ of games or fewer than three teams played the deck.</li>
           <li><strong>Rating cohorts</strong> use current leaderboard ratings because historical match-time ratings are unavailable.</li>
-          <li><strong>Deck prices</strong> match each simulated card by set and collector number, then use TCGplayer market data cached by TCGCSV. Incomplete lists show no total.</li>
+          <li><strong>Deck prices</strong> match each simulated card by set and collector number, then use the lowest market-priced finish from TCGplayer data cached by TCGCSV. Alternate-art and promo versions are excluded; incomplete lists show no total.</li>
         </ul>
         <div class="method-diagnostics" id="method-diagnostics"></div>
 
