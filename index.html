@@ -116,7 +116,7 @@
         <span>Win Rate</span>
         <span>Share</span>
         <span>Games</span>
-        <span>Est. Price</span>
+        <span>Max Value</span>
       </div>
 
       <div class="tier-table" id="deck-grid" data-testid="deck-grid" aria-busy="true">
@@ -167,7 +167,7 @@
           <li><strong>Sample adjustment</strong> pulls low-volume decks toward 50% to reduce small-sample inflation.</li>
           <li><strong>Pilot concentration</strong> appears as a labeled badge inside deck details when one team supplies 80%+ of games or fewer than three teams played the deck.</li>
           <li><strong>Rating cohorts</strong> use current leaderboard ratings because historical match-time ratings are unavailable.</li>
-          <li><strong>Deck prices</strong> match each simulated card by set and collector number, then use the lowest market-priced finish from TCGplayer data cached by TCGCSV. Alternate-art and promo versions are excluded; incomplete lists show no total.</li>
+          <li><strong>Collector max</strong> compares playable English printings with the same name and identical gameplay metadata, then uses the highest TCGplayer market price for every copy. Jumbo and World Championship replicas are excluded; this is maximum collectible value, not the minimum cost to play.</li>
         </ul>
         <div class="method-diagnostics" id="method-diagnostics"></div>
 

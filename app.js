@@ -64,11 +64,17 @@ function tierBadge(tier) {
   return `<span class="tier-badge tier-${escapeHtml(tier.toLowerCase())}"><strong>${escapeHtml(meta.label)}</strong></span>`;
 }
 
+function collectorPriceFor(card) {
+  return state.prices?.cards?.[String(card?.cid)] || null;
+}
+
 function cardArt(card, { eager = false, large = false } = {}) {
-  if (!card?.img) return `<span class="card-placeholder" aria-hidden="true">?</span>`;
+  const image = collectorPriceFor(card)?.image || card?.img;
+  if (!image) return `<span class="card-placeholder" aria-hidden="true">?</span>`;
+  const fallbackImage = card?.img && card.img !== image ? card.img : "";
   const size = large ? 180 : 92;
   return `<span class="card-art-wrap${large ? " is-large" : ""}" data-fallback="${escapeHtml((card.name || "?").slice(0, 1))}">
-    <img class="card-art" src="${escapeHtml(card.img)}" alt="" width="${size}" height="${Math.round(size * 1.39)}" ${eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async">
+    <img class="card-art" src="${escapeHtml(image)}"${fallbackImage ? ` data-fallback-src="${escapeHtml(fallbackImage)}"` : ""} alt="" width="${size}" height="${Math.round(size * 1.39)}" ${eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async">
   </span>`;
 }
 
@@ -288,7 +294,7 @@ function deckRow(row) {
   const price = deckPrice(row);
   const priceText = deckPriceLabel(price, 0);
   const priceTitle = price.complete
-    ? `Simulated set/number estimate · ${priceSnapshotLabel()}`
+    ? `Highest-value equivalent printings · ${priceSnapshotLabel()}`
     : "Price unavailable — incomplete market data";
   return `<article class="deck-card">
     <button class="deck-card-button" type="button" data-open-unit="${escapeHtml(row.unit)}" aria-label="View details for ${escapeHtml(shortDeckName(row))}">
@@ -302,7 +308,7 @@ function deckRow(row) {
         <span class="deck-stat"><strong>${formatPercent(row.raw_wr)}</strong><small>Win</small></span>
         <span class="deck-stat"><strong>${formatPercent(row.pick_rate)}</strong><small>Share</small></span>
         <span class="deck-stat"><strong>${formatNumber(row.seats)}</strong><small>Games</small></span>
-        <span class="deck-stat stat-price" title="${escapeHtml(priceTitle)}"><strong>${escapeHtml(priceText)}</strong><small>${price.complete ? "Price" : "Priced"}</small></span>
+        <span class="deck-stat stat-price" title="${escapeHtml(priceTitle)}"><strong>${escapeHtml(priceText)}</strong><small>${price.complete ? "Max" : "Priced"}</small></span>
       </span>
     </button>
   </article>`;
@@ -502,9 +508,10 @@ function deckListText(row) {
 function deckPrice(row) {
   const cards = state.prices?.cards || {};
   let total = 0;
+  let baseTotal = 0;
   let totalCopies = 0;
   let pricedCopies = 0;
-  let estimatedCopies = 0;
+  let upgradedCopies = 0;
   let lowBasisCopies = 0;
   const missing = [];
   for (const card of row.modal_deck || []) {
@@ -518,24 +525,46 @@ function deckPrice(row) {
     }
     total += usd * qty;
     pricedCopies += qty;
-    if (price.source === "basic-energy-default") estimatedCopies += qty;
+    const baseUsd = Number(price.base_usd);
+    if (Number.isFinite(baseUsd) && baseUsd > 0) {
+      baseTotal += baseUsd * qty;
+      if (usd > baseUsd + 0.001) upgradedCopies += qty;
+    }
     if (price.basis === "low") lowBasisCopies += qty;
   }
   return {
     total,
+    baseTotal,
     totalCopies,
     pricedCopies,
-    estimatedCopies,
+    upgradedCopies,
     lowBasisCopies,
     missing,
     complete: totalCopies > 0 && pricedCopies === totalCopies,
   };
 }
 
+function formatUsd(value, digits = 2) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  }).format(value);
+}
+
 function deckPriceLabel(price, digits = 2) {
-  if (price.complete) return `~$${price.total.toFixed(digits)}`;
+  if (price.complete) return `~${formatUsd(price.total, digits)}`;
   if (price.pricedCopies) return `${price.pricedCopies}/${price.totalCopies}`;
   return "—";
+}
+
+function coreCardMeta(card) {
+  const collectorValue = Number(collectorPriceFor(card)?.usd);
+  const value = Number.isFinite(collectorValue) && collectorValue > 0
+    ? ` · ~${formatUsd(collectorValue, collectorValue >= 100 ? 0 : 2)} max`
+    : "";
+  return `${formatPercent(card.presence)} inclusion${value}`;
 }
 
 function renderDialog(row) {
@@ -550,10 +579,10 @@ function renderDialog(row) {
       ? `Partial (${price.pricedCopies}/${price.totalCopies})`
       : "Unavailable";
   const coverageNote = price.complete
-    ? "Based on the simulated set and collector number; alternate-art and promo versions are excluded."
+    ? "Each copy uses the highest TCGplayer market-priced playable English printing with identical gameplay metadata."
     : `Price unavailable because ${price.totalCopies - price.pricedCopies} cards lack market data.`;
-  const estimateNote = price.estimatedCopies
-    ? ` ${price.estimatedCopies} Basic Energy cards use the $0.05 default.`
+  const upgradeNote = price.complete && price.upgradedCopies
+    ? ` ${price.upgradedCopies} copies use a higher-value printing; the matched base-print total is ~${formatUsd(price.baseTotal)}.`
     : "";
   const lowBasisNote = price.lowBasisCopies
     ? ` ${price.lowBasisCopies} cards use low price because market price was unavailable.`
@@ -575,7 +604,7 @@ function renderDialog(row) {
       <div><small>Win</small><strong>${formatPercent(row.raw_wr)}</strong></div>
       <div><small>Share</small><strong>${formatPercent(row.pick_rate)}</strong></div>
       <div><small>Games</small><strong>${formatNumber(row.seats)}</strong></div>
-      <div><small>Est. Deck Price</small><strong>${priceLabel}</strong></div>
+      <div><small>Collector Max</small><strong>${priceLabel}</strong></div>
     </div>
 
     <div class="detail-evidence-strip">
@@ -594,12 +623,12 @@ function renderDialog(row) {
 
     <section class="detail-section">
       <div class="detail-section-heading"><h3>Core Cards</h3><span>Sorted by inclusion rate</span></div>
-      <div class="core-card-grid">${cardGallery.map((card) => `<article>${cardArt(card, { large: true })}<strong>${escapeHtml(card.name)}</strong><span>${formatPercent(card.presence)} inclusion</span></article>`).join("")}</div>
+      <div class="core-card-grid">${cardGallery.map((card) => `<article>${cardArt(card, { large: true })}<strong>${escapeHtml(card.name)}</strong><span>${escapeHtml(coreCardMeta(card))}</span></article>`).join("")}</div>
     </section>
 
     <section class="detail-section">
       <div class="detail-section-heading"><h3>Representative List</h3><span>${formatPercent(row.modal_deck_share)} of variant · ${modalCount} cards</span></div>
-      <p class="price-note">Deck estimate: <strong>${priceLabel}</strong>. ${escapeHtml(coverageNote)}${escapeHtml(estimateNote)}${escapeHtml(lowBasisNote)} The lowest market-priced finish for each matched product is used. TCGplayer data via TCGCSV, snapshot ${escapeHtml(priceSnapshotLabel())}; shipping, tax, condition, and regional prices are excluded.</p>
+      <p class="price-note">Collector-max estimate: <strong>${priceLabel}</strong>. ${escapeHtml(coverageNote)}${escapeHtml(upgradeNote)}${escapeHtml(lowBasisNote)} This is a maximum collectible build, not the minimum cost to play. TCGplayer data via TCGCSV, snapshot ${escapeHtml(priceSnapshotLabel())}; shipping, tax, condition, and regional prices are excluded.</p>
       <div class="decklist-shell">
         <div class="decklist-grid">${(row.modal_deck || []).map((card) => `<div><strong>${card.qty}</strong><span>${escapeHtml(card.name)}</span></div>`).join("")}</div>
         <button class="copy-button" type="button" data-copy-deck>Copy decklist</button>
@@ -680,6 +709,12 @@ function bindDelegatedActions() {
   document.addEventListener("error", (event) => {
     const image = event.target;
     if (!(image instanceof HTMLImageElement) || !image.classList.contains("card-art")) return;
+    const fallback = image.dataset.fallbackSrc;
+    if (fallback) {
+      delete image.dataset.fallbackSrc;
+      image.src = fallback;
+      return;
+    }
     image.closest(".card-art-wrap")?.classList.add("is-broken");
     image.remove();
   }, true);

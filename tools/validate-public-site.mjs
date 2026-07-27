@@ -61,6 +61,8 @@ const allowedPriceTopLevelKeys = new Set([
 const allowedPriceCardKeys = new Set([
   "name", "set", "number", "usd", "currency", "source", "basis",
   "printing", "groupId", "productId", "variant", "market", "low",
+  "selection", "rarity", "collector_number", "image", "base_usd",
+  "base_productId", "equivalent_products",
 ]);
 
 // Generic leak patterns only. Identifier-specific tokens live in the internal
@@ -215,7 +217,7 @@ if (aggregates) {
 
 if (prices) {
   assertAllowedKeys(prices, allowedPriceTopLevelKeys, "prices");
-  if (prices.schema_version !== 4) fail(`price schema_version must be 4, got ${prices.schema_version}`);
+  if (prices.schema_version !== 5) fail(`price schema_version must be 5, got ${prices.schema_version}`);
   if (prices.currency !== "USD") fail(`price currency must be USD, got ${prices.currency}`);
   if (!Number.isFinite(Date.parse(prices.generated_at))) fail(`price generated_at is invalid: ${prices.generated_at}`);
   if (prices.provider?.name !== "TCGCSV" || prices.provider?.underlying_market !== "TCGplayer") {
@@ -230,20 +232,33 @@ if (prices) {
       if (typeof price.name !== "string" || !price.name) fail(`prices.cards.${cid}.name missing`);
       if (!Number.isFinite(price.usd) || price.usd <= 0) fail(`prices.cards.${cid}.usd must be positive`);
       if (price.currency !== "USD") fail(`prices.cards.${cid}.currency must be USD`);
-      if (!["tcgcsv/tcgplayer", "basic-energy-default"].includes(price.source)) {
-        fail(`prices.cards.${cid}.source is unsupported: ${price.source}`);
+      if (price.source !== "tcgcsv/tcgplayer") {
+        fail(`prices.cards.${cid}.source must be tcgcsv/tcgplayer`);
       }
-      if (!["market", "low", "default"].includes(price.basis)) {
+      if (!["market", "low"].includes(price.basis)) {
         fail(`prices.cards.${cid}.basis is unsupported: ${price.basis}`);
       }
-      if (price.source === "tcgcsv/tcgplayer") {
-        if (!Number.isInteger(price.groupId) || !Number.isInteger(price.productId)) {
-          fail(`prices.cards.${cid}: TCGCSV identifiers missing`);
-        }
-        if (!price.printing) fail(`prices.cards.${cid}: exact printing label missing`);
-      } else if (price.basis !== "default" || price.usd !== 0.05) {
-        fail(`prices.cards.${cid}: Basic Energy default must be exactly $0.05`);
+      if (!Number.isInteger(price.groupId) || !Number.isInteger(price.productId)) {
+        fail(`prices.cards.${cid}: selected TCGCSV identifiers missing`);
       }
+      if (!price.printing) fail(`prices.cards.${cid}: selected printing label missing`);
+      if (/^(Jumbo Cards|World Championship Decks) ·/.test(price.printing)) {
+        fail(`prices.cards.${cid}: non-playable collector product selected`);
+      }
+      if (price.selection !== "collector-max") fail(`prices.cards.${cid}: selection must be collector-max`);
+      if (typeof price.rarity !== "string" || !price.rarity) fail(`prices.cards.${cid}: rarity missing`);
+      if (price.collector_number !== null && !/^\d+$/.test(price.collector_number)) {
+        fail(`prices.cards.${cid}: collector_number must be numeric or null`);
+      }
+      if (typeof price.image !== "string" || !price.image.startsWith("https://")) {
+        fail(`prices.cards.${cid}: selected printing image missing`);
+      }
+      if (!Number.isFinite(price.base_usd) || price.base_usd <= 0) fail(`prices.cards.${cid}: base_usd must be positive`);
+      if (!Number.isInteger(price.base_productId)) fail(`prices.cards.${cid}: base_productId missing`);
+      if (!Number.isInteger(price.equivalent_products) || price.equivalent_products < 1) {
+        fail(`prices.cards.${cid}: equivalent_products must be positive`);
+      }
+      if (price.usd + 0.001 < price.base_usd) fail(`prices.cards.${cid}: collector max is below base price`);
     }
   }
 
@@ -255,6 +270,15 @@ if (prices) {
       let cardCopies = 0;
       let completeDecks = 0;
       for (const row of rows) {
+        for (const card of row.main_cards || []) {
+          requiredCardIds.add(String(card.cid));
+          const price = prices.cards[String(card.cid)];
+          if (!price) {
+            fail(`${viewKey}/${row.unit}: missing collector price for core card ${card.cid} ${card.name}`);
+          } else if (price.name !== card.name) {
+            fail(`${viewKey}/${row.unit}: core card ${card.cid} price name mismatch (${price.name} != ${card.name})`);
+          }
+        }
         let deckPricedCopies = 0;
         let deckCopies = 0;
         for (const card of row.modal_deck || []) {
@@ -289,6 +313,12 @@ if (prices) {
     }
     if (prices.coverage?.priced_card_ids !== priceIds.length) {
       fail(`price coverage priced_card_ids is ${prices.coverage?.priced_card_ids}, expected ${priceIds.length}`);
+    }
+    const upgradedCardIds = Object.values(prices.cards).filter((price) =>
+      price.productId !== price.base_productId || price.usd > price.base_usd + 0.001
+    ).length;
+    if (prices.coverage?.upgraded_card_ids !== upgradedCardIds) {
+      fail(`price coverage upgraded_card_ids is ${prices.coverage?.upgraded_card_ids}, expected ${upgradedCardIds}`);
     }
     const extraIds = priceIds.filter((cid) => !requiredCardIds.has(cid));
     if (extraIds.length) fail(`price map contains ${extraIds.length} unused card ids`);
@@ -339,4 +369,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`public-site validation passed: ${viewKeys.map((key) => `${aggregates.views[key].rows.length} ${key}`).join(", ")} variants, ${prices.coverage.card_ids} exact card prices`);
+console.log(`public-site validation passed: ${viewKeys.map((key) => `${aggregates.views[key].rows.length} ${key}`).join(", ")} variants, ${prices.coverage.card_ids} collector-max card prices`);

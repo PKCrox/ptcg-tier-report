@@ -142,7 +142,9 @@ try {
   const runtimeErrors = [];
   cdp.on("Runtime.exceptionThrown", (event) => runtimeErrors.push(event.exceptionDetails?.text || "runtime exception"));
   cdp.on("Log.entryAdded", ({ entry }) => {
-    if (entry?.level === "error" && !entry.url?.includes("limitlesstcg")) runtimeErrors.push(entry.text);
+    const optionalCardImage = ["limitlesstcg", "tcgplayer-cdn.tcgplayer.com"]
+      .some((host) => entry?.url?.includes(host));
+    if (entry?.level === "error" && !optionalCardImage) runtimeErrors.push(entry.text);
   });
 
   async function evaluate(expression) {
@@ -186,6 +188,8 @@ try {
   assert(await evaluate("!document.body.innerText.includes('OBSERVED SAMPLE')"), "overview should not expose the observed-sample card");
   assert(await evaluate("document.querySelectorAll('.row-flag').length === 0"), "deck rows should not show ambiguous warning icons");
   assert(await evaluate("document.querySelectorAll('.stat-price strong').length > 0 && [...document.querySelectorAll('.stat-price strong')].every((node) => node.textContent.trim().startsWith('~$'))"), "every rendered deck should have a complete price");
+  assert(await evaluate("[...document.querySelectorAll('.table-head span')].some((node) => node.textContent.trim() === 'Max Value')"), "price column should identify collector-max values");
+  assert(await evaluate("document.querySelectorAll('.card-art-wrap.is-broken').length === 0"), "all visible card art should render or fall back");
   assert(await evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"), "desktop has horizontal overflow");
   assert(await evaluate("document.querySelectorAll('h1').length === 1"), "page must expose one h1");
   await screenshot("/tmp/ptcg-qa-desktop.png");
@@ -211,8 +215,29 @@ try {
   await evaluate("document.querySelector('.deck-card-button').click()");
   await waitFor("document.querySelector('#deck-dialog').open === true", "deck dialog");
   assert(await evaluate("Boolean(document.querySelector('#dialog-title').textContent.trim())"), "deck dialog title missing");
+  assert(await evaluate("[...document.querySelectorAll('.core-card-grid span')].some((node) => node.textContent.includes(' max'))"), "core cards should show collector-max values");
   await screenshot("/tmp/ptcg-qa-dialog.png");
   await evaluate("document.querySelector('#deck-dialog').close()");
+
+  const artFallback = await evaluate(`new Promise((resolve) => {
+    const image = document.querySelector('.card-art[data-fallback-src]');
+    if (!image) {
+      resolve({ok: false, reason: 'no premium image with fallback'});
+      return;
+    }
+    const expected = new URL(image.dataset.fallbackSrc, document.baseURI).href;
+    const wrapper = image.closest('.card-art-wrap');
+    const timer = setTimeout(() => resolve({ok: false, reason: 'fallback timed out'}), 5000);
+    image.addEventListener('load', () => {
+      clearTimeout(timer);
+      resolve({
+        ok: image.currentSrc === expected && image.naturalWidth > 0 && !wrapper.classList.contains('is-broken'),
+        reason: image.currentSrc,
+      });
+    }, {once: true});
+    image.dispatchEvent(new Event('error'));
+  })`);
+  assert(artFallback.ok, `premium card-art fallback failed: ${JSON.stringify(artFallback)}`);
 
   await viewport(390, 844, true);
   await navigate(baseUrl);
